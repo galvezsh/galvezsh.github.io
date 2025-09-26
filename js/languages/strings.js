@@ -19,8 +19,8 @@ export default class Strings {
             staticWelcomeVoid: "Welcome to the void",
 
             // LOCALE-BUTTONS
-            aboutConfigLocaleEn: "🇺🇸 Switch to English 🇬🇧",
-            aboutConfigLocaleEs: "🇪🇸 Cambiar a español 🇲🇽",
+            localeEn: "🇺🇸 Switch to English 🇬🇧",
+            localeEs: "🇪🇸 Cambiar a Español 🇲🇽",
 
             // NAVBAR
             navbarStartLink: "/home",

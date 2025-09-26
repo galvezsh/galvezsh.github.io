@@ -25,6 +25,7 @@ export default {
     navbarStart: "Home",
     navbarProjects: "Projects",
     navbarAbout: "About",
+    navbarLocale: "Change Language:",
 
     // START-HTML
     startHello: "Hi, I'm Alberto Gálvez",
@@ -89,12 +90,6 @@ export default {
     aboutLegacy_3: "<strong>Full UI redesign and code rebuild</strong>, dropped Bootstrap and AnimateCSS, and renamed to 'El estudio de Gálvez'.",
 
     aboutConfigTitle: "Website Settings",
-
-    aboutConfigLocaleLabel: "To change the <strong>website language</strong>, click one of the following buttons. Available languages: English and Spanish.",
-    
-    aboutConfigThemeLabel: "To change the <strong>website theme</strong>, choose between light and dark using these buttons:",
-    aboutConfigThemeLight: "☀️ Switch to light theme ☀️",
-    aboutConfigThemeDark: "🌙 Switch to dark theme 🌙",
 
     aboutConfigRestoreLabel: "To restore the <strong>default cookie settings</strong> and reset the site to its original state, click the button below:",
     aboutConfigRestoreButton: "🔧 Restore Settings 🔨",

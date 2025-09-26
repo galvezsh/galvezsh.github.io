@@ -25,6 +25,7 @@ export default {
     navbarStart: "Inicio",
     navbarProjects: "Proyectos",
     navbarAbout: "Acerca de",
+    navbarLocale: "Cambiar Idioma:",
 
     // START-HTML
     startHello: "Hola, soy Alberto Gálvez",
@@ -89,12 +90,6 @@ export default {
     aboutLegacy_3: "<strong>Rediseño completo de la interfaz y reconstrucción del código</strong>, abandono de Bootstrap y AnimateCSS, y renombrado a 'El estudio de Gálvez'.",
 
     aboutConfigTitle: "Configuración del sitio web",
-
-    aboutConfigLocaleLabel: "Para cambiar el <strong>idioma del sitio web</strong>, pulse uno de los siguientes botones. Idiomas disponibles: inglés y español.",
-
-    aboutConfigThemeLabel: "Para cambiar el <strong>tema del sitio web</strong>, pulse uno de los siguientes botones según su preferencia por tema claro u oscuro:",
-    aboutConfigThemeLight: "☀️ Cambiar a tema claro ☀️",
-    aboutConfigThemeDark: "🌙 Cambiar a tema oscuro 🌙",
 
     aboutConfigRestoreLabel: "Para restaurar la <strong>configuración de cookies por defecto</strong> y dejar el sitio como la primera vez que lo visitó, pulse el siguiente botón:",
     aboutConfigRestoreButton: "🔧 Restaurar configuración 🔨",

@@ -8,12 +8,13 @@ export default class NavBar {
      * @param {object} STRINGS An object containing localized strings and corresponding navigation URLs.
      * @param {string} navItemSelected The currently active navigation item to be visually highlighted.
      * @param {boolean} lightMode A boolean that checks if the website is in light mode or not.
-     * @param {string} callback A callback feature that sends an action backwards when the button is pressed.
+     * @param {string} callbackTheme A callback feature that sends an action backwards when the theme button is pressed.
+     * @param {string} callbackLocale A callback feature that sends an action backwards when the locale button is pressed.
      */
-    constructor( STRINGS, navItemSelected, lightMode, callback ) {
+    constructor( STRINGS, navItemSelected, lightMode, callbackTheme, callbackLocale ) {
         this.nav = document.querySelector( "main nav" );
 
-        this.buildBlock( STRINGS, navItemSelected, lightMode, () => { callback(); } );
+        this.buildBlock( STRINGS, navItemSelected, lightMode, () => { callbackTheme(); }, () => { callbackLocale(); } );
     }
 
     /**
@@ -22,9 +23,10 @@ export default class NavBar {
      * @param {object} STRINGS An object containing the navigation item labels and URLs.
      * @param {string} navItemSelected The navigation label to be marked as active.
      * @param {boolean} lightMode A boolean that checks if the website is in light mode or not.
-     * @param {string} callback A callback feature that sends an action backwards when the button is pressed.
+     * @param {string} callbackTheme A callback feature that sends an action backwards when the theme button is pressed.
+     * @param {string} callbackLocale A callback feature that sends an action backwards when the locale button is pressed.
      */
-    buildBlock( STRINGS, navItemSelected, lightMode, callback ) {
+    buildBlock( STRINGS, navItemSelected, lightMode, callbackTheme, callbackLocale ) {
         const theme = document.createElement("a");
         const ul = document.createElement( "ul" );
         const locale = document.createElement("a");
@@ -39,7 +41,7 @@ export default class NavBar {
         else
             theme.innerHTML = '<i class="fa-solid fa-sun"></i>';
         
-        theme.onclick = () => { callback(); };
+        theme.onclick = () => { callbackTheme(); };
         this.nav.appendChild( theme );
 
         Object.entries( navItems ).forEach( ( [ text, href ] ) => {
@@ -57,7 +59,8 @@ export default class NavBar {
             ul.appendChild( li );
         });
 
-        locale.innerHTML += '<i class="fa-solid fa-regular fa-globe"></i>';
+        locale.innerHTML += '<i class="fa-solid fa-language"></i>';
+        locale.onclick = () => { callbackLocale(); };
 
         this.nav.appendChild( ul );
         this.nav.appendChild( locale );

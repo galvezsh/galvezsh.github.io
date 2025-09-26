@@ -68,13 +68,19 @@ export class Html {
      * @param {string} navItemSelected The selected navigation item used as the page title suffix.
      */
     constructor( STRINGS, COOKIE, navItemSelected ) {
+        if ( COOKIE.getCookie( "theme" ) == "light" )
+            this.lightMode = true
+        else
+            this.lightMode = false
+
         this.void = new Void( STRINGS );
         this.toast = new Toast( STRINGS );
         this.modal = new Modal();
-        if ( COOKIE.getCookie( "theme" ) == "light" )
-           this.navbar = new NavBar( STRINGS, navItemSelected, true, () => { this.changeTheme( true, COOKIE ); });
-        else
-           this.navbar = new NavBar( STRINGS, navItemSelected, false, () => { this.changeTheme( false, COOKIE ); });
+        this.navbar = new NavBar( STRINGS, navItemSelected, this.lightMode, () => { 
+            this.changeTheme( this.lightMode, COOKIE ); 
+        }, () => {
+            this.showLocaleModal( this.modal, STRINGS, ( locale ) => { this.changeLocale( locale, COOKIE ); } ); 
+        } );
         this.footer = new Footer( STRINGS );
 
         document.title = STRINGS.websiteName + ": " + navItemSelected;
@@ -88,12 +94,55 @@ export class Html {
         }
     }
 
+    /**
+     * Toggles the current theme (light/dark) and updates the cookie accordingly.
+     * 
+     * @param {boolean} lightMode Indicates whether the current theme is light mode.
+     * @param {object} COOKIE An object for managing cookies.
+     */
     changeTheme( lightMode, COOKIE ) {
         if ( lightMode == true ) 
             COOKIE.setCookie( "theme", "dark" );
         else 
             COOKIE.setCookie( "theme", "light" );
 
+        window.location.reload();
+    }
+    
+    /**
+     * Displays a modal dialog that allows the user to change the website language.
+     * 
+     * @param {object} modal An instance of the modal component.
+     * @param {object} STRINGS An object containing localized strings.
+     * @param {function} callback A function to execute when a locale option is selected.
+     */
+    showLocaleModal( modal, STRINGS, callback ) {
+        const en = document.createElement("a");
+        const es = document.createElement("a");
+        const div = document.createElement("div");
+
+        div.classList.add("lang");
+        en.innerHTML = STRINGS.localeEn;
+        en.onclick = () => { callback( "en" ); };
+        en.href = "";
+        es.innerHTML = STRINGS.localeEs;
+        es.onclick = () => { callback( "es" ); };
+        es.href = "";
+
+        div.appendChild( en );
+        div.appendChild( es );
+
+        modal.showInfoModal( STRINGS.navbarLocale, div );
+    }
+
+    /**
+     * Changes the current locale, stores it in cookies, and reloads the page.
+     * 
+     * @param {string} locale The locale code to apply (e.g., "en" or "es").
+     * @param {object} COOKIE An object for managing cookies.
+     */
+    changeLocale( locale, COOKIE ) {
+        COOKIE.setCookie( "locale", locale );
         window.location.reload();
     }
 
@@ -129,7 +178,6 @@ export class Html {
      * @param {object} COOKIE An object containing statics methods for managing cookies.
      */
     firstStart( STRINGS, COOKIE ) {
-        // this.toast.showToast(1, STRINGS.staticBetaWebsite, 8);
         this.void.showVoid();
 
         COOKIE.setCookie( "logged", "true" );

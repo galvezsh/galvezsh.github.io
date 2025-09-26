@@ -99,7 +99,13 @@ export default class Modal {
      */
     showInfoModal( newTitle, newContext ) {
         this.header.innerHTML = newTitle;
-        this.body.innerHTML = newContext;
+        this.body.innerHTML = "";
+        if (typeof newContext === "string")
+            this.body.innerHTML = newContext;
+
+        else
+            this.body.appendChild(newContext); 
+
         this.footer.style.display = "none";
         this.modal.style.display = "block";
     }
