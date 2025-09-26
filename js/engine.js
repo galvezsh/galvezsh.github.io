@@ -71,7 +71,10 @@ export class Html {
         this.void = new Void( STRINGS );
         this.toast = new Toast( STRINGS );
         this.modal = new Modal();
-        this.navbar = new NavBar( STRINGS, navItemSelected );
+        if ( COOKIE.getCookie( "theme" ) == "light" )
+           this.navbar = new NavBar( STRINGS, navItemSelected, true, () => { this.changeTheme( true, COOKIE ); });
+        else
+           this.navbar = new NavBar( STRINGS, navItemSelected, false, () => { this.changeTheme( false, COOKIE ); });
         this.footer = new Footer( STRINGS );
 
         document.title = STRINGS.websiteName + ": " + navItemSelected;
@@ -83,6 +86,15 @@ export class Html {
         if ( COOKIE.getCookie( "logged" ) != "true" ) {
             this.firstStart( STRINGS, COOKIE );
         }
+    }
+
+    changeTheme( lightMode, COOKIE ) {
+        if ( lightMode == true ) 
+            COOKIE.setCookie( "theme", "dark" );
+        else 
+            COOKIE.setCookie( "theme", "light" );
+
+        window.location.reload();
     }
 
     /**

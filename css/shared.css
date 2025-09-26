@@ -291,10 +291,6 @@ nav {
     font-size: 0.8rem;
 }
 
-nav > img {
-    border-radius: 7px;
-}
-
 nav > ul {
     display: flex;
     list-style: none;
