@@ -31,8 +31,6 @@ Inside each folder there’s a minimal `index.html` that acts as an entry point.
 DigitalVoid/
 ├── about/
 │   └── index.html
-├── home/
-│   └── index.html
 ├── projects/
 │   ├── index.html
 │   ├── flipper/
@@ -41,11 +39,8 @@ DigitalVoid/
 │   │   └── index.html
 │   └── minecraft/
 │       └── index.html
-├── errors/
-│   ├── 400.html
-│   ├── 401.html
-│   ├── ...
-│   └── 504.html
+├── home/
+│   └── index.html
 ├── css/
 │   ├── about.css
 │   ├── animations.css
@@ -56,6 +51,10 @@ DigitalVoid/
 │   ├── shared.css
 │   └── themes.css
 ├── js/
+│   ├── languages/
+│   │   ├── en.js       # English strings
+│   │   ├── es.js       # English strings
+│   │   └── strings.js  # Language detection & loader
 │   ├── components/
 │   │   ├── Footer.js
 │   │   ├── Modal.js
@@ -66,14 +65,11 @@ DigitalVoid/
 │   ├── engine.js   # Only handles rendering logic and component bootstrapping
 │   ├── home.js
 │   └── projects.js
-├── languages/
-│   ├── en.js       # English strings
-│   ├── es.js       # Spanish strings
-│   └── strings.js  # Language detection & loader
 ├── resources/
 │   ├── images/
 │   └── videos/
 ├── credentials.txt
+├── 404.html        # Custom 404 error. Github pages only supports the 404 error
 ├── robots.txt
 └── readme.md
 ```
@@ -84,8 +80,8 @@ DigitalVoid/
 
 The site supports multiple languages (currently English and Spanish) using modular language files:
 
-- `languages/en.js`, `languages/es.js` — locale strings
-- `languages/strings.js` — detects language preference via cookies and loads the corresponding locale
+- `js/languages/en.js`, `js/languages/es.js` — locale strings
+- `js/languages/strings.js` — detects language preference via cookies and loads the corresponding locale
 
 Each page-specific script (like `about.js`) loads `strings.js`, which then uses the desired locale when rendering content. You simply pass the language code to the string manager, and it handles the rest.
 
