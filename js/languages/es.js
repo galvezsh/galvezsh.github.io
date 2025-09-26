@@ -55,9 +55,9 @@ export default {
     startLaboralExperience_1_Content: "Administrador de sistemas, montaje de equipos, diseño y administración de redes, helpdesk y mantenimiento general. Gestión de servidores críticos, endpoints y sistemas anti-malware.",
 
     startProjects: "Proyectos profesionales",
-    startProjects_2_Name: "Digital Void (enero 2022 - Actualidad)",
+    startProjects_2_Name: "Digital Void (Enero 2022 - Actualidad)",
     startProjects_2_Content: "Mi sitio web personal (este actual) desarrollado íntegramente con HTML, CSS y JavaScript, con soporte multidioma y componentes reutilizables al estilo de Jetpack Compose o React.",
-    startProjects_1_Name: "Rick and Morty DB (mayo 2025 - junio 2025)",
+    startProjects_1_Name: "Rick and Morty DB (Mayo 2025 - Junio 2025)",
     startProjects_1_Content: "Aplicación móvil sobre la serie 'Rick y Morty'. Contiene base de datos con personajes, episodios y localizaciones, interconectados. Desarrollada con tecnologías actuales y arquitectura recomendada por Google.",
     startProjectsGithub: "Ver proyecto en GitHub",
 
