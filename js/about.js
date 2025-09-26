@@ -1,6 +1,6 @@
 'use strict';
 
-import Strings from "../languages/strings.js";
+import Strings from "../js/languages/strings.js";
 import { Html, Cookie } from "./engine.js";
 
 /////////////////////////////////////////////

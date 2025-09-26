@@ -36,7 +36,7 @@ export default class Strings {
             linkedinLink: "https://www.linkedin.com/in/alberto-galvez-gandullo-01838a244/",
             emailLink: "alberto.galvez.n7@gmail.com",
 
-            // DOCS (must have the same name as the doc's name. ex: /projects/[homelab] -> /docs/[homelab].html)
+            // DOCS
             diyServerDoc: "/projects/homelab",
             minecraftServersDoc: "/projects/minecraft",
             flipperZeroDoc: "/projects/flipper"
