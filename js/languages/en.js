@@ -18,28 +18,14 @@ export default {
     resetCookiesBody: "Do you want to reset the website settings as if it were your first visit? This will reload the page and discard all current settings.",
 
     // ERRORS
-    error400Title: "Bad Request",
-    error400Label: "<p>The request could not be processed due to an error in the submitted data.</p><p>The URL may be incorrect or required information is missing.</p><p>Return to the <a href='/'>home page</a> and try again.</p>",
-    error401Title: "Unauthorized",
-    error401Label: "<p>You don't have access to this section because you're not logged in or your session has expired.</p><p>Return to the <a href='/'>home page</a>.</p>",
-    error403Title: "Access Denied",
-    error403Label: "<p>Your account does not have permission to access this content.</p><p>Even if you're logged in, this section may be restricted.</p><p>Return to the <a href='/'>home page</a>.</p>",
     error404Title: "Page Not Found",
     error404Label: "<p>The page you're looking for doesn't exist or has been removed.</p><p>Check the URL or use the menu to navigate.</p><p>Return to the <a href='/'>home page</a>.</p>",
-    
-    error500Title: "Internal Server Error",
-    error500Label: "<p>An unexpected error occurred on the server.</p><p>It's not your fault. We're working to fix it.</p><p>Return to the <a href='/'>home page</a>.</p>",
-    error502Title: "Bad Gateway",
-    error502Label: "<p>The server could not get a valid response from the upstream server.</p><p>It may be temporarily offline or unresponsive.</p><p>Please try again later or return to the <a href='/'>home page</a>.</p>",
-    error503Title: "Service Unavailable",
-    error503Label: "<p>The server is temporarily unavailable.</p><p>It might be undergoing maintenance or experiencing high traffic.</p><p>Sorry for the inconvenience. Please try again later or return to the <a href='/'>home page</a>.</p>",
-    error504Title: "Gateway Timeout",
-    error504Label: "<p>The server took too long to respond.</p><p>The request timed out.</p><p>Please try again later or return to the <a href='/'>home page</a>.</p>",
-    
+
     // NAVBAR
     navbarStart: "Home",
     navbarProjects: "Projects",
     navbarAbout: "About",
+    navbarLocale: "Change Language:",
 
     // START-HTML
     startHello: "Hi, I'm Alberto Gálvez",
@@ -98,18 +84,12 @@ export default {
     aboutAboutDevelopers: "Developers: ",
 
     aboutLegacyTitle: "Legacy History",
-    aboutLegacyLabel: "Before being named <strong>'Digital Vacio'</strong>, this website went through several phases. Here’s how the homepage looked with each version:",
+    aboutLegacyLabel: "Before being named <strong>'Digital Void'</strong>, this website went through several phases. Here’s how the homepage looked with each version:",
     aboutLegacy_1: "<strong>Birth of GSSR Web</strong>, basic structure design and development.",
     aboutLegacy_2: "<strong>Full development of GSSR Web</strong>, object-oriented JavaScript, function-based modular kernel, local integration of Bootstrap 5.2.3 and AnimateCSS 4.1.1.",
     aboutLegacy_3: "<strong>Full UI redesign and code rebuild</strong>, dropped Bootstrap and AnimateCSS, and renamed to 'El estudio de Gálvez'.",
 
     aboutConfigTitle: "Website Settings",
-
-    aboutConfigLocaleLabel: "To change the <strong>website language</strong>, click one of the following buttons. Available languages: English and Spanish.",
-    
-    aboutConfigThemeLabel: "To change the <strong>website theme</strong>, choose between light and dark using these buttons:",
-    aboutConfigThemeLight: "☀️ Switch to light theme ☀️",
-    aboutConfigThemeDark: "🌙 Switch to dark theme 🌙",
 
     aboutConfigRestoreLabel: "To restore the <strong>default cookie settings</strong> and reset the site to its original state, click the button below:",
     aboutConfigRestoreButton: "🔧 Restore Settings 🔨",

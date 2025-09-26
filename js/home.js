@@ -1,6 +1,6 @@
 'use strict';
 
-import Strings from "../languages/strings.js";
+import Strings from "../js/languages/strings.js";
 import { Html, Cookie } from "./engine.js";
 
 /////////////////////////////////////////////
@@ -14,7 +14,7 @@ const HTML = new Html( STRINGS, COOKIE, STRINGS.navbarStart );
 const workState = false;
 const workLabel = document.querySelector("#workLabel");
 const SKILL_DETAILS = [ STRINGS.startMicroinformaticSkillsDetail, STRINGS.startProgrammingSkillsDetail, STRINGS.startCibersecuritySkillsDetail ];
-const PROJECTS_LINKS = [ STRINGS.githubLink + "/Digital_studio", STRINGS.githubLink + "/RickAndMortyDB" ];
+const PROJECTS_LINKS = [ STRINGS.githubLink + "/galvezsh.github.io", STRINGS.githubLink + "/RickAndMortyDB" ];
 
 /////////////////////////////////////////////
 // SCRIPT ///////////////////////////////////

@@ -18,28 +18,14 @@ export default {
     resetCookiesBody: "¿Desea restaurar la configuración de la página web como el primer día? Esta acción recargará la ventana y se perderá toda la configuración actual.",
 
     // ERRORS
-    error400Title: "Petición incorrecta",
-    error400Label: "<p>La solicitud no se pudo procesar debido a un error en los datos enviados.</p><p>Puede que la URL esté mal escrita o falte información.</p><p>Vuelve a la <a href='/'>página de inicio</a> e inténtalo de nuevo.</p>",
-    error401Title: "No autorizado",
-    error401Label: "<p>No tienes acceso a esta sección porque no has iniciado sesión o tu sesión ha caducado.</p><p>Vuelve a la <a href='/'>página de inicio</a>.</p>",
-    error403Title: "Acceso denegado",
-    error403Label: "<p>Tu cuenta no tiene permisos para acceder a este contenido.</p><p>Incluso si has iniciado sesión, puede que esta sección esté restringida.</p><p>Vuelve a la <a href='/'>página de inicio</a>.</p>",
     error404Title: "Página no encontrada",
     error404Label: "<p>La página que estás buscando no existe o ha sido eliminada.</p><p>Comprueba la URL o usa el menú para navegar.</p><p>Vuelve a la <a href='/'>página de inicio</a>.</p>",
-    
-    error500Title: "Error interno",
-    error500Label: "<p>Se ha producido un error inesperado en el servidor.</p><p>No es culpa tuya. Estamos trabajando para solucionarlo.</p><p>Vuelve a la <a href='/'>página de inicio</a>.</p>",    
-    error502Title: "Error de puerta de enlace",
-    error502Label: "<p>El servidor no pudo obtener una respuesta válida desde el servidor de origen.</p><p>Es posible que esté temporalmente fuera de servicio.</p><p>Intenta de nuevo más tarde o vuelve a la <a href='/'>página de inicio</a>.</p>",
-    error503Title: "Servidor no disponible",
-    error503Label: "<p>El servidor está temporalmente no disponible.</p><p>Puede estar en mantenimiento o tener una sobrecarga.</p><p>Disculpa las molestias. Intenta más tarde o vuelve a la <a href='/'>página de inicio</a>.</p>",
-    error504Title: "Tiempo de espera agotado",
-    error504Label: "<p>El servidor no respondió a tiempo.</p><p>La solicitud tardó demasiado y se agotó el tiempo de espera.</p><p>Vuelve a intentarlo más tarde o vuelve a la <a href='/'>página de inicio</a>.</p>",
-    
+
     // NAVBAR
     navbarStart: "Inicio",
     navbarProjects: "Proyectos",
     navbarAbout: "Acerca de",
+    navbarLocale: "Cambiar Idioma:",
 
     // START-HTML
     startHello: "Hola, soy Alberto Gálvez",
@@ -69,9 +55,9 @@ export default {
     startLaboralExperience_1_Content: "Administrador de sistemas, montaje de equipos, diseño y administración de redes, helpdesk y mantenimiento general. Gestión de servidores críticos, endpoints y sistemas anti-malware.",
 
     startProjects: "Proyectos profesionales",
-    startProjects_2_Name: "Digital Void (enero 2022 - Actualidad)",
+    startProjects_2_Name: "Digital Void (Enero 2022 - Actualidad)",
     startProjects_2_Content: "Mi sitio web personal (este actual) desarrollado íntegramente con HTML, CSS y JavaScript, con soporte multidioma y componentes reutilizables al estilo de Jetpack Compose o React.",
-    startProjects_1_Name: "Rick and Morty DB (mayo 2025 - junio 2025)",
+    startProjects_1_Name: "Rick and Morty DB (Mayo 2025 - Junio 2025)",
     startProjects_1_Content: "Aplicación móvil sobre la serie 'Rick y Morty'. Contiene base de datos con personajes, episodios y localizaciones, interconectados. Desarrollada con tecnologías actuales y arquitectura recomendada por Google.",
     startProjectsGithub: "Ver proyecto en GitHub",
 
@@ -104,12 +90,6 @@ export default {
     aboutLegacy_3: "<strong>Rediseño completo de la interfaz y reconstrucción del código</strong>, abandono de Bootstrap y AnimateCSS, y renombrado a 'El estudio de Gálvez'.",
 
     aboutConfigTitle: "Configuración del sitio web",
-
-    aboutConfigLocaleLabel: "Para cambiar el <strong>idioma del sitio web</strong>, pulse uno de los siguientes botones. Idiomas disponibles: inglés y español.",
-
-    aboutConfigThemeLabel: "Para cambiar el <strong>tema del sitio web</strong>, pulse uno de los siguientes botones según su preferencia por tema claro u oscuro:",
-    aboutConfigThemeLight: "☀️ Cambiar a tema claro ☀️",
-    aboutConfigThemeDark: "🌙 Cambiar a tema oscuro 🌙",
 
     aboutConfigRestoreLabel: "Para restaurar la <strong>configuración de cookies por defecto</strong> y dejar el sitio como la primera vez que lo visitó, pulse el siguiente botón:",
     aboutConfigRestoreButton: "🔧 Restaurar configuración 🔨",
