@@ -18,24 +18,9 @@ export default {
     resetCookiesBody: "¿Desea restaurar la configuración de la página web como el primer día? Esta acción recargará la ventana y se perderá toda la configuración actual.",
 
     // ERRORS
-    error400Title: "Petición incorrecta",
-    error400Label: "<p>La solicitud no se pudo procesar debido a un error en los datos enviados.</p><p>Puede que la URL esté mal escrita o falte información.</p><p>Vuelve a la <a href='/'>página de inicio</a> e inténtalo de nuevo.</p>",
-    error401Title: "No autorizado",
-    error401Label: "<p>No tienes acceso a esta sección porque no has iniciado sesión o tu sesión ha caducado.</p><p>Vuelve a la <a href='/'>página de inicio</a>.</p>",
-    error403Title: "Acceso denegado",
-    error403Label: "<p>Tu cuenta no tiene permisos para acceder a este contenido.</p><p>Incluso si has iniciado sesión, puede que esta sección esté restringida.</p><p>Vuelve a la <a href='/'>página de inicio</a>.</p>",
     error404Title: "Página no encontrada",
     error404Label: "<p>La página que estás buscando no existe o ha sido eliminada.</p><p>Comprueba la URL o usa el menú para navegar.</p><p>Vuelve a la <a href='/'>página de inicio</a>.</p>",
-    
-    error500Title: "Error interno",
-    error500Label: "<p>Se ha producido un error inesperado en el servidor.</p><p>No es culpa tuya. Estamos trabajando para solucionarlo.</p><p>Vuelve a la <a href='/'>página de inicio</a>.</p>",    
-    error502Title: "Error de puerta de enlace",
-    error502Label: "<p>El servidor no pudo obtener una respuesta válida desde el servidor de origen.</p><p>Es posible que esté temporalmente fuera de servicio.</p><p>Intenta de nuevo más tarde o vuelve a la <a href='/'>página de inicio</a>.</p>",
-    error503Title: "Servidor no disponible",
-    error503Label: "<p>El servidor está temporalmente no disponible.</p><p>Puede estar en mantenimiento o tener una sobrecarga.</p><p>Disculpa las molestias. Intenta más tarde o vuelve a la <a href='/'>página de inicio</a>.</p>",
-    error504Title: "Tiempo de espera agotado",
-    error504Label: "<p>El servidor no respondió a tiempo.</p><p>La solicitud tardó demasiado y se agotó el tiempo de espera.</p><p>Vuelve a intentarlo más tarde o vuelve a la <a href='/'>página de inicio</a>.</p>",
-    
+
     // NAVBAR
     navbarStart: "Inicio",
     navbarProjects: "Proyectos",
