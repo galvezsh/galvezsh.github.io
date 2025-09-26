@@ -1,0 +1,51 @@
+@import url('../css/shared.css');
+
+img {
+    border-radius: 16px;
+}
+
+aside {
+    padding-top: 20px;
+}
+
+aside ol {
+    font-size: 0.9rem;
+}
+
+ol ol {
+    list-style-type: lower-latin;
+}
+
+article {
+    padding-top: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    line-height: 1.5;
+}
+
+@media ( min-width: 1000px ) {
+
+    main {
+        max-width: 950px;
+    }
+
+    div.document {
+        display: flex;
+        gap: 40px;
+    }
+
+    aside {
+        position: sticky;
+        top: 0px;
+        height: 100%;
+    }
+
+    aside div {
+        text-align: center;
+    }
+}

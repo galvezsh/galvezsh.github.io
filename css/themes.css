@@ -1,0 +1,85 @@
+:root {
+    /* BASE */
+    --bg-color: radial-gradient(
+      ellipse 80% 80% at 50% 0%, 
+      rgba(120, 120, 200, 0.3), 
+      rgba(255, 255, 255, 0)
+    ), #0a0a0a;
+    --onBg-color: #2a2a2a;
+
+    /* TEXTS */
+    --title-color: #ffffff;
+    --text-color-primary: #e0e0e0;
+    --text-color-secondary: #D5D5A0;
+    --text-color-tertiary: #7878C8;
+    --text-color-quaternary: grey;
+
+    /* BUTTONS */
+    --button-primary: #7878C8;
+    --button-primary-hover: #6060B0;
+    --button-secondary: #6c757d;
+    --button-secondary-hover: #5c636a;
+
+    /* TOAST */
+    --toast-header-gradient-color-from: rgba(255, 255, 255, 0.05);
+    --toast-header-gradient-color-to: rgba(255, 255, 255, 0.25);
+    --toast-header-info-color: #0099aa;
+    --toast-header-warning-color: #ba8800;
+    --toast-header-error-color: #990011;
+
+    /* VOID */
+    --void-color: radial-gradient(
+        ellipse at center,
+        rgba(20, 20, 40, 0.95) 0%,
+        rgba(20, 20, 40, 0.95) 10%,
+        rgba(0, 0, 0, 0.95) 60%,
+        rgba(10, 10, 30, 0.98) 100%
+    ), #2a2a2a;
+    --void-text-color: rgba(0, 0, 0, 0);
+
+    /* MODAL */
+    --modal-outbound-color: rgba(0, 0, 0, 0.7);
+
+    /* TIMELINE */
+    --timeline-color: #444;
+}
+
+.light {
+    /* BASE */
+    --bg-color: radial-gradient(
+        ellipse 80% 80% at 50% 0%,
+        rgba(106, 106, 217, 0.25),
+        rgba(0, 0, 0, 0)
+    ), #f9f9f9;
+    --onBg-color: #e0e0e0;
+
+    /* TEXTS */
+    --title-color: #000000;
+    --text-color-primary: #1f1f1f;
+    --text-color-secondary: #ab9642;
+    --text-color-tertiary: #8575ff;
+    --text-color-quaternary: #7a7a7a;
+
+    /* BUTTONS */
+    --button-primary: #8575ff;
+    --button-primary-hover: #6e61f0;
+    --button-secondary: #ced4da;
+    --button-secondary-hover: #b8bec4;
+
+    /* TOAST */
+    --toast-header-gradient-color-from: rgba(0, 0, 0, 0.03);
+    --toast-header-gradient-color-to: rgba(0, 0, 0, 0.08);
+    --toast-header-info-color: #0dcaf0;
+    --toast-header-warning-color: #ffc107;
+    --toast-header-error-color: #dc3545;
+
+    /* VOID */
+    --void-outbound-color: rgba(255, 255, 255, 0.9);
+
+    /* MODAL */
+    --modal-outbound-color: rgba(255, 255, 255, 0.7);
+
+    /* TIMELINE */
+    --timeline-color: #bbbbbb;
+
+}

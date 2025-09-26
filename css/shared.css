@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;700&display=swap');
+@import url('./themes.css');
+@import url('./animations.css');
+
+/***********/
+/* GENERIC */
+/***********/
+html {
+    font-family: "Onest", sans-serif;
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color-primary);
+    margin: auto;
+}
+
+h1, h2 {
+    color: var(--title-color);
+    margin-top: 0;
+    transition: 200ms ease-in-out;
+}
+
+h2 > i {
+    padding-right: 12px;
+}
+
+h3 {
+    color: var(--text-color-secondary);
+    margin: 0;
+    margin-bottom: 4px;
+    transition: 200ms ease-in-out;
+}
+
+h4 {
+    color: var(--text-color-tertiary);
+    margin: 0;
+    margin-bottom: 4px;
+    transition: 200ms ease-in-out;
+}
+
+p {
+    margin: 16px 0px;
+    line-height: 1.2;
+    transition: 200ms ease-in-out;
+}
+
+p.mt {
+    margin: 0;
+    margin-top: 16px;
+}
+
+p.mb {
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+p.m0 {
+    margin: 0;
+}
+
+strong {
+    color: var(--text-color-secondary);
+}
+
+a {
+    color: var(--text-color-tertiary);
+    text-decoration: none;
+    transition: 200ms ease-in-out;
+}
+
+a:hover {
+    color: var(--text-color-secondary);
+}
+
+
+img.full {
+    width: 100%;
+}
+
+img.screenshot {
+    width: calc(25% - 0.5rem);
+}
+
+main {
+    margin: auto;
+    max-width: 700px;
+    transition: 200ms ease-in-out;
+}
+
+.yt-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.yt-video iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+/***********/
+/* BUTTONS */
+/***********/
+button {
+    font-size: 0.85rem;
+    margin-top: 8px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: 200ms ease-in-out;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+button.primary,
+button.secondary {
+    color: var(--title-color);
+}
+
+button.primary {
+    background-color: var(--button-primary);
+    border-color: var(--button-primary);
+}
+
+button.secondary {
+    background-color: var(--button-secondary);
+    border-color: var(--button-secondary);
+}
+
+button.primary:hover:not(:disabled) {
+    background-color: var(--button-primary-hover);
+    border-color: var(--button-primary-hover);
+}
+
+button.secondary:hover:not(:disabled) {
+    background-color: var(--button-secondary-hover);
+    border-color: var(--button-secondary-hover);
+}
+
+button.primary:disabled,
+button.secondary:disabled {
+    background-color: var(--button-primary-hover);
+    border-color: var(--button-primary-hover);
+    color: var(--text-color-primary);
+}
+
+button.small {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+}
+
+/*********/
+/* VOID **/
+/*********/
+.void {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center; 
+    background: var( --void-color );
+    z-index: 3;
+}
+
+.void h1 {
+    color: var( --void-text-color );
+    -webkit-text-stroke: 1px var( --text-color-primary );
+    margin: 0;
+}
+
+/*********/
+/* TOAST */
+/*********/
+.toast {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+    margin: 16px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    overflow: hidden;
+    color: var(--text-color-primary);
+    z-index: 2;
+}
+
+.toast .header {
+    padding: 10px 12px;
+    font-weight: bold;
+    background-image: linear-gradient(
+        90deg,
+        var(--toast-header-gradient-color-from),
+        var(--toast-header-gradient-color-to)
+    );
+}
+
+.toast .bg-info {
+    background-color: var(--toast-header-info-color);
+}
+
+.toast .bg-warning {
+    background-color: var(--toast-header-warning-color);
+}
+
+.toast .bg-error {
+    background-color: var(--toast-header-error-color);
+}
+
+.toast .body {
+    padding: 12px;
+    background-color: var(--onBg-color);
+}
+
+/*********/
+/* MODAL */
+/*********/
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: var(--modal-outbound-color);
+    z-index: 1;
+}
+
+.modal .content {
+    display: inline-block;
+    text-align: left;
+    max-width: 500px;
+    margin-top: 30px;
+    border-radius: 8px;
+    background-color: var(--onBg-color);
+    color: var(--text-color-primary);
+}
+
+.modal .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--text-color-quaternary);
+    padding: 16px;
+}
+
+.modal .header i {
+    transform: scale(1.2);
+    color: var(--text-color-quaternary);
+    padding-right: 2px;
+    transition: 200ms ease-in-out;
+}
+
+.modal .header i:hover {
+    color: var(--text-color-primary);
+}
+
+.modal .body {
+    margin: 16px;
+}
+
+.modal .footer {
+    width: 100%;
+    padding: 0;
+    border-top: 1px solid var(--text-color-quaternary);
+}
+
+.modal .footer .buttons {
+    display: inline-block;
+    padding: 16px;
+}
+
+.modal button {
+    border-radius: 8px;
+    margin: 0;
+    margin-right: 8px;
+}
+
+/**********/
+/* NAVBAR */
+/**********/
+nav {
+    display: flex;
+    margin: 8px 0 80px;
+    font-size: 0.8rem;
+}
+
+nav > img {
+    border-radius: 7px;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+nav a {
+    display: block;
+    padding: 8px;
+    color: var(--text-color-primary);
+}
+
+nav a:hover {
+    transform: scale(1.1);
+}
+
+nav a.active {
+    color: var(--text-color-quaternary);
+}
+
+/**************/
+/* CONTAINERS */
+/**************/
+.container-big {
+    margin-bottom: 80px;
+}
+
+.container-medium {
+    margin-bottom: 40px;
+}
+
+.container-small {
+    margin-bottom: 20px;
+}
+
+/**************/
+/* LIST-LINKS */
+/**************/
+.list-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 12px 0;
+    font-size: 0.8rem;
+}
+
+.list-links .list-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    text-decoration: none;
+    background-color: var(--onBg-color);
+    color: var(--title-color);
+    transition: 200ms ease-in-out;
+}
+
+.list-links .list-item:hover {
+    color: var(--text-color-secondary);
+}
+
+.list-links .list-item i {
+    font-size: 0.9rem;
+}
+
+/************/
+/* TIMELINE */
+/************/
+.timeline {
+    position: relative;
+    border-left: 2px solid var(--timeline-color);
+    font-size: 0.8rem;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+
+.timeline-item::before {
+    position: absolute;
+    top: 2px;
+    left: -9px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--title-color);
+    border-radius: 50%;
+    border: 2px solid var(--timeline-color);
+    content: "";
+}
+
+.timeline-item p {
+    line-height: 1.5;
+}
+
+/**********/
+/* FOOTER */
+/**********/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    color: var(--text-color-quaternary);
+    font-size: 0.8rem;
+}
+
+footer > ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+footer > ul a {
+    display: block;
+    transform: scale(1.1);
+}
+
+footer > ul a:hover {
+    transform: scale(1.3);
+}
+
+footer a {
+    color: var(--text-color-quaternary);
+}
+
+/****************/
+/* MEDIA QUERY  */
+/****************/
+/* For medium screens (from 0px to 800px) */
+@media ( max-width: 800px ) {
+    
+    html {
+        font-size: 16px;
+    }
+
+    main {
+        max-width: 600px;
+    }
+}
+
+/* For small screens (from 0px to 650px) */
+@media ( max-width: 650px ) {
+    
+    html {
+        font-size: 15px;
+    }
+
+    img.screenshot {
+        width: calc(50% - 0.75rem);
+    }
+
+    main {
+        max-width: 450px;
+    }
+
+    .modal .content {
+        max-width: 400px;
+    }
+}
+
+/* For mobile screens (from 0px to 500px) */
+@media ( max-width: 500px ) {
+    
+    html {
+        font-size: 14px;
+    }
+
+    img.screenshot {
+        width: 100%;
+    }
+
+    main {
+        max-width: 325px;
+    }
+
+    footer ul {
+        gap: 12px;
+    }
+
+    .toast {
+        max-width: 250px;
+    }
+
+    .modal .content {
+        max-width: 300px;
+    }
+}
