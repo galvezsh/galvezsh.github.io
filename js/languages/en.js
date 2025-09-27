@@ -26,6 +26,9 @@ export default {
     navbarProjects: "Projects",
     navbarAbout: "About",
     navbarLocale: "Change Language:",
+    
+    enLocale: "🇺🇸 English - English 🇬🇧",
+    esLocale: "🇪🇸 Spanish - Español 🇲🇽",
 
     // START-HTML
     startHello: "Hi, I'm Alberto Gálvez",

@@ -1,9 +1,10 @@
 'use strict';
 
-import es from './es.js';
 import en from './en.js';
+import es from './es.js';
 
-const LANGUAGES = { es, en };
+const LANGUAGES = { en, es };
+const supportedLanguages = Object.keys( LANGUAGES );
 
 export default class Strings {
 
@@ -17,10 +18,6 @@ export default class Strings {
 
             // STATICS (Only in english because is the default language of the website. Basically for the first login and stuff like this...
             staticWelcomeVoid: "Welcome to the void",
-
-            // LOCALE-BUTTONS
-            localeEn: "🇺🇸 Switch to English 🇬🇧",
-            localeEs: "🇪🇸 Cambiar a Español 🇲🇽",
 
             // NAVBAR
             navbarStartLink: "/home",
@@ -49,5 +46,9 @@ export default class Strings {
         } else {
             Object.assign( this, en )
         }
+    }
+
+    supportedLanguages() {
+        return supportedLanguages;
     }
 }
