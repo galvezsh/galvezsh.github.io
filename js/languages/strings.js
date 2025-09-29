@@ -13,7 +13,7 @@ export default class Strings {
         // STRINGS
         Object.assign( this, {
             // WEBSITE
-            websiteVersion: "v1.0.4_Release (2025.09)",
+            websiteVersion: "v1.0.5_Beta (2025.09)",
             websiteDevelopers: "Alberto Gálvez (galvezsh)",
 
             // STATICS (Only in english because is the default language of the website. Basically for the first login and stuff like this...
@@ -36,7 +36,48 @@ export default class Strings {
             // DOCS
             diyServerDoc: "/projects/homelab",
             minecraftServersDoc: "/projects/minecraft",
-            flipperZeroDoc: "/projects/flipper"
+            flipperZeroDoc: "/projects/flipper",
+
+            // SHARED
+            java: "Java",
+            kotlin: "Kotlin",
+            python: "Python",
+            html: "HTML",
+            css: "CSS",
+            javascript: "JavaScript",
+            php: "PHP",
+            sql: "SQL - PL/SQL",
+            powershell: "Powershell - Shell Script",
+
+            kotlinMultiplatform: "Kotlin multiplatform",
+            composeMultiplatform: "Compose Multiplatform",
+            jetpackCompose: "Jetpack Compose",
+            daggerHilt: "Dagger Hilt",
+            koin: "Koin",
+            mvvm: "MVVM + Clean Arquitecture",
+            principles: "SOLID - DRY",
+            navigationCompose: "Navigation Compose",
+            room: "Room",
+
+            git: "Git",
+            vscode: "VS Code",
+            androidStudio: "Android Studio",
+            intellij: "Intellij IDEA",
+            pycharm: "PyCharm",
+            phpstorm: "PhpStorm",
+            docker: "Docker",
+
+            react: "React",
+            cakephp: "CakePHP",
+            django: "Django",
+
+            firebase: "Firebase",
+            springBoot: "Spring Boot",
+            hibernate: "Hibernate",
+
+            mysql: "MySQL",
+            mariadb: "MariaDB",
+            mongodb: "MongoDB"
 
         });
 

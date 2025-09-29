@@ -84,9 +84,17 @@ img.screenshot {
     width: calc(25% - 0.5rem);
 }
 
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    gap: 20px;
+}
+
 main {
     margin: auto;
-    max-width: 700px;
+    max-width: 1000px;
     transition: 200ms ease-in-out;
 }
 
@@ -230,6 +238,7 @@ button.small {
     text-align: center;
     background-color: var(--modal-outbound-color);
     z-index: 1;
+    transition: 200ms ease-in-out;
 }
 
 .modal .content {
@@ -300,14 +309,6 @@ nav {
     display: flex;
     margin: 8px 0 80px;
     font-size: 0.8rem;
-}
-
-nav > ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    gap: 20px;
 }
 
 nav a {
@@ -414,11 +415,8 @@ footer {
 }
 
 footer > ul {
-    display: flex;
-    list-style: none;
-    gap: 16px;
     margin: 0;
-    padding: 0;
+    gap: 16px;
 }
 
 footer > ul a {
@@ -437,20 +435,20 @@ footer a {
 /****************/
 /* MEDIA QUERY  */
 /****************/
-/* For medium screens (from 0px to 800px) */
-@media ( max-width: 800px ) {
+/* For medium screens (from 0px to 1100px) */
+@media ( max-width: 1050px ) {
     
     html {
         font-size: 16px;
     }
 
     main {
-        max-width: 600px;
+        max-width: 750px;
     }
 }
 
-/* For small screens (from 0px to 650px) */
-@media ( max-width: 650px ) {
+/* For small screens (from 0px to 800px) */
+@media ( max-width: 800px ) {
     
     html {
         font-size: 15px;
@@ -461,7 +459,7 @@ footer a {
     }
 
     main {
-        max-width: 450px;
+        max-width: 550px;
     }
 
     .modal .content {
@@ -470,7 +468,7 @@ footer a {
 }
 
 /* For mobile screens (from 0px to 500px) */
-@media ( max-width: 500px ) {
+@media ( max-width: 600px ) {
     
     html {
         font-size: 14px;

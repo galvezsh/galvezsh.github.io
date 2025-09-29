@@ -1,146 +1,437 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset='utf-8'>
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-        <link async rel="shortcut icon" href="../resources/images/favicon.jpg" type="image/x-icon">
-        <link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link async rel="stylesheet" href="../css/home.css">
-        <script defer type="module" src="../js/home.js"></script>
-    </head>
+    <link async rel="shortcut icon" href="../resources/images/favicon.jpg" type="image/x-icon">
+    <link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link async rel="stylesheet" href="../css/home.css">
+    <script defer type="module" src="../js/home.js"></script>
+</head>
 
-    <body>
-        <!-- Void -->
-        <div class="void animation-fadeIn"></div>
+<body>
+    <!-- Void -->
+    <div class="void animation-fadeIn"></div>
 
-        <!-- Toast -->
-        <div class="toast animation-fadeInUp"></div>
+    <!-- Toast -->
+    <div class="toast animation-fadeInUp"></div>
 
-        <!-- Modal -->
-        <div class="modal animation-fadeIn"></div>
+    <!-- Modal -->
+    <div class="modal animation-fadeIn"></div>
 
-        <main>
+    <main>
 
-            <!-- Navbar -->
-            <nav></nav>
+        <!-- Navbar -->
+        <nav></nav>
 
-            <div class="container-big header">
-                <img src="../resources/images/developer.png">
+        <div class="container-big header">
+            <img src="../resources/images/developer.png">
 
-                <div class="flex-header">
-                    <h1 id="startHello"></h1>
-                    <span id="workLabel"></span>
+            <div class="flex-header">
+                <h1 id="startHello"></h1>
+                <span id="workLabel"></span>
+            </div>
+
+            <p id="startSmallDescription"></p>
+
+            <div class="list-links">
+                <a href="" class="list-item" id="link-in" target="_blank"><i class="fa-brands fa-linkedin"></i>
+                    LinkedIn</a>
+                <a href="" class="list-item" id="link-gh" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="" class="list-item" id="link-em"><i class="fa-solid fa-envelope"></i> Email</a>
+            </div>
+        </div>
+
+        <div class="container-big experience">
+            <h2 id="startLaboralExperience"><i class="fa-solid fa-briefcase"></i></h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <h4 id="startLaboralExperience_2_Date"></h4>
+                    <h3 id="startLaboralExperience_2_Name"></h3>
+                    <p class="m0" id="startLaboralExperience_2_Content"></p>
                 </div>
 
-                <p id="startSmallDescription"></p>
+                <div class="timeline-item">
+                    <h4 id="startLaboralExperience_1_Date"></h4>
+                    <h3 id="startLaboralExperience_1_Name"></h3>
+                    <p class="m0" id="startLaboralExperience_1_Content"></p>
+                </div>
 
+            </div>
+        </div>
+
+        <!-- TODO: 
+         Actualizar datos del inicio. Añadir mas de 5 años de software, añadir descarga del curriculum, 
+         corregir la seccion de Skills y actualizar capturas de pantalla del proyecto 
+         RockAndMortyDB para que sean columnas responsivas como las de la seccion de TechStack
+        -->
+
+        <div class="container-big stack">
+            <h2 id="startTechStack"><i class="fa-solid fa-layer-group"></i></h2>
+            <div class="tech-stack">
+
+                <div class="stack-node languages">
+                    <h3><i class="fa-solid fa-code"></i> <span id="startTechStackTitle_1"></span></h3>
+                    <ul>
+                        <li class="stack-item">
+                            <img class="stack-item-img" src="../resources/images/techstack/java.svg">
+                            <div>
+                                <h4 id="java"></h4>
+                                <span id="startTechStack_1_1"></span>
+                            </div>
+                        </li>
+                        <li class="stack-item">
+                            <img class="stack-item-img" src="../resources/images/techstack/kotlin.svg">
+                            <div>
+                                <h4 id="kotlin"></h4>
+                                <span id="startTechStack_1_2"></span>
+                            </div>
+                        </li>
+                        <li class="stack-item">
+                            <img class="stack-item-img" src="../resources/images/techstack/python.svg">
+                            <div>
+                                <h4 id="python"></h4>
+                                <span id="startTechStack_1_3"></span>
+                            </div>
+                        </li>
+                        <li class="stack-item">
+                            <img class="stack-item-img" src="../resources/images/techstack/html5.svg">
+                            <div>
+                                <h4 id="html"></h4>
+                                <span id="startTechStack_1_4"></span>
+                            </div>
+                        </li>
+                        <li class="stack-item">
+                            <img class="stack-item-img" src="../resources/images/techstack/css3.svg">
+                            <div>
+                                <h4 id="css"></h4>
+                                <span id="startTechStack_1_5"></span>
+                            </div>
+                        </li>
+                        <li class="stack-item">
+                            <img class="stack-item-img" src="../resources/images/techstack/javascript.svg">
+                            <div>
+                                <h4 id="javascript"></h4>
+                                <span id="startTechStack_1_6"></span>
+                            </div>
+                        </li>
+                        <li class="stack-item">
+                            <img class="stack-item-img" src="../resources/images/techstack/php.svg">
+                            <div>
+                                <h4 id="php"></h4>
+                                <span id="startTechStack_1_7"></span>
+                            </div>
+                        </li>
+                        <li class="stack-item">
+                            <img class="stack-item-img" src="../resources/images/techstack/sql.svg">
+                            <div>
+                                <h4 id="sql"></h4>
+                                <span id="startTechStack_1_8"></span>
+                            </div>
+                        </li>
+                        <li class="stack-item">
+                            <img class="stack-item-img" src="../resources/images/techstack/powershell.svg">
+                            <div>
+                                <h4 id="powershell"></h4>
+                                <span id="startTechStack_1_9"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="stack-node mobile">
+                    <h3><i class="fa-solid fa-mobile-screen-button"></i> <span id="startTechStackTitle_2"></span></h3>
+                    <ul>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/kotlin.svg">
+                            <div>
+                                <h4 id="kotlinMultiplatform"></h4>
+                                <span id="startTechStack_2_1"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/jetpackcompose.svg">
+                            <div>
+                                <h4 id="composeMultiplatform"></h4>
+                                <span id="startTechStack_2_2"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/jetpackcompose.svg">
+                            <div>
+                                <h4 id="jetpackCompose"></h4>
+                                <span id="startTechStack_2_3"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/android.svg">
+                            <div>
+                                <h4 id="daggerHilt"></h4>
+                                <span id="startTechStack_2_4"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/koin.svg">
+                            <div>
+                                <h4 id="koin"></h4>
+                                <span id="startTechStack_2_5"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/android.svg">
+                            <div>
+                                <h4 id="mvvm"></h4>
+                                <span id="startTechStack_2_6"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/android.svg">
+                            <div>
+                                <h4 id="principles"></h4>
+                                <span id="startTechStack_2_7"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/jetpackcompose.svg">
+                            <div>
+                                <h4 id="navigationCompose"></h4>
+                                <span id="startTechStack_2_8"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/sql.svg">
+                            <div>
+                                <h4 id="room"></h4>
+                                <span id="startTechStack_2_9"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="stack-node tools">
+                    <h3><i class="fa-solid fa-screwdriver-wrench"></i> <span id="startTechStackTitle_3"></span></h3>
+                    <ul>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/git.svg">
+                            <div>
+                                <h4 id="git"></h4>
+                                <span id="startTechStack_3_1"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/vscode.svg">
+                            <div>
+                                <h4 id="vscode"></h4>
+                                <span id="startTechStack_3_2"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/androidstudio.svg">
+                            <div>
+                                <h4 id="androidStudio"></h4>
+                                <span id="startTechStack_3_3"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/intellij.svg">
+                            <div>
+                                <h4 id="intellij"></h4>
+                                <span id="startTechStack_3_4"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/pycharm.svg">
+                            <div>
+                                <h4 id="pycharm"></h4>
+                                <span id="startTechStack_3_5"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/phpstorm.svg">
+                            <div>
+                                <h4 id="phpstorm"></h4>
+                                <span id="startTechStack_3_6"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/docker.svg">
+                            <div>
+                                <h4 id="docker"></h4>
+                                <span id="startTechStack_3_7"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="stack-node frontend">
+                    <h3><i class="fa-solid fa-display"></i> <span id="startTechStackTitle_4"></span></h3>
+                    <ul>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/react.svg">
+                            <div>
+                                <h4 id="react"></h4>
+                                <span id="startTechStack_4_1"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/cakephp.svg">
+                            <div>
+                                <h4 id="cakephp"></h4>
+                                <span id="startTechStack_4_2"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/django.svg">
+                            <div>
+                                <h4 id="django"></h4>
+                                <span id="startTechStack_4_3"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="stack-node backend">
+                    <h3><i class="fa-solid fa-server"></i> <span id="startTechStackTitle_5"></span></h3>
+                    <ul>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/firebase.svg">
+                            <div>
+                                <h4 id="firebase"></h4>
+                                <span id="startTechStack_5_1"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/spring.svg">
+                            <div>
+                                <h4 id="springBoot"></h4>
+                                <span id="startTechStack_5_2"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/hibernate.svg">
+                            <div>
+                                <h4 id="hibernate"></h4>
+                                <span id="startTechStack_5_3"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="stack-node databases">
+                    <h3><i class="fa-solid fa-database"></i> <span id="startTechStackTitle_6"></span></h3>
+                    <ul>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/mysql.svg">
+                            <div>
+                                <h4 id="mysql"></h4>
+                                <span id="startTechStack_6_1"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/mariadb.svg">
+                            <div>
+                                <h4 id="mariadb"></h4>
+                                <span id="startTechStack_6_2"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="stack-item-img" src="../resources/images/techstack/mongodb.svg">
+                            <div>
+                                <h4 id="mongodb"></h4>
+                                <span id="startTechStack_6_3"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-big skills">
+            <h2 id="startKnowledge"><i class="fa-solid fa-book"></i></h2>
+            <div>
+
+                <div class="container-small">
+                    <h3 id="startMicroinformatic"></h3>
+                    <p class="m0" id="startMicroinformaticSkills"></p>
+                    <button class="primary small" id="knowMore"></button>
+                </div>
+
+                <div class="container-small">
+                    <h3 id="startProgramming"></h3>
+                    <p class="m0" id="startProgrammingSkills"></p>
+                    <button class="primary small" id="knowMore"></button>
+                </div>
+
+                <div class="container-small">
+                    <h3 id="startCibersecurity"></h3>
+                    <p class="m0" id="startCibersecuritySkills"></p>
+                    <button class="primary small" id="knowMore"></button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-big projects">
+            <h2 id="startProjects"><i class="fa-solid fa-code"></i></h2>
+
+            <div class="container-medium project">
+                <h3 id="startProjects_2_Name"></h3>
+                <p class="m0" id="startProjects_2_Content"></p>
                 <div class="list-links">
-                    <a href="" class="list-item" id="link-in" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                    <a href="" class="list-item" id="link-gh" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-                    <a href="" class="list-item" id="link-em"><i class="fa-solid fa-envelope"></i> Email</a>
+                    <span class="list-item"><i class="fa-brands fa-html5"></i> HTML</span>
+                    <span class="list-item"><i class="fa-brands fa-css3"></i> CSS</span>
+                    <span class="list-item"><i class="fa-brands fa-js"></i> JavaScript</span>
+                    <span class="list-item"><i class="fa-solid fa-code"></i> Oriented Object Programming</span>
+                    <span class="list-item"><i class="fa-solid fa-language"></i> Multilanguage</span>
                 </div>
-
-            </div>
-
-            <div class="container-big skills">
-                <h2 id="startKnowledge"><i class="fa-solid fa-book"></i></h2>
-                <div>
-
-                    <div class="container-small">
-                        <h3 id="startMicroinformatic"></h3>
-                        <p class="m0" id="startMicroinformaticSkills"></p>
-                        <button class="primary small" id="knowMore"></button>
-                    </div>
-
-                    <div class="container-small">
-                        <h3 id="startProgramming"></h3>
-                        <p class="m0" id="startProgrammingSkills"></p>
-                        <button class="primary small" id="knowMore"></button>
-                    </div>
-
-                    <div class="container-small">
-                        <h3 id="startCibersecurity"></h3>
-                        <p class="m0" id="startCibersecuritySkills"></p>
-                        <button class="primary small" id="knowMore"></button>
-                    </div>
-
+                <div class="images">
+                    <img class="full" src="../resources/images/digitalvoid/image_1.png">
+                </div>
+                <div class="list-links">
+                    <a href="" class="list-item" id="projectsGithub" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
                 </div>
             </div>
 
-            <div class="container-big experience">
-                <h2 id="startLaboralExperience"><i class="fa-solid fa-briefcase"></i></h2>
-                <div class="timeline">
-
-                    <div class="timeline-item">
-                        <h4 id="startLaboralExperience_2_Date"></h4>
-                        <h3 id="startLaboralExperience_2_Name"></h3>
-                        <p class="m0" id="startLaboralExperience_2_Content"></p>
-                    </div>
-                
-                    <div class="timeline-item">
-                        <h4 id="startLaboralExperience_1_Date"></h4>
-                        <h3 id="startLaboralExperience_1_Name"></h3>
-                        <p class="m0" id="startLaboralExperience_1_Content"></p>
-                    </div>
-
+            <div class="container-medium project">
+                <h3 id="startProjects_1_Name"></h3>
+                <p class="m0" id="startProjects_1_Content"></p>
+                <div class="list-links">
+                    <span class="list-item"><i class="fa-brands fa-android"></i> Kotlin</span>
+                    <span class="list-item"><i class="fa-brands fa-android"></i> Jetpack compose</span>
+                    <span class="list-item"><i class="fa-brands fa-android"></i> MVVM + Clean architecture</span>
+                    <span class="list-item"><i class="fa-brands fa-android"></i> Dagger Hilt</span>
+                    <span class="list-item"><i class="fa-brands fa-android"></i> Retrofit</span>
+                    <span class="list-item"><i class="fa-brands fa-android"></i> Paging 3</span>
+                </div>
+                <div class="images">
+                    <img class="screenshot" src="../resources/images/rickandmorty/image_1.png">
+                    <img class="screenshot" src="../resources/images/rickandmorty/image_2.png">
+                    <img class="screenshot" src="../resources/images/rickandmorty/image_3.png">
+                    <img class="screenshot" src="../resources/images/rickandmorty/image_4.png">
+                    <img class="screenshot" src="../resources/images/rickandmorty/image_5.png">
+                    <img class="screenshot" src="../resources/images/rickandmorty/image_6.png">
+                    <img class="screenshot" src="../resources/images/rickandmorty/image_7.png">
+                    <img class="screenshot" src="../resources/images/rickandmorty/image_8.png">
+                </div>
+                <div class="list-links">
+                    <a href="" class="list-item" id="projectsGithub" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
                 </div>
             </div>
 
-            <div class="container-big projects">
-                <h2 id="startProjects"><i class="fa-solid fa-code"></i></h2>
+        </div>
 
-                <div class="container-medium project">
-                    <h3 id="startProjects_2_Name"></h3>
-                    <p class="m0" id="startProjects_2_Content"></p>
-                    <div class="list-links">
-                        <span class="list-item"><i class="fa-brands fa-html5"></i> HTML</span>
-                        <span class="list-item"><i class="fa-brands fa-css3"></i> CSS</span>
-                        <span class="list-item"><i class="fa-brands fa-js"></i> JavaScript</span>
-                        <span class="list-item"><i class="fa-solid fa-code"></i> Oriented Object Programming</span>
-                        <span class="list-item"><i class="fa-solid fa-language"></i> Multilanguage</span>
-                    </div>
-                    <div class="images">
-                        <img class="full" src="../resources/images/Digital_Void/image_1.png">
-                    </div>
-                    <div class="list-links">
-                        <a href="" class="list-item" id="projectsGithub" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
+        <!-- Footer -->
+        <footer></footer>
 
-                <div class="container-medium project">
-                    <h3 id="startProjects_1_Name"></h3>
-                    <p class="m0" id="startProjects_1_Content"></p>
-                    <div class="list-links">
-                        <span class="list-item"><i class="fa-brands fa-android"></i> Kotlin</span>
-                        <span class="list-item"><i class="fa-brands fa-android"></i> Jetpack compose</span>
-                        <span class="list-item"><i class="fa-brands fa-android"></i> MVVM + Clean</span>
-                        <span class="list-item"><i class="fa-brands fa-android"></i> Dagger Hilt</span>
-                        <span class="list-item"><i class="fa-brands fa-android"></i> Retrofit</span>
-                        <span class="list-item"><i class="fa-brands fa-android"></i> Paging 3</span>
-                    </div>
-                    <div class="images">
-                        <img class="screenshot" src="../resources/images/rickandmorty/image_1.png">
-                        <img class="screenshot" src="../resources/images/rickandmorty/image_2.png">
-                        <img class="screenshot" src="../resources/images/rickandmorty/image_3.png">
-                        <img class="screenshot" src="../resources/images/rickandmorty/image_4.png">
-                        <img class="screenshot" src="../resources/images/rickandmorty/image_5.png">
-                        <img class="screenshot" src="../resources/images/rickandmorty/image_6.png">
-                        <img class="screenshot" src="../resources/images/rickandmorty/image_7.png">
-                        <img class="screenshot" src="../resources/images/rickandmorty/image_8.png">
-                    </div>
-                    <div class="list-links">
-                        <a href="" class="list-item" id="projectsGithub" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
+    </main>
+</body>
 
-            </div>
-
-            <!-- Footer -->
-            <footer></footer>
-            
-        </main>
-    </body>
 </html>

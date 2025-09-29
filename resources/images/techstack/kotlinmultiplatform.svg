@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Kotlin Multiplatform icon (stylized)">
+  <!-- Transparent background (implicit) -->
+  <defs>
+    <linearGradient id="gradA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00A1FF"/>
+      <stop offset="0.45" stop-color="#9B4DFF"/>
+      <stop offset="1" stop-color="#FF8A00"/>
+    </linearGradient>
+
+    <linearGradient id="gradB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF6A9D"/>
+      <stop offset="0.5" stop-color="#9B4DFF"/>
+      <stop offset="1" stop-color="#00A1FF"/>
+    </linearGradient>
+
+    <!-- subtle inner shadow shape for a bit of depth -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Outer rounded square container (invisible background to preserve aspect, no fill) -->
+  <rect x="0" y="0" width="512" height="512" rx="64" ry="64" fill="none"/>
+
+  <!-- Stylized 'K' composed of three main shapes to emulate Kotlin icon -->
+  <!-- Top-right slanted triangle (orange) -->
+  <path d="M332 64 L480 64 L320 224 L332 64 Z"
+        fill="url(#gradA)" />
+
+  <!-- Diagonal middle bar (gradient pink/purple) -->
+  <path d="M128 64 L332 64 L320 224 L116 224 L128 64 Z"
+        fill="url(#gradB)" />
+
+  <!-- Bottom-left triangle (blue/purple) -->
+  <path d="M128 448 L320 448 L320 224 L128 448 Z"
+        fill="url(#gradA)" />
+
+  <!-- White cut that defines the 'K' inner division -->
+  <path d="M240 144 L300 144 L200 256 L300 368 L240 368 L160 256 L240 144 Z"
+        fill="rgba(255,255,255,0.06)"/>
+
+  <!-- Slight highlight overlay to emulate modern glossy icon (low opacity) -->
+  <path d="M140 80 L324 80 L312 208 L156 208 L140 80 Z"
+        fill="white" opacity="0.06"/>
+
+  <!-- Optional: small drop shadow under the composition for depth (comment out if undesired) -->
+  <g filter="url(#shadow)">
+    <path d="M100 420 L412 420 L412 92 L100 420 Z" fill="transparent"/>
+  </g>
+
+</svg>
