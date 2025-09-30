@@ -12,28 +12,28 @@ export default class NavBar {
      * @param {string} callbackLocale A callback feature that sends an action backwards when the locale button is pressed.
      */
     constructor( STRINGS, navItemSelected, lightMode, callbackTheme, callbackLocale ) {
+        this.strings = STRINGS;
         this.nav = document.querySelector( "main nav" );
 
-        this.buildBlock( STRINGS, navItemSelected, lightMode, () => { callbackTheme(); }, () => { callbackLocale(); } );
+        this.buildBlock( navItemSelected, lightMode, () => { callbackTheme(); }, () => { callbackLocale(); } );
     }
 
     /**
      * Dynamically creates the navigation menu with localized labels and highlights the active item.
      * 
-     * @param {object} STRINGS An object containing the navigation item labels and URLs.
      * @param {string} navItemSelected The navigation label to be marked as active.
      * @param {boolean} lightMode A boolean that checks if the website is in light mode or not.
      * @param {string} callbackTheme A callback feature that sends an action backwards when the theme button is pressed.
      * @param {string} callbackLocale A callback feature that sends an action backwards when the locale button is pressed.
      */
-    buildBlock( STRINGS, navItemSelected, lightMode, callbackTheme, callbackLocale ) {
+    buildBlock( navItemSelected, lightMode, callbackTheme, callbackLocale ) {
         const theme = document.createElement("a");
         const ul = document.createElement( "ul" );
         const locale = document.createElement("a");
         const navItems = {
-            [ STRINGS.navbarStart ]: [ STRINGS.navbarStartLink ],
-            [ STRINGS.navbarProjects ]: [ STRINGS.navbarProjectsLink ],
-            [ STRINGS.navbarAbout ]: [ STRINGS.navbarAboutLink ]
+            [ this.strings.navbarStart ]: [ this.strings.navbarStartLink ],
+            [ this.strings.navbarProjects ]: [ this.strings.navbarProjectsLink ],
+            [ this.strings.navbarAbout ]: [ this.strings.navbarAboutLink ]
         };
 
         if ( lightMode ) 

@@ -80,10 +80,6 @@ img.full {
     width: 100%;
 }
 
-img.screenshot {
-    width: calc(25% - 0.5rem);
-}
-
 ul {
     display: flex;
     list-style: none;
@@ -454,10 +450,6 @@ footer a {
         font-size: 15px;
     }
 
-    img.screenshot {
-        width: calc(50% - 0.75rem);
-    }
-
     main {
         max-width: 550px;
     }
@@ -472,10 +464,6 @@ footer a {
     
     html {
         font-size: 14px;
-    }
-
-    img.screenshot {
-        width: 100%;
     }
 
     main {

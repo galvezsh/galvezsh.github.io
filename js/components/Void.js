@@ -8,18 +8,19 @@ export default class Void {
      * @param {object} STRINGS An object containing localized static strings and external social links.
      */
     constructor( STRINGS ) {
+        this.strings = STRINGS;
         this.void = document.querySelector( "div.void" );
 
-        this.buildBlock( STRINGS );
+        this.buildBlock();
     }
 
     /**
      * Dynamically builds the internal HTML structure for the modal component
      * and appends it to the modal container element.
      */
-    buildBlock( STRINGS ) {
+    buildBlock() {
         const h1 = document.createElement( 'h1' );
-        h1.innerHTML = STRINGS.staticWelcomeVoid;
+        h1.innerHTML = this.strings.staticWelcomeVoid;
 
         this.void.appendChild( h1 );
     }

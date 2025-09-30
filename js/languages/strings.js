@@ -13,7 +13,7 @@ export default class Strings {
         // STRINGS
         Object.assign( this, {
             // WEBSITE
-            websiteVersion: "v1.0.5_Beta (2025.09)",
+            websiteVersion: "v1.0.5 (2025.09)",
             websiteDevelopers: "Alberto Gálvez (galvezsh)",
 
             // STATICS (Only in english because is the default language of the website. Basically for the first login and stuff like this...
