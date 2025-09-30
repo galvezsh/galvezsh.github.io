@@ -11,9 +11,9 @@ const COOKIE = new Cookie();
 const STRINGS = new Strings( COOKIE.getCookie( "locale" ) );
 const HTML = new Html( STRINGS, COOKIE, STRINGS.navbarStart );
 
-const workState = false;
+const workState = false; // True if you're working, false if you're looking for a job
 const workLabel = document.querySelector("#workLabel");
-const SKILL_DETAILS = [ STRINGS.startMicroinformaticSkillsDetail, STRINGS.startProgrammingSkillsDetail, STRINGS.startCibersecuritySkillsDetail ];
+const SKILL_DETAILS = [ STRINGS.startMicroinformaticSkillsDetail, STRINGS.startCibersecuritySkillsDetail ];
 const PROJECTS_LINKS = [ STRINGS.githubLink + "/galvezsh.github.io", STRINGS.githubLink + "/RickAndMortyDB" ];
 
 /////////////////////////////////////////////

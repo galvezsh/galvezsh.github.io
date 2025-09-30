@@ -27,7 +27,7 @@
     --toast-header-warning-color: #ba8800;
     --toast-header-error-color: #990011;
 
-    /* VOID */
+    /* VOID ( Only appers with the dark theme ) */ 
     --void-color: radial-gradient(
         ellipse at center,
         rgba(20, 20, 40, 0.95) 0%,
@@ -72,9 +72,6 @@
     --toast-header-info-color: #0dcaf0;
     --toast-header-warning-color: #ffc107;
     --toast-header-error-color: #dc3545;
-
-    /* VOID */
-    --void-outbound-color: rgba(255, 255, 255, 0.9);
 
     /* MODAL */
     --modal-outbound-color: rgba(255, 255, 255, 0.7);

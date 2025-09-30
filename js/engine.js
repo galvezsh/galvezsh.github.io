@@ -117,22 +117,21 @@ export class Html {
      * @param {function} callback A function to execute when a locale option is selected.
      */
     showLocaleModal( modal, STRINGS, callback ) {
-        const en = document.createElement("a");
-        const es = document.createElement("a");
         const div = document.createElement("div");
-
         div.classList.add("lang");
-        en.innerHTML = STRINGS.localeEn;
-        en.onclick = () => { callback( "en" ); };
-        en.href = "";
-        es.innerHTML = STRINGS.localeEs;
-        es.onclick = () => { callback( "es" ); };
-        es.href = "";
 
-        div.appendChild( en );
-        div.appendChild( es );
+        STRINGS.supportedLanguages().forEach( locale => {
+            const a = document.createElement("a");
+            const key = locale + "Locale"; // Building automatically the variable: "enLocale", "esLocale", ...
 
-        modal.showInfoModal( STRINGS.navbarLocale, div );
+            a.innerHTML = STRINGS[key];
+            a.href = "";
+            a.onclick = () => { callback( locale ); };
+
+            div.appendChild(a);
+        });
+
+        modal.showInfoModal(STRINGS.navbarLocale, div);
     }
 
     /**
