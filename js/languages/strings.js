@@ -20,7 +20,7 @@ export default class Strings {
             staticWelcomeVoid: "Welcome to the void",
 
             // NAVBAR
-            navbarStartLink: "/home",
+            navbarHomeLink: "/home",
             navbarProjectsLink: "/projects",
             navbarAboutLink: "/about",
 
@@ -66,18 +66,25 @@ export default class Strings {
             pycharm: "PyCharm",
             phpstorm: "PhpStorm",
             docker: "Docker",
+            figma: "Figma",
 
-            react: "React",
-            cakephp: "CakePHP",
-            django: "Django",
+            chatgpt: "ChatGPT",
+            gemini: "Gemini",
+            copilot: "GitHub Copilot",
+            notebookLM: "NotebookLM",
+            firebaseStudio: "Firebase Studio",
 
             firebase: "Firebase",
             springBoot: "Spring Boot",
             hibernate: "Hibernate",
+            react: "React",
+            cakephp: "CakePHP",
+            django: "Django",
 
             mysql: "MySQL",
             mariadb: "MariaDB",
-            mongodb: "MongoDB"
+            mongodb: "MongoDB",
+            postgresql: "PostgreSQL",
 
         });
 

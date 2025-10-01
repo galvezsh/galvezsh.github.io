@@ -9,7 +9,7 @@ import { Html, Cookie } from "./engine.js";
 
 const COOKIE = new Cookie();
 const STRINGS = new Strings( COOKIE.getCookie( "locale" ) );
-const HTML = new Html( STRINGS, COOKIE, STRINGS.navbarStart );
+const HTML = new Html( STRINGS, COOKIE, STRINGS.navbarHome );
 
 const workState = false; // True if you're working, false if you're looking for a job
 const workLabel = document.querySelector("#workLabel");

@@ -22,7 +22,7 @@ export default {
     error404Label: "<p>La página que estás buscando no existe o ha sido eliminada.</p><p>Comprueba la URL o usa el menú para navegar.</p><p>Vuelve a la <a href='/'>página de inicio</a>.</p>",
 
     // NAVBAR
-    navbarStart: "Inicio",
+    navbarHome: "Inicio",
     navbarProjects: "Proyectos",
     navbarAbout: "Acerca de",
     navbarLocale: "Cambiar Idioma:",
@@ -84,21 +84,28 @@ export default {
     startTechStack_3_5: "IDE especializado en Python",
     startTechStack_3_6: "IDE optimizado para PHP",
     startTechStack_3_7: "Contenedores para apps portables",
+    startTechStack_3_8: "Herramienta de diseño y prototipado UI/UX",
 
-    startTechStackTitle_4: "Frontend",
-    startTechStack_4_1: "Biblioteca para interfaces web dinámicas",
-    startTechStack_4_2: "Framework PHP para aplicaciones web",
-    startTechStack_4_3: "Framework Python para desarrollo web",
+    startTechStackTitle_4: "Herramientas IA",
+    startTechStack_4_1: "Modelo avanzado de razonamiento y generación de texto natural",
+    startTechStack_4_2: "Modelo multiproposito (razonamiento, texto, imagenes, etc.)",
+    startTechStack_4_3: "Asistente de programación IA",
+    startTechStack_4_4: "Modelo de investigación y estudio basado en datos reales",
+    startTechStack_4_5: "IDE cloud con IA para gestionar proyectos Firebase",
 
-    startTechStackTitle_5: "Backend",
+    startTechStackTitle_5: "Frameworks",
     startTechStack_5_1: "Plataforma de servicios en la nube",
     startTechStack_5_2: "Framework para microservicios en Java",
     startTechStack_5_3: "ORM para bases de datos en Java",
+    startTechStack_5_4: "Biblioteca para interfaces web dinámicas",
+    startTechStack_5_5: "Framework PHP para aplicaciones web",
+    startTechStack_5_6: "ramework Python para desarrollo web",
 
     startTechStackTitle_6: "Bases de datos",
     startTechStack_6_1: "Sistema de base de datos relacional",
     startTechStack_6_2: "Fork de MySQL con mejoras de rendimiento",
     startTechStack_6_3: "Base de datos NoSQL orientada a documentos",
+    startTechStack_6_4: "Base de datos relacional avanzada",
 
     startKnowledge: "Conocimientos adicionales",
     startDeepKnowledge: "Especialización",
