@@ -31,7 +31,7 @@ export default class NavBar {
         const ul = document.createElement( "ul" );
         const locale = document.createElement("a");
         const navItems = {
-            [ this.strings.navbarStart ]: [ this.strings.navbarStartLink ],
+            [ this.strings.navbarHome ]: [ this.strings.navbarHomeLink ],
             [ this.strings.navbarProjects ]: [ this.strings.navbarProjectsLink ],
             [ this.strings.navbarAbout ]: [ this.strings.navbarAboutLink ]
         };

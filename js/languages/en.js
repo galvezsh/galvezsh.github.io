@@ -22,7 +22,7 @@ export default {
     error404Label: "<p>The page you're looking for doesn't exist or has been removed.</p><p>Check the URL or use the menu to navigate.</p><p>Return to the <a href='/'>home page</a>.</p>",
 
     // NAVBAR
-    navbarStart: "Home",
+    navbarHome: "Home",
     navbarProjects: "Projects",
     navbarAbout: "About",
     navbarLocale: "Change Language:",
@@ -84,21 +84,28 @@ export default {
     startTechStack_3_5: "IDE specialized in Python",
     startTechStack_3_6: "IDE optimized for PHP",
     startTechStack_3_7: "Containers for portable apps",
+    startTechStack_3_8: "Tool for UI/UX design and prototyping",
 
-    startTechStackTitle_4: "Frontend",
-    startTechStack_4_1: "Library for dynamic web interfaces",
-    startTechStack_4_2: "PHP framework for web applications",
-    startTechStack_4_3: "Python framework for web development",
+    startTechStackTitle_4: "IA Tools",
+    startTechStack_4_1: "Advanced model for reasoning and natural text generation",
+    startTechStack_4_2: "Multipurpose model (reasoning, text, images, etc.)",
+    startTechStack_4_3: "AI programming assistant",
+    startTechStack_4_4: "Research and study model based on real data",
+    startTechStack_4_5: "Cloud IDE with AI to manage Firebase projects",
 
-    startTechStackTitle_5: "Backend",
+    startTechStackTitle_5: "Frameworks",
     startTechStack_5_1: "Cloud-based service platform",
     startTechStack_5_2: "Framework for microservices in Java",
     startTechStack_5_3: "ORM for databases in Java",
+    startTechStack_5_4: "Library for dynamic web interfaces",
+    startTechStack_5_5: "PHP framework for web applications",
+    startTechStack_5_6: "Python framework for web development",
 
     startTechStackTitle_6: "Databases",
     startTechStack_6_1: "Relational database management system",
     startTechStack_6_2: "MySQL fork with performance improvements",
     startTechStack_6_3: "NoSQL document-oriented database",
+    startTechStack_6_4: "Advanced relational database",
     
     startKnowledge: "Additional skills",
     startDeepKnowledge: "Specialties",
