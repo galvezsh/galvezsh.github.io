@@ -34,6 +34,10 @@ h3 {
     transition: 200ms ease-in-out;
 }
 
+h3 > i {
+    padding-right: 12px;
+}
+
 h4 {
     color: var(--text-color-tertiary);
     margin: 0;

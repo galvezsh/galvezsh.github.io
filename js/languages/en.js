@@ -108,13 +108,12 @@ export default {
     startTechStack_6_4: "Advanced relational database",
     
     startKnowledge: "Additional skills",
-    startDeepKnowledge: "Specialties",
     startMicroinformatic: "Computer Hardware",
     startCibersecurity: "Cybersecurity",
     startMicroinformaticSkills: "Extensive knowledge in IT hardware: computers, servers, operating systems, etc. I’ve always been drawn to electronics and computing since I was a kid.",
     startCibersecuritySkills: "Knowledge in modern cybersecurity fundamentals: system hardening, SIEM analysis, forensic analysis, ethical hacking, and incident response. I can also give cybersecurity awareness talks.",
-    startMicroinformaticSkillsDetail: `<p>- <strong>Computer assembly</strong>: building and maintaining home PCs and servers.</p><p>- <strong>Operating systems</strong>: managing, optimizing, and configuring home, enterprise, and custom OS setups.</p><p>- <strong>Network design</strong>: topology, schematics, analysis, and optimization. Familiar with routers, switches, hubs, access points, etc.</p>`,
-    startCibersecuritySkillsDetail: `<p>- <strong>SIEM analyst</strong>: endpoint monitoring with Elastic Stack (Elasticsearch, Kibana, Beats, and Logstash), Wazuh, and Suricata.</p><p>- <strong>Ethical hacking</strong>: penetration testing to uncover vulnerabilities in apps and systems.</p><p>- <strong>System hardening</strong>: securing critical systems using least privilege principles.</p><p>- <strong>Forensic analysis</strong>: investigating causes of failures or cyberattacks.</p>`,
+    startMicroinformaticSkillsDetail: "<p>- <strong>Computer assembly</strong>: building and maintaining home PCs and servers.</p><p>- <strong>Operating systems</strong>: managing, optimizing, and configuring home, enterprise, and custom OS setups.</p><p>- <strong>Network design</strong>: topology, schematics, analysis, and optimization. Familiar with routers, switches, hubs, access points, etc.</p>",
+    startCibersecuritySkillsDetail: "<p>- <strong>SIEM analyst</strong>: endpoint monitoring with Elastic Stack (Elasticsearch, Kibana, Beats, and Logstash), Wazuh, and Suricata.</p><p>- <strong>Ethical hacking</strong>: penetration testing to uncover vulnerabilities in apps and systems.</p><p>- <strong>System hardening</strong>: securing critical systems using least privilege principles.</p><p>- <strong>Forensic analysis</strong>: investigating causes of failures or cyberattacks.</p>",
     startKnowMore: "Learn more...",
 
     startStudies: "Education",

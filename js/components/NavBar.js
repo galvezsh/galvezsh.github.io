@@ -5,14 +5,14 @@ export default class NavBar {
     /**
      * Initializes the navigation bar and builds its links.
      * 
-     * @param {object} STRINGS An object containing localized strings and corresponding navigation URLs.
+     * @param {object} strings An object containing localized strings and corresponding navigation URLs.
      * @param {string} navItemSelected The currently active navigation item to be visually highlighted.
      * @param {boolean} lightMode A boolean that checks if the website is in light mode or not.
      * @param {string} callbackTheme A callback feature that sends an action backwards when the theme button is pressed.
      * @param {string} callbackLocale A callback feature that sends an action backwards when the locale button is pressed.
      */
-    constructor( STRINGS, navItemSelected, lightMode, callbackTheme, callbackLocale ) {
-        this.strings = STRINGS;
+    constructor( strings, navItemSelected, lightMode, callbackTheme, callbackLocale ) {
+        this.strings = strings;
         this.nav = document.querySelector( "main nav" );
 
         this.buildBlock( navItemSelected, lightMode, () => { callbackTheme(); }, () => { callbackLocale(); } );
@@ -30,6 +30,11 @@ export default class NavBar {
         const theme = document.createElement("a");
         const ul = document.createElement( "ul" );
         const locale = document.createElement("a");
+        const navItemsActive = [
+            this.strings.navbarHome,
+            this.strings.navbarProjects,
+            this.strings.navbarAbout
+        ];
         const navItems = {
             [ this.strings.navbarHome ]: [ this.strings.navbarHomeLink ],
             [ this.strings.navbarProjects ]: [ this.strings.navbarProjectsLink ],
@@ -51,7 +56,7 @@ export default class NavBar {
             a.textContent = text;
             a.href = href;
 
-            if ( text === navItemSelected ) {
+            if ( text === navItemsActive[ navItemSelected ] ) {
                 a.classList.add( "active" );
             }
 

@@ -1,12 +1,13 @@
 'use strict';
 
+import Strings from "../js/languages/strings.js";
 import Void from './components/Void.js';
 import Toast from './components/Toast.js';
 import Modal from './components/Modal.js';
 import NavBar from './components/NavBar.js';
 import Footer from './components/Footer.js';
 
-export class Cookie {
+class Cookie {
 
     /**
      * Creates a new Cookie helper instance.
@@ -58,39 +59,40 @@ export class Cookie {
     }
 }
 
-export class Html {
+export default class Html {
 
     /**
      * Initializes the HTML layout and sets localized content, theme, and startup behavior.
      * 
-     * @param {object} STRINGS An object containing static strings for localization.
-     * @param {object} COOKIE An object containing statics methods for managing cookies.
-     * @param {string} navItemSelected The selected navigation item used as the page title suffix.
+     * @param {string} navItemSelected The selected navigation item based on a number (0 -> home, 1 -> projects or 2 -> about).
      */
-    constructor( STRINGS, COOKIE, navItemSelected ) {
-        if ( COOKIE.getCookie( "theme" ) == "light" )
+    constructor( navItemSelected ) {
+        this.cookie = new Cookie();
+        this.strings = new Strings( this.cookie.getCookie( "locale" ) );
+
+        if ( this.cookie.getCookie( "theme" ) == "light" )
             this.lightMode = true
         else
             this.lightMode = false
 
-        this.void = new Void( STRINGS );
-        this.toast = new Toast( STRINGS );
+        this.void = new Void( this.strings );
+        this.toast = new Toast( this.strings );
         this.modal = new Modal();
-        this.navbar = new NavBar( STRINGS, navItemSelected, this.lightMode, () => { 
-            this.changeTheme( this.lightMode, COOKIE ); 
+        this.navbar = new NavBar( this.strings, navItemSelected, this.lightMode, () => { 
+            this.changeTheme( this.lightMode, this.cookie ); 
         }, () => {
-            this.showLocaleModal( this.modal, STRINGS, ( locale ) => { this.changeLocale( locale, COOKIE ); } ); 
+            this.showLocaleModal( this.modal, this.strings, ( locale ) => { this.changeLocale( locale, this.cookie ); } ); 
         } );
-        this.footer = new Footer( STRINGS );
+        this.footer = new Footer( this.strings );
 
-        document.title = STRINGS.websiteName + ": " + navItemSelected;
+        // document.title = this.strings.websiteName + ": " + navItemSelected;
 
-        this.setTheme( COOKIE );
-        this.setLocale( STRINGS );
+        if ( this.cookie.getCookie("theme") == "light" )
+            document.body.classList.add("light");
 
         // Trigger first-time setup if user has not been logged before
-        if ( COOKIE.getCookie( "logged" ) != "true" ) {
-            this.firstStart( STRINGS, COOKIE );
+        if ( this.cookie.getCookie( "logged" ) != "true" ) {
+            this.firstStart( this.strings, this.cookie );
         }
     }
 
@@ -98,13 +100,13 @@ export class Html {
      * Toggles the current theme (light/dark) and updates the cookie accordingly.
      * 
      * @param {boolean} lightMode Indicates whether the current theme is light mode.
-     * @param {object} COOKIE An object for managing cookies.
+     * @param {object} cookie An object for managing cookies.
      */
-    changeTheme( lightMode, COOKIE ) {
+    changeTheme( lightMode, cookie ) {
         if ( lightMode == true ) 
-            COOKIE.setCookie( "theme", "dark" );
+            cookie.setCookie( "theme", "dark" );
         else 
-            COOKIE.setCookie( "theme", "light" );
+            cookie.setCookie( "theme", "light" );
 
         window.location.reload();
     }
@@ -113,74 +115,49 @@ export class Html {
      * Displays a modal dialog that allows the user to change the website language.
      * 
      * @param {object} modal An instance of the modal component.
-     * @param {object} STRINGS An object containing localized strings.
+     * @param {object} strings An object containing localized strings.
      * @param {function} callback A function to execute when a locale option is selected.
      */
-    showLocaleModal( modal, STRINGS, callback ) {
+    showLocaleModal( modal, strings, callback ) {
         const div = document.createElement("div");
         div.classList.add("lang");
 
-        STRINGS.supportedLanguages().forEach( locale => {
+        strings.supportedLanguages().forEach( locale => {
             const a = document.createElement("a");
             const key = locale + "Locale"; // Building automatically the variable: "enLocale", "esLocale", ...
 
-            a.innerHTML = STRINGS[key];
+            a.innerHTML = strings[key];
             a.href = "";
             a.onclick = () => { callback( locale ); };
 
             div.appendChild(a);
         });
 
-        modal.showInfoModal(STRINGS.navbarLocale, div);
+        modal.showInfoModal( strings.navbarLocale, div );
     }
 
     /**
      * Changes the current locale, stores it in cookies, and reloads the page.
      * 
      * @param {string} locale The locale code to apply (e.g., "en" or "es").
-     * @param {object} COOKIE An object for managing cookies.
+     * @param {object} cookie An object for managing cookies.
      */
-    changeLocale( locale, COOKIE ) {
-        COOKIE.setCookie( "locale", locale );
+    changeLocale( locale, cookie ) {
+        cookie.setCookie( "locale", locale );
         window.location.reload();
-    }
-
-    /**
-     * Applies the selected theme to the document based on the stored cookie.
-     * 
-     * @param {object} COOKIE An object containing statics methods for managing cookies.
-     */
-    setTheme( COOKIE ) {
-        if ( COOKIE.getCookie("theme") == "light" )
-            document.body.classList.add("light");
-    }
-
-    /**
-     * Populates HTML elements with localized strings based on their IDs.
-     * 
-     * @param {object} STRINGS An object containing localized string values, where each key matches an element ID.
-     */
-    setLocale( STRINGS ) {
-        Object.entries( STRINGS ).forEach( ([key, value]) => {
-            const element = document.getElementById(key);
-
-            if ( element ) {
-                element.innerHTML += value;
-            }
-        });
     }
 
     /**
      * Performs first-time setup operations, such as displaying a toast and initializing cookies.
      * 
-     * @param {object} STRINGS An object containing static strings for localization.
-     * @param {object} COOKIE An object containing statics methods for managing cookies.
+     * @param {object} strings An object containing static strings for localization.
+     * @param {object} cookie An object containing statics methods for managing cookies.
      */
-    firstStart( STRINGS, COOKIE ) {
+    firstStart( strings, cookie ) {
         this.void.showVoid();
 
-        COOKIE.setCookie( "logged", "true" );
-        COOKIE.setCookie( "locale", "en" );
-        COOKIE.setCookie( "theme", "dark" );
+        cookie.setCookie( "logged", "true" );
+        cookie.setCookie( "locale", "en" );
+        cookie.setCookie( "theme", "dark" );
     }
 }

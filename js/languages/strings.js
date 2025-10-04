@@ -13,7 +13,7 @@ export default class Strings {
         // STRINGS
         Object.assign( this, {
             // WEBSITE
-            websiteVersion: "v1.0.5 (2025.09)",
+            websiteVersion: "v2.0.0_Beta (2025.09)",
             websiteDevelopers: "Alberto Gálvez (galvezsh)",
 
             // STATICS (Only in english because is the default language of the website. Basically for the first login and stuff like this...
@@ -39,6 +39,13 @@ export default class Strings {
             flipperZeroDoc: "/projects/flipper",
 
             // SHARED
+            linkedin: "LinkedIn",
+            github: "GitHub",
+            email: "Email",
+
+            oop: "Oriented Object Programming",
+            multilanguage: "Multi-language",
+
             java: "Java",
             kotlin: "Kotlin",
             python: "Python",
@@ -56,8 +63,10 @@ export default class Strings {
             koin: "Koin",
             mvvm: "MVVM + Clean Arquitecture",
             principles: "SOLID - DRY",
-            navigationCompose: "Navigation Compose",
+            navigationCompose: "Compose Navigation",
             room: "Room",
+            paging3: "Paging 3",
+            retrofit: "Retrofit",
 
             git: "Git",
             vscode: "VS Code",
@@ -89,10 +98,10 @@ export default class Strings {
         });
 
         // LOCALE
-        if ( language_code != "null" ) {
-            Object.assign( this, LANGUAGES[ language_code ] )
+        if ( language_code && LANGUAGES[ language_code ] ) { 
+            Object.assign( this, LANGUAGES[ language_code ] );
         } else {
-            Object.assign( this, en )
+            Object.assign( this, en );
         }
     }
 
