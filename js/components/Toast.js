@@ -18,13 +18,6 @@ export default class Toast {
 
         this.headerStyle = "";
         this.finishedToast = true;
-
-        /**
-         * Arrow function to handle the "animationend" event.
-         * Ensures that the same function reference is used when adding/removing the event listener,
-         * preserving the correct context (`this`) within the Toast class.
-         */
-        this.endAnimationHandler = () => this.removeEndAnimation();
     }
 
     /**
@@ -82,23 +75,15 @@ export default class Toast {
 
     /**
      * Initiates the hiding of the toast using a fade-out animation.
-     * Final removal is handled by `removeAnimationToast()` once the animation completes.
+     * When the animation ends, the lambda listener removes the animation class and sets the display to "none".
+     * The { once: true } option ensures the listener is removed after the first animation end event.
      */
     hideToast() {
         this.toast.classList.add( "animation-fadeOutDown" );
-        this.toast.addEventListener( "animationend", this.endAnimationHandler );
-    }
-
-    /**
-     * Finalizes the removal of the toast from view, resets its state,
-     * and detaches the animation event listener to avoid memory leaks or duplicated events.
-     */
-    removeEndAnimation() {
-        this.toast.classList.remove( "animation-fadeOutDown" );
-        this.header.classList.remove( this.headerStyle );
-        this.toast.removeEventListener( "animationend", this.endAnimationHandler );
-        this.toast.style.display = "none";
-
-        this.finishedToast = true;
+        this.toast.addEventListener("animationend", () => {
+            this.toast.classList.remove("animation-fadeOutDown");
+            this.toast.style.display = "none";
+            this.finishedToast = true;
+        }, { once: true });
     }
 }
