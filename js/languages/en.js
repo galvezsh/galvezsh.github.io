@@ -7,15 +7,12 @@ export default {
     warning: "Warning",
     error: "Error",
     apply: "Apply",
+    accept: "Accept",
     cancel: "Cancel",
     close: "Close",
 
     // TOAST
     blockedToast: "Toast not available. Please wait until the previous one finishes.",
-
-    // MODAL
-    resetCookiesHead: "Restore Settings",
-    resetCookiesBody: "Do you want to reset the website settings as if it were your first visit? This will reload the page and discard all current settings.",
 
     // ERRORS
     error404Title: "Page Not Found",
@@ -161,6 +158,8 @@ export default {
     aboutConfigTitle: "Website Settings",
     aboutConfigRestoreLabel: "To restore the <strong>default cookie settings</strong> and reset the site to its original state, click the button below:",
     aboutConfigRestoreButton: "🔧 Restore Settings 🔨",
+    aboutConfigRestoreCookiesTitle: "Restore default settings",
+    aboutConfigRestoreCookiesContent: "Do you want to reset the website settings as if it were your first visit? This will reload the page and discard all current settings.",
 
     aboutHistoryTitle: "Version history",
     aboutHistoryTitle_3: "Gálvez's studio - Version 0.3.1",

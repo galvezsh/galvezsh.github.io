@@ -253,28 +253,9 @@ button.small {
 }
 
 .modal .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border-bottom: 1px solid var(--text-color-quaternary);
     padding: 16px;
-}
-
-.modal .header h3 {
     margin: 0;
-}
-
-.modal .header i {
-    transform: scale(1.2);
-    color: var(--text-color-quaternary);
-    padding-right: 2px;
-    transition: 200ms ease-in-out;
-    cursor: pointer;
-    /* padding-bottom: 2px; */
-}
-
-.modal .header i:hover {
-    color: var(--text-color-primary);
 }
 
 .modal .body {
@@ -297,14 +278,8 @@ button.small {
 }
 
 .modal .footer {
-    width: 100%;
-    padding: 0;
-    border-top: 1px solid var(--text-color-quaternary);
-}
-
-.modal .footer .buttons {
-    display: inline-block;
     padding: 16px;
+    border-top: 1px solid var(--text-color-quaternary);
 }
 
 .modal button {
@@ -476,10 +451,6 @@ footer a {
 
     .modal .content {
         max-width: 400px;
-    }
-
-    .modal .header i {
-        padding-bottom: 2px;
     }
 }
 

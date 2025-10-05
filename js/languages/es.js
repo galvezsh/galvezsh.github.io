@@ -7,15 +7,12 @@ export default {
     warning: "Advertencia",
     error: "Error",
     apply: "Aplicar",
+    accept: "Aceptar",
     cancel: "Cancelar",
     close: "Cerrar",
 
     // TOAST
     blockedToast: "Toast no disponible. Espere a que finalice el anterior.",
-
-    // MODAL
-    resetCookiesHead: "Restaurar configuración",
-    resetCookiesBody: "¿Desea restaurar la configuración de la página web como el primer día? Esta acción recargará la ventana y se perderá toda la configuración actual.",
 
     // ERRORS
     error404Title: "Página no encontrada",
@@ -161,6 +158,8 @@ export default {
     aboutConfigTitle: "Configuración del sitio web",
     aboutConfigRestoreLabel: "Para restaurar la <strong>configuración de cookies por defecto</strong> y dejar el sitio como la primera vez que lo visitó, pulse el siguiente botón:",
     aboutConfigRestoreButton: "🔧 Restaurar configuración 🔨",
+    aboutConfigRestoreCookiesTitle: "Restaurar configuración por defecto",
+    aboutConfigRestoreCookiesContent: "¿Desea restaurar la configuración de la página web como el primer día? Esta acción recargará la ventana y se perderá toda la configuración actual.",
 
     aboutHistoryTitle: "Historial de versiones",
     aboutHistoryTitle_3: "El estudio de Gálvez - Versión 0.3.1",

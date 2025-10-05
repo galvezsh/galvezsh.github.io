@@ -77,7 +77,7 @@ export default class Html {
 
         this.void = new Void( this.strings );
         this.toast = new Toast( this.strings );
-        this.modal = new Modal();
+        this.modal = new Modal( this.strings );
         this.navbar = new NavBar( this.strings, navItemSelected, this.lightMode, () => { 
             this.changeTheme( this.lightMode, this.cookie ); 
         }, () => {

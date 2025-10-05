@@ -40,7 +40,6 @@ document.getElementById("about").innerHTML = createAbout( HTML.strings.aboutAbou
 document.getElementById("config").innerHTML = createConfig( HTML.strings.aboutConfigTitle, HTML.strings.aboutConfigRestoreLabel, HTML.strings.aboutConfigRestoreButton );
 document.getElementById("legacy").innerHTML = timeline( HTML.strings.aboutHistoryTitle, "hourglass-half", legacyItems );
 
-document.querySelector("#modalCancel").addEventListener("click", () => HTML.modal.hideModal());
 document.querySelector("#aboutConfigRestoreButton").addEventListener("click", () => resetCookies());
 
 /////////////////////////////////////////////
@@ -67,8 +66,7 @@ function createConfig( title, restoreLabel, restoreButton ) {
 }
 
 function resetCookies() {
-    HTML.modal.showQuestionModal( HTML.strings.resetCookiesHead, HTML.strings.resetCookiesBody, HTML.strings.apply, HTML.strings.cancel );
-    document.querySelector("#modalApply").addEventListener("click", () => {
+    HTML.modal.showQuestionModal( HTML.strings.aboutConfigRestoreCookiesTitle, HTML.strings.aboutConfigRestoreCookiesContent, () => {
         HTML.cookie.resetCookies();
         location.reload();
     });
