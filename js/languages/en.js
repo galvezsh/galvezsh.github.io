@@ -116,18 +116,18 @@ export default {
     startCibersecuritySkillsDetail: "<p>- <strong>SIEM analyst</strong>: endpoint monitoring with Elastic Stack (Elasticsearch, Kibana, Beats, and Logstash), Wazuh, and Suricata.</p><p>- <strong>Ethical hacking</strong>: penetration testing to uncover vulnerabilities in apps and systems.</p><p>- <strong>System hardening</strong>: securing critical systems using least privilege principles.</p><p>- <strong>Forensic analysis</strong>: investigating causes of failures or cyberattacks.</p>",
     startKnowMore: "Learn more...",
 
-    startStudies: "Education",
-    startStudies_3_Date: "October 2023 - May 2024",
-    startStudies_3_Name: "Specialization Course in Cybersecurity",
-    startStudies_3_Content: "Advanced training in cybersecurity, including system hardening, SIEM analysis, forensic analysis, ethical hacking, and incident management. Use of tools such as Elastic Stack (Elasticsearch, Kibana, Beats, and Logstash), Wazuh, and Suricata for security monitoring and analysis.",
+    startEducation: "Education",
+    startEducation_3_Date: "October 2023 - May 2024",
+    startEducation_3_Name: "Specialization Course in Cybersecurity",
+    startEducation_3_Content: "Advanced training in cybersecurity, including system hardening, SIEM analysis, forensic analysis, ethical hacking, and incident management. Use of tools such as Elastic Stack (Elasticsearch, Kibana, Beats, and Logstash), Wazuh, and Suricata for security monitoring and analysis.",
 
-    startStudies_2_Date: "September 2021 - May 2023",
-    startStudies_2_Name: "Higher Vocational Training in Multiplatform Application Development",
-    startStudies_2_Content: "Training in multiplatform software development for web, mobile, and desktop applications. Foundations in object-oriented programming, data structures, databases, and networks. Practical projects in Java, Kotlin, Python, PHP, SQL, and PL/SQL.",
+    startEducation_2_Date: "September 2021 - May 2023",
+    startEducation_2_Name: "Higher Vocational Training in Multiplatform Application Development",
+    startEducation_2_Content: "Training in multiplatform software development for web, mobile, and desktop applications. Foundations in object-oriented programming, data structures, databases, and networks. Practical projects in Java, Kotlin, Python, PHP, SQL, and PL/SQL.",
 
-    startStudies_1_Date: "September 2019 - May 2021",
-    startStudies_1_Name: "Intermediate Vocational Training in Computer Systems and Networks",
-    startStudies_1_Content: "Training in assembly, configuration, and maintenance of computer equipment and local networks. Basic system administration, IT security, and technical support. Practical projects in hardware, software, and networking.",
+    startEducation_1_Date: "September 2019 - May 2021",
+    startEducation_1_Name: "Intermediate Vocational Training in Computer Systems and Networks",
+    startEducation_1_Content: "Training in assembly, configuration, and maintenance of computer equipment and local networks. Basic system administration, IT security, and technical support. Practical projects in hardware, software, and networking.",
 
     startProjects: "Professional Projects",
     startProjects_2_Name: "Digital Void (January 2022 - Present)",
@@ -138,19 +138,19 @@ export default {
 
     // PROJECTS-HTML
     projectsPersonalProjectsTitle: "Personal Projects",
-    projectsPersonalProjectsContent: "Here are some of my personal projects that, while not professional, are worth highlighting.",
+    projectsPersonalProjectsContent: "Here are my personal projects that, while not professional, are worth highlighting. I’ve dedicated a lot of time to them and want to share what I’ve learned with the world.",
     projectsSeeFullDocument: "View full document",
 
     projects_3_title: "Flipper Zero",
-    projects_3_subtitle: "Cybersecurity and Utilities",
+    projects_3_duration: "January 2025 - Present",
     projects_3_content: "This document covers everything related to Flipper Zero, a device capable of reading, copying, modifying, and emulating networks and cards. Known as the 'Tamagotchi for hackers'. I bought it to learn more about cybersecurity and ethical hacking, and to explain how to protect ourselves from such attacks. If you're interested, click the button to view the document.",
 
     projects_2_title: "Custom Minecraft Servers",
-    projects_2_subtitle: "Configurable Virtual Servers",
+    projects_2_duration: "May 2025 - June 2025",
     projects_2_content: "Here I explain how I create my own Minecraft servers to play with friends for a few weeks. I usually pack them with mods to offer a unique experience, since vanilla Minecraft can get repetitive. If you’re curious, click the button to read the document.",
 
     projects_1_title: "DIY Homelab Server",
-    projects_1_subtitle: "Physical Computers and Servers",
+    projects_1_duration: "October 2022 - August 2025",
     projects_1_content: "In this document I explain how to build a powerful, affordable, and scalable homelab server step by step — ideal for various projects. Based on Intel, but I also include AMD alternatives. If you’re thinking of building your dream server, click the button to see it.",
 
     // ABOUT-HTML

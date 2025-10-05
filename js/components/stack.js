@@ -8,41 +8,37 @@ export default function createStack( title, icon, stacks ) {
     return `
       <h2><i class="fa-solid fa-${icon}"></i>${title}</h2>
       <div class="tech-stack">
-        ${stacks.map( node => createStackNode( node.title, node.icon, node.items ) ).join("")}
+        ${stacks.map( node => createStackNode( node ) ).join("")}
       </div>
     `;
 }
 
 /**
- * @param {string} title 
- * @param {string} icon 
- * @param {Array} items 
+ * @param {object} node 
  * @returns {string}
  */
-function createStackNode( title, icon, items ) {
+function createStackNode( node ) {
     return `
       <div class="stack-node">
-        <h3><i class="fa-solid fa-${icon}"></i>${title}</h3>
+        <h3><i class="fa-solid fa-${node.icon}"></i>${node.title}</h3>
         <ul>
-          ${items.map( item => createStackItem( item.img, item.title, item.desc ) ).join("")}
+          ${node.items.map( item => createStackItem( item ) ).join("")}
         </ul>
       </div>
     `;
 }
 
 /**
- * @param {string} img 
- * @param {string} title 
- * @param {string} desc 
+ * @param {object} item 
  * @returns {string}
  */
-function createStackItem( img, title, desc ) {
+function createStackItem( item ) {
     return `
       <li>
-        <img class="stack-item-img" src="../resources/images/techstack/${img}">
+        <img class="stack-item-img" src="../resources/images/techstack/${item.img}">
         <div>
-          <h4>${title}</h4>
-          <span>${desc}</span>
+          <h4>${item.title}</h4>
+          <span>${item.desc}</span>
         </div>
       </li>
     `;

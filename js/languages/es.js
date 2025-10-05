@@ -138,19 +138,19 @@ export default {
 
     // PROJECTS-HTML
     projectsPersonalProjectsTitle: "Proyectos personales",
-    projectsPersonalProjectsContent: "Aquí se presentan algunos de mis proyectos personales que, aunque no profesionales, merecen ser mencionados.",
+    projectsPersonalProjectsContent: "Aquí se presentan mis proyectos personales que, aunque no profesionales, merecen ser mencionados. Son proyectos a los que le he dedicado mucho tiempo y quiero compartir con el mundo lo que he aprendido con ellos.",
     projectsSeeFullDocument: "Ver documentación completa",
 
     projects_3_title: "Flipper Zero",
-    projects_3_subtitle: "Ciberseguridad y utilidades",
+    projects_3_duration: "Enero 2025 - Actualidad",
     projects_3_content: "Este documento muestra todo lo relacionado con Flipper Zero, un dispositivo capaz de leer, copiar, modificar y emular redes y tarjetas. Conocido como el 'tamagotchi de los hackers'. Lo adquirí para aprender más sobre ciberseguridad y hacking ético, y explicar cómo proteger nuestros dispositivos de este tipo de ataques. Si te interesa, pincha en el botón para ver el documento.",
 
     projects_2_title: "Servidores de Minecraft personalizados",
-    projects_2_subtitle: "Servidores virtuales configurables",
+    projects_2_duration: "Mayo 2023 - Actualidad",
     projects_2_content: "Aquí muestro cómo creo mis propios servidores de Minecraft para jugar con amigos durante unas semanas. Normalmente los lleno de mods para ofrecer una experiencia diferente, ya que el Minecraft vanilla está algo pasado. Si quieres saber qué contienen, pincha en el botón para acceder al documento.",
 
     projects_1_title: "Servidor doméstico casero",
-    projects_1_subtitle: "Ordenadores y servidores físicos",
+    projects_1_duration: "Octubre 2022 - Agosto 2025",
     projects_1_content: "En este documento explico paso a paso cómo construir un servidor casero potente, económico y escalable, ideal para múltiples proyectos. Basado en Intel, aunque también incluyo alternativas con AMD. Si te interesa montar el servidor de tus sueños, pincha en el botón para verlo.",
 
     // ABOUT-HTML

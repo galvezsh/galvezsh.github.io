@@ -18,11 +18,24 @@ export default function createTimeline( title, icon, items ) {
  * @returns 
  */
 function createTimelineItem( item ) {
+  if ( item.link != null ) {
     return `
     <div class="timeline-item">
-      <h4>${item.date}</h4>
-      <h3>${item.name}</h3>
+      <h4>${item.duration}</h4>
+      <h3>${item.title}</h3>
+      <p class="m0">${item.content}</p>
+      <div class="list-links">
+        <a class="list-item" href="${item.link}"><i class="fa-solid fa-link"></i>${item.linkText}</a>
+      </div>
+    </div>
+    `;
+  } else {
+    return `
+    <div class="timeline-item">
+      <h4>${item.duration}</h4>
+      <h3>${item.title}</h3>
       <p class="m0">${item.content}</p>
     </div>
-  `;
+    `;
+  }
 }
