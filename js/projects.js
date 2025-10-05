@@ -11,21 +11,21 @@ const HTML = new Html( 1 );
 const personalProjects = [
     {
         title: HTML.strings.projects_3_title,
-        duration: HTML.strings.projects_3_duration,
+        date: HTML.strings.projects_3_date,
         content: HTML.strings.projects_3_content,
         link: HTML.strings.flipperZeroDoc,
         linkText: HTML.strings.projectsSeeFullDocument
     },
     {
         title: HTML.strings.projects_2_title,
-        duration: HTML.strings.projects_2_duration,
+        date: HTML.strings.projects_2_date,
         content: HTML.strings.projects_2_content,
         link: HTML.strings.minecraftServersDoc,
         linkText: HTML.strings.projectsSeeFullDocument
     },
     {
         title: HTML.strings.projects_1_title,
-        duration: HTML.strings.projects_1_duration,
+        date: HTML.strings.projects_1_date,
         content: HTML.strings.projects_1_content,
         link: HTML.strings.diyServerDoc,
         linkText: HTML.strings.projectsSeeFullDocument

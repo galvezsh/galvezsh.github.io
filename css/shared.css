@@ -249,6 +249,7 @@ button.small {
     border-radius: 8px;
     background-color: var(--onBg-color);
     color: var(--text-color-primary);
+    transition: 200ms ease-in-out;
 }
 
 .modal .header {
@@ -259,11 +260,17 @@ button.small {
     padding: 16px;
 }
 
+.modal .header h3 {
+    margin: 0;
+}
+
 .modal .header i {
     transform: scale(1.2);
     color: var(--text-color-quaternary);
     padding-right: 2px;
     transition: 200ms ease-in-out;
+    cursor: pointer;
+    /* padding-bottom: 2px; */
 }
 
 .modal .header i:hover {
@@ -272,6 +279,10 @@ button.small {
 
 .modal .body {
     margin: 16px;
+}
+
+.modal .body a {
+    cursor: pointer;
 }
 
 .modal .body div.lang {
@@ -315,6 +326,7 @@ nav a {
     display: block;
     padding: 8px;
     color: var(--text-color-primary);
+    cursor: pointer;
 }
 
 nav a:hover {
@@ -326,7 +338,7 @@ nav a.active {
 }
 
 nav i {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 /**************/
@@ -381,7 +393,7 @@ nav i {
 .timeline {
     position: relative;
     border-left: 2px solid var(--timeline-color);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .timeline-item {
@@ -464,6 +476,10 @@ footer a {
 
     .modal .content {
         max-width: 400px;
+    }
+
+    .modal .header i {
+        padding-bottom: 2px;
     }
 }
 

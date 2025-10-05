@@ -127,7 +127,6 @@ export default class Html {
             const key = locale + "Locale"; // Building automatically the variable: "enLocale", "esLocale", ...
 
             a.innerHTML = strings[key];
-            a.href = "";
             a.onclick = () => { callback( locale ); };
 
             div.appendChild(a);

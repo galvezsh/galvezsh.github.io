@@ -142,15 +142,15 @@ export default {
     projectsSeeFullDocument: "View full document",
 
     projects_3_title: "Flipper Zero",
-    projects_3_duration: "January 2025 - Present",
+    projects_3_date: "January 2025 - Present",
     projects_3_content: "This document covers everything related to Flipper Zero, a device capable of reading, copying, modifying, and emulating networks and cards. Known as the 'Tamagotchi for hackers'. I bought it to learn more about cybersecurity and ethical hacking, and to explain how to protect ourselves from such attacks. If you're interested, click the button to view the document.",
 
     projects_2_title: "Custom Minecraft Servers",
-    projects_2_duration: "May 2025 - June 2025",
+    projects_2_date: "May 2025 - June 2025",
     projects_2_content: "Here I explain how I create my own Minecraft servers to play with friends for a few weeks. I usually pack them with mods to offer a unique experience, since vanilla Minecraft can get repetitive. If you’re curious, click the button to read the document.",
 
     projects_1_title: "DIY Homelab Server",
-    projects_1_duration: "October 2022 - August 2025",
+    projects_1_date: "October 2022 - August 2025",
     projects_1_content: "In this document I explain how to build a powerful, affordable, and scalable homelab server step by step — ideal for various projects. Based on Intel, but I also include AMD alternatives. If you’re thinking of building your dream server, click the button to see it.",
 
     // ABOUT-HTML
@@ -158,16 +158,21 @@ export default {
     aboutAboutVersion: "Website version: ",
     aboutAboutDevelopers: "Developers: ",
 
-    aboutLegacyTitle: "Legacy History",
-    aboutLegacyLabel: "Before being named <strong>'Digital Void'</strong>, this website went through several phases. Here’s how the homepage looked with each version:",
-    aboutLegacy_1: "<strong>Birth of GSSR Web</strong>, basic structure design and development.",
-    aboutLegacy_2: "<strong>Full development of GSSR Web</strong>, object-oriented JavaScript, function-based modular kernel, local integration of Bootstrap 5.2.3 and AnimateCSS 4.1.1.",
-    aboutLegacy_3: "<strong>Full UI redesign and code rebuild</strong>, dropped Bootstrap and AnimateCSS, and renamed to 'El estudio de Gálvez'.",
-
     aboutConfigTitle: "Website Settings",
-
     aboutConfigRestoreLabel: "To restore the <strong>default cookie settings</strong> and reset the site to its original state, click the button below:",
     aboutConfigRestoreButton: "🔧 Restore Settings 🔨",
+
+    aboutHistoryTitle: "Version history",
+    aboutHistoryTitle_3: "Gálvez's studio - Version 0.3.1",
+    aboutHistoryContent_3: "Full UI redesign and code rebuild, dropped Bootstrap and AnimateCSS, and renamed to 'El estudio de Gálvez'.",
+    aboutHistoryDate_3: "October 2024 - July 2025",
+    aboutHistoryTitle_2: "GSSR Web - Version 0.2.11",
+    aboutHistoryContent_2: "Full development of GSSR Web, object-oriented JavaScript, function-based modular kernel, local integration of Bootstrap 5.2.3 and AnimateCSS 4.1.1.",
+    aboutHistoryDate_2: "September 2022 - October 2024",
+    aboutHistoryTitle_1: "GSSR Web - Version 0.1.1",
+    aboutHistoryContent_1: "Birth of GSSR Web, basic structure design and development.",
+    aboutHistoryDate_1: "August 2022 - September 2022",
+    aboutHistorySeeImage: "See image",
 
     // DOCS
     docsIndex: "Index",

@@ -14,28 +14,28 @@ const HTML = new Html(0);
 const workState = false; // True if you're working, false if you're looking for a job
 const experience = [
     {
+      title: HTML.strings.startLaboralExperience_5_Name,
       date: HTML.strings.startLaboralExperience_5_Date,
-      name: HTML.strings.startLaboralExperience_5_Name,
       content: HTML.strings.startLaboralExperience_5_Content
     },
     {
+      title: HTML.strings.startLaboralExperience_4_Name,
       date: HTML.strings.startLaboralExperience_4_Date,
-      name: HTML.strings.startLaboralExperience_4_Name,
       content: HTML.strings.startLaboralExperience_4_Content
     },
     {
+      title: HTML.strings.startLaboralExperience_3_Name,
       date: HTML.strings.startLaboralExperience_3_Date,
-      name: HTML.strings.startLaboralExperience_3_Name,
       content: HTML.strings.startLaboralExperience_3_Content
     },
     {
+      title: HTML.strings.startLaboralExperience_2_Name,
       date: HTML.strings.startLaboralExperience_2_Date,
-      name: HTML.strings.startLaboralExperience_2_Name,
       content: HTML.strings.startLaboralExperience_2_Content
     },
     {
+      title: HTML.strings.startLaboralExperience_1_Name,
       date: HTML.strings.startLaboralExperience_1_Date,
-      name: HTML.strings.startLaboralExperience_1_Name,
       content: HTML.strings.startLaboralExperience_1_Content
     }
 ];
@@ -134,18 +134,18 @@ const knowledge = [
 ];
 const education = [
     {
+        title: HTML.strings.startEducation_3_Name,
         date: HTML.strings.startEducation_3_Date,
-        name: HTML.strings.startEducation_3_Name,
         content: HTML.strings.startEducation_3_Content
     },
     {
+        title: HTML.strings.startEducation_2_Name,
         date: HTML.strings.startEducation_2_Date,
-        name: HTML.strings.startEducation_2_Name,
         content: HTML.strings.startEducation_2_Content
     },
     {
+        title: HTML.strings.startEducation_1_Name,
         date: HTML.strings.startEducation_1_Date,
-        name: HTML.strings.startEducation_1_Name,
         content: HTML.strings.startEducation_1_Content
     }
 ];

@@ -142,15 +142,15 @@ export default {
     projectsSeeFullDocument: "Ver documentación completa",
 
     projects_3_title: "Flipper Zero",
-    projects_3_duration: "Enero 2025 - Actualidad",
+    projects_3_date: "Enero 2025 - Actualidad (en desarrollo)",
     projects_3_content: "Este documento muestra todo lo relacionado con Flipper Zero, un dispositivo capaz de leer, copiar, modificar y emular redes y tarjetas. Conocido como el 'tamagotchi de los hackers'. Lo adquirí para aprender más sobre ciberseguridad y hacking ético, y explicar cómo proteger nuestros dispositivos de este tipo de ataques. Si te interesa, pincha en el botón para ver el documento.",
 
     projects_2_title: "Servidores de Minecraft personalizados",
-    projects_2_duration: "Mayo 2023 - Actualidad",
+    projects_2_date: "Mayo 2023 - Actualidad (en desarrollo)",
     projects_2_content: "Aquí muestro cómo creo mis propios servidores de Minecraft para jugar con amigos durante unas semanas. Normalmente los lleno de mods para ofrecer una experiencia diferente, ya que el Minecraft vanilla está algo pasado. Si quieres saber qué contienen, pincha en el botón para acceder al documento.",
 
     projects_1_title: "Servidor doméstico casero",
-    projects_1_duration: "Octubre 2022 - Agosto 2025",
+    projects_1_date: "Octubre 2022 - Agosto 2025",
     projects_1_content: "En este documento explico paso a paso cómo construir un servidor casero potente, económico y escalable, ideal para múltiples proyectos. Basado en Intel, aunque también incluyo alternativas con AMD. Si te interesa montar el servidor de tus sueños, pincha en el botón para verlo.",
 
     // ABOUT-HTML
@@ -158,16 +158,21 @@ export default {
     aboutAboutVersion: "Versión del sitio web: ",
     aboutAboutDevelopers: "Desarrolladores: ",
 
-    aboutLegacyTitle: "Legado de antaño",
-    aboutLegacyLabel: "Antes de llamarse <strong>'Vacio Digital'</strong>, el sitio web pasó por varias etapas. Aquí puedes ver cómo lucía el inicio con cada versión:",
-    aboutLegacy_1: "<strong>Nacimiento de GSSR Web</strong>, diseño y desarrollo de la estructura básica.",
-    aboutLegacy_2: "<strong>Desarrollo completo de GSSR Web</strong>, orientación a objetos en JavaScript, kernel modular basado en funciones, integración local de Bootstrap 5.2.3 y AnimateCSS 4.1.1.",
-    aboutLegacy_3: "<strong>Rediseño completo de la interfaz y reconstrucción del código</strong>, abandono de Bootstrap y AnimateCSS, y renombrado a 'El estudio de Gálvez'.",
-
     aboutConfigTitle: "Configuración del sitio web",
-
     aboutConfigRestoreLabel: "Para restaurar la <strong>configuración de cookies por defecto</strong> y dejar el sitio como la primera vez que lo visitó, pulse el siguiente botón:",
     aboutConfigRestoreButton: "🔧 Restaurar configuración 🔨",
+
+    aboutHistoryTitle: "Historial de versiones",
+    aboutHistoryTitle_3: "El estudio de Gálvez - Versión 0.3.1",
+    aboutHistoryContent_3: "Rediseño completo de la interfaz y reconstrucción del código, abandono de Bootstrap y AnimateCSS, y renombrado a 'El estudio de Gálvez'.",
+    aboutHistoryDate_3: "Octubre 2024 - Julio 2025",
+    aboutHistoryTitle_2: "GSSR Web - Versión 0.2.11",
+    aboutHistoryContent_2: "Desarrollo completo de GSSR Web, orientación a objetos en JavaScript, kernel modular basado en funciones, integración local de Bootstrap 5.2.3 y AnimateCSS 4.1.1.",
+    aboutHistoryDate_2: "Septiembre 2022 - Octubre 2024",
+    aboutHistoryTitle_1: "GSSR Web - Versión 0.1.1",
+    aboutHistoryContent_1: "Nacimiento de GSSR Web, diseño y desarrollo de la estructura básica.",
+    aboutHistoryDate_1: "Agosto 2022 - Septiembre 2022",
+    aboutHistorySeeImage: "Ver imagen",
 
     // DOCS
     docsIndex: "Índice",

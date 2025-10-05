@@ -1,1 +1,5 @@
 @import url("./shared.css");
+
+.timeline-item {
+    margin-bottom: 40px;
+}
