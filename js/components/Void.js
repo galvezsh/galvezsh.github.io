@@ -2,11 +2,17 @@
 export default class Void {
 
     /**
-     * Initializes the footer component and builds its structure.
+     * Initializes the void component and builds its structure. This one is special because it is not added to the DOM
+     * in the HTML file, but it is added here. This is for ensuring that the void is always present in the page, so the 
+     * developer can use it without worrying about the DOM structure.
      */
     constructor() {
-        this.void = document.querySelector( "div.void" );
+        this.body = document.querySelector( "body" );
+        this.void = document.createElement( "div" );
+        this.void.classList.add( "void", "animation-fadeIn" );
         this.void.innerHTML = `<h1>Welcome to the void</h1>`;
+
+        this.body.prepend( this.void );
     }
 
     /**

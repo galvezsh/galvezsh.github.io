@@ -89,14 +89,15 @@ export default class Html {
     /**
      * Initializes the HTML layout and sets localized content, theme, and startup behavior.
      * 
-     * @param {string} navItemSelected The selected navigation item based on a number (0 -> home, 1 -> projects or 2 -> about).
+     * @param {string} navItemSelected The selected navigation item based in a string. The string must be present 
+     * in strings.js and be one of the navbarItems keys.
      */
     constructor( navItemSelected ) {
         this.cookie = new Cookie();
         this.strings = new Strings( this.cookie.getCookie("locale") );
-        this.void = new voide( this.strings );
-        this.toast = new toast( this.strings );
         this.modal = new modal( this.strings );
+        this.toast = new toast( this.strings );
+        this.void = new voide( this.strings );
 
         const lightMode = this.cookie.getCookie("theme") == "light";
         const firstStart = this.cookie.getCookie("logged") != "true";

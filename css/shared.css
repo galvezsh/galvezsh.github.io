@@ -200,6 +200,7 @@ button.small {
 
 .toast .header {
     padding: 10px 12px;
+    font-size: 0.9rem;
     font-weight: bold;
     background-image: linear-gradient(
         90deg,

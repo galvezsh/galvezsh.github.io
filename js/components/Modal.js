@@ -3,13 +3,18 @@
 export default class Modal {
 
     /**
-     * Initializes the modal component and binds necessary DOM elements and events.
+     * Initializes the modal component and builds its structure. This one is special because it is not added to the DOM
+     * in the HTML file, but it is added here. This is for ensuring that the void is always present in the page, so the 
+     * developer can use it without worrying about the DOM structure.
      * 
      * @param {object} strings An object containing localized strings and corresponding navigation URLs.
      */
     constructor( strings ) {
         this.strings = strings;
-        this.modal = document.querySelector( "div.modal" );
+
+        this.mainBody = document.querySelector( "body" );
+        this.modal = document.createElement( "div" );
+        this.modal.classList.add( "modal", "animation-fadeIn" );
         this.modal.innerHTML = `
             <div class="content">
                 <h3 class="header"></h3>
@@ -20,6 +25,8 @@ export default class Modal {
                 </div>
             </div>
         `;
+
+        this.mainBody.prepend( this.modal );
 
         this.header = document.querySelector( "div.modal h3.header" );
         this.body = document.querySelector( "div.modal div.body" );

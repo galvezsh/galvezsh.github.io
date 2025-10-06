@@ -3,18 +3,25 @@
 export default class Toast {
 
     /**
-     * Initializes the Toast component, binds necessary DOM elements, and sets up default state.
+     * Initializes the toast component and builds its structure. This one is special because it is not added to the DOM
+     * in the HTML file, but it is added here. This is for ensuring that the void is always present in the page, so the 
+     * developer can use it without worrying about the DOM structure.
      * 
      * @param {object} strings An object containing localized string labels for toast headers and messages.
      */
     constructor( strings ) {
         this.strings = strings;
-        this.toast = document.querySelector( "div.toast" );
+
+        this.mainBody = document.querySelector( "body" );
+        this.toast = document.createElement( "div" );
+        this.toast.classList.add( "toast", "animation-fadeInUp" );
         this.toast.innerHTML = `<div class="header"></div><div class="body"></div>`;
 
+        this.mainBody.prepend( this.toast );
+        
         this.header = document.querySelector( "div.toast div.header" );
         this.body = document.querySelector( "div.toast div.body" );
-
+        
         this.finishedToast = true;
     }
 
@@ -26,7 +33,7 @@ export default class Toast {
      * @param {number} timeout The duration the toast remains visible (in seconds).
      */
     showToast( level, newContext, timeout ) {
-        const headerStyle = "";
+        let headerStyle = "";
 
         if ( this.finishedToast === true ) {
             this.finishedToast = false;
