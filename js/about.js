@@ -7,7 +7,7 @@ import Html from "./engine.js";
 // VARIABLES ////////////////////////////////
 /////////////////////////////////////////////
 
-const HTML = new Html( 2 );
+const HTML = new Html( "navbarAbout" );
 const legacyItems = [
     {
         title: HTML.strings.aboutHistoryTitle_3,

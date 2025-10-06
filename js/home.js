@@ -10,7 +10,7 @@ import Html from "./engine.js";
 // VARIABLES ////////////////////////////////
 /////////////////////////////////////////////
 
-const HTML = new Html(0);
+const HTML = new Html( "navbarHome" );
 const workState = false; // True if you're working, false if you're looking for a job
 const experience = [
     {

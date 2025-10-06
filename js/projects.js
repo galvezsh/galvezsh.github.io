@@ -7,7 +7,7 @@ import Html from "./engine.js";
 // VARIABLES ////////////////////////////////
 /////////////////////////////////////////////
 
-const HTML = new Html( 1 );
+const HTML = new Html( "navbarProjects" );
 const personalProjects = [
     {
         title: HTML.strings.projects_3_title,
@@ -36,15 +36,15 @@ const personalProjects = [
 // SCRIPT ///////////////////////////////////
 /////////////////////////////////////////////
 
-document.getElementById("title").innerHTML = createTitle( HTML.strings.projectsPersonalProjectsTitle, HTML.strings.projectsPersonalProjectsContent );
+document.getElementById("title").innerHTML = createTitle( HTML.strings.projectsPersonalProjectsContent );
 document.getElementById("projects").innerHTML = timeline( HTML.strings.projectsPersonalProjectsTitle, "list-check", personalProjects );
 
 /////////////////////////////////////////////
 // FUNCTIONS ////////////////////////////////
 /////////////////////////////////////////////
 
-function createTitle( title, content ) {
+function createTitle( content ) {
     return `
-        <p>${ content }</p>
+        <p>${content}</p>
     `;
 }
