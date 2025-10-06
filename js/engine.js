@@ -1,13 +1,13 @@
 'use strict';
 
 import Strings from "./languages/strings.js";
-import Void from './components/Void.js';
-import Toast from './components/Toast.js';
-import Modal from './components/Modal.js';
+import voide from './components/void.js';
+import toast from './components/toast.js';
+import modal from './components/modal.js';
 import navbar from './components/navbar.js';
 import footer from './components/footer.js';
 
-class Cookie {
+export class Cookie {
     /**
      * Creates a new Cookie helper instance.
      */
@@ -94,9 +94,9 @@ export default class Html {
     constructor( navItemSelected ) {
         this.cookie = new Cookie();
         this.strings = new Strings( this.cookie.getCookie("locale") );
-        this.void = new Void( this.strings );
-        this.toast = new Toast( this.strings );
-        this.modal = new Modal( this.strings );
+        this.void = new voide( this.strings );
+        this.toast = new toast( this.strings );
+        this.modal = new modal( this.strings );
 
         const lightMode = this.cookie.getCookie("theme") == "light";
         const firstStart = this.cookie.getCookie("logged") != "true";
@@ -141,7 +141,13 @@ export default class Html {
     }
 
     /**
-     * Displays a modal dialog that allows the user to change the website language.
+     * Displays a modal with a list of supported languages and their corresponding translations.
+     * When a language is selected, the changeLocale method is called to update the language settings.
+     * 
+     * Thanks to the DOM, we can assign lamdas to the onclick event of the links, avoiding the need to 
+     * create event listeners for each link.
+     * 
+     * If we do the same with return`...`, we lose the lambda and the onclick event is not triggered.
      */
     showLocaleModal() {
         const div = document.createElement("div");

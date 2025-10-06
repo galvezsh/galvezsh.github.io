@@ -1,7 +1,9 @@
 /**
- * @param {object} strings
- * @param {object} items
- * @returns {string}
+ * Creates a footer element with the specified strings and items.
+ * 
+ * @param {object} strings - The strings object that contains the language strings.
+ * @param {object} items - The footer items object that contains the social links.
+ * @returns {string} - The footer HTML in string format.
  */
 export default function createFooter( strings, items ) {
     const currentYear = new Date().getFullYear();
@@ -15,9 +17,11 @@ export default function createFooter( strings, items ) {
 }
 
 /**
- * @param {string} icon
- * @param {string} href
- * @returns {string}
+ * Creates a footer item element with the specified icon and href.
+ * 
+ * @param {string} icon - The icon of the footer item. 
+ * @param {string} href - The href of the footer item.
+ * @returns {string} - The footer item HTML in string format.
  */
 function createFooterItem( icon, href ) {
     return `

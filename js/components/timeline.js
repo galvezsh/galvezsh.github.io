@@ -1,8 +1,10 @@
 /**
- * @param {*} title 
- * @param {*} icon 
- * @param {*} items 
- * @returns 
+ * Creates a timeline with the specified title, icon, and items.
+ * 
+ * @param {string} title - The title of the timeline.
+ * @param {string} icon - The icon of the timeline.
+ * @param {Array} items - The items array.
+ * @returns {string} - The timeline HTML in string format.
  */
 export default function createTimeline( title, icon, items ) {
     return `
@@ -14,10 +16,12 @@ export default function createTimeline( title, icon, items ) {
 }
 
 /**
- * @param {*} item 
- * @param {*} link (optional)
- * @param {*} linkText (optional)
- * @returns 
+ * Creates a timeline item with the specified item.
+ * 
+ * @param {object} item - The item object.
+ * @param {string} link - The link of the item (optional).
+ * @param {string} linkText - The link text of the item (optional).
+ * @returns {string} - The timeline item HTML in string format.
  */
 function createTimelineItem( item ) {
   if ( item.link != null ) {

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/errors.css">
 </head>
 <body>
-    <div class="error-container" id="error404Label">
+    <div class="error-container">
         <h1>Error 404</h1>
     </div>
 </body>
@@ -21,13 +21,6 @@
 
     const STRINGS = new Strings( new Cookie( document ).getCookie( "locale" ) );
 
-    document.title = STRINGS.error404Title;
-
-    Object.entries( STRINGS ).forEach( ([key, value]) => {
-        const element = document.getElementById(key);
-        
-        if (element) {
-            element.innerHTML += value;
-        }
-    });
+    document.title = STRINGS.websiteName + ": " + STRINGS.error404Title;
+    document.querySelector("div.error-container").innerHTML += STRINGS.error404Label;
 </script>

@@ -1,8 +1,10 @@
 /**
- * @param {object} strings 
- * @param {string} icon 
- * @param {Array} stacks 
- * @returns {string}
+ * Creates a stack with the specified title, icon, and stacks.
+ * 
+ * @param {string} title - The title of the stack.
+ * @param {string} icon - The icon of the stack.
+ * @param {Array} stacks - The stacks array.
+ * @returns {string} - The stack HTML in string format.
  */
 export default function createStack( title, icon, stacks ) {
     return `
@@ -14,8 +16,10 @@ export default function createStack( title, icon, stacks ) {
 }
 
 /**
- * @param {object} node 
- * @returns {string}
+ * Creates a stack node with the specified node.
+ * 
+ * @param {object} node - The node object.
+ * @returns {string} - The stack node HTML in string format.
  */
 function createStackNode( node ) {
     return `
@@ -29,8 +33,10 @@ function createStackNode( node ) {
 }
 
 /**
- * @param {object} item 
- * @returns {string}
+ * Creates a stack item with the specified item.
+ * 
+ * @param {object} item - The item object.
+ * @returns {string} - The stack item HTML in string format.
  */
 function createStackItem( item ) {
     return `

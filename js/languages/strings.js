@@ -16,9 +16,6 @@ export default class Strings {
             websiteVersion: "v2.0.0_Beta (2025.09)",
             websiteDevelopers: "Alberto Gálvez (galvezsh)",
 
-            // STATICS (Only in english because is the default language of the website. Basically for the first login and stuff like this...
-            staticWelcomeVoid: "Welcome to the void",
-
             // NAVBAR
             navbarHomeLink: "/home",
             navbarProjectsLink: "/projects",

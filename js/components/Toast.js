@@ -5,34 +5,17 @@ export default class Toast {
     /**
      * Initializes the Toast component, binds necessary DOM elements, and sets up default state.
      * 
-     * @param {object} STRINGS An object containing localized string labels for toast headers and messages.
+     * @param {object} strings An object containing localized string labels for toast headers and messages.
      */
-    constructor( STRINGS ) {
-        this.strings = STRINGS;
+    constructor( strings ) {
+        this.strings = strings;
         this.toast = document.querySelector( "div.toast" );
-
-        this.buildBlock();
+        this.toast.innerHTML = `<div class="header"></div><div class="body"></div>`;
 
         this.header = document.querySelector( "div.toast div.header" );
         this.body = document.querySelector( "div.toast div.body" );
 
-        this.headerStyle = "";
         this.finishedToast = true;
-    }
-
-    /**
-     * Dynamically builds the internal HTML structure for the toast component
-     * and appends it to the toast container element.
-     */
-    buildBlock() {
-        const header = document.createElement( 'div' );
-        const body = document.createElement( 'div' );
-
-        header.classList.add( 'header' );
-        body.classList.add( 'body' );
-        
-        this.toast.appendChild( header );
-        this.toast.appendChild( body );
     }
 
     /**
@@ -43,25 +26,26 @@ export default class Toast {
      * @param {number} timeout The duration the toast remains visible (in seconds).
      */
     showToast( level, newContext, timeout ) {
+        const headerStyle = "";
 
         if ( this.finishedToast === true ) {
             this.finishedToast = false;
 
             // Set header style and label based on level
             if ( level === 0 ) {
-                this.headerStyle = "bg-info";
+                headerStyle = "bg-info";
                 this.header.textContent = this.strings.info;
 
             } else if ( level === 1 ) {
-                this.headerStyle = "bg-warning";
+                headerStyle = "bg-warning";
                 this.header.textContent = this.strings.warning;
 
             } else {
-                this.headerStyle = "bg-error";
+                headerStyle = "bg-error";
                 this.header.textContent = this.strings.error;
             }
 
-            this.header.classList.add( this.headerStyle );
+            this.header.classList.add( headerStyle );
             this.body.textContent = newContext;
             this.toast.style.display = "block";
 

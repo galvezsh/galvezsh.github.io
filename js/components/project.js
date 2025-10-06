@@ -1,8 +1,10 @@
 /**
- * @param {string} title
- * @param {string} icon
- * @param {Array} projects
- * @returns {string}
+ * Creates a projects section with the specified title, icon, and projects.
+ * 
+ * @param {string} title - The title of the projects section.
+ * @param {string} icon - The icon of the projects section.
+ * @param {Array} projects - The projects array.
+ * @returns {string} - The projects HTML in string format.
  */
 export default function createProjects( title, icon, projects ) {
     return `
@@ -12,8 +14,10 @@ export default function createProjects( title, icon, projects ) {
 }
 
 /**
- * @param {object} project
- * @returns {string}
+ * Creates a project item with the specified project.
+ * 
+ * @param {object} project - The project object.
+ * @returns {string} - The project item HTML in string format.
  */
 function createProjectItem( project ) {
     return `

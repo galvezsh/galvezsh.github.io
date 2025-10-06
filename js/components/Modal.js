@@ -10,52 +10,22 @@ export default class Modal {
     constructor( strings ) {
         this.strings = strings;
         this.modal = document.querySelector( "div.modal" );
-
-        this.buildBlock();
+        this.modal.innerHTML = `
+            <div class="content">
+                <h3 class="header"></h3>
+                <div class="body"></div>
+                <div class="footer">
+                    <button class="primary"></button>
+                    <button class="secondary"></button>
+                </div>
+            </div>
+        `;
 
         this.header = document.querySelector( "div.modal h3.header" );
         this.body = document.querySelector( "div.modal div.body" );
         this.footer = document.querySelector( "div.modal div.footer" );
         this.primaryButton = document.querySelector( "div.modal button.primary" );
         this.secondaryButton = document.querySelector( "div.modal button.secondary" );
-    }
-
-    /**
-     * Dynamically builds the internal HTML structure for the modal component
-     * and appends it to the modal container element.
-     */
-    buildBlock() {
-        const content = document.createElement('div');
-        content.classList.add('content');
-    
-        const header = document.createElement('h3');
-        header.classList.add('header');
-    
-        const body = document.createElement('div');
-        body.classList.add('body');
-    
-        const footer = document.createElement('div');
-        footer.classList.add('footer');
-    
-        const btnApply = document.createElement('button');
-        const btnCancel = document.createElement('button');
-    
-        btnApply.type = 'button';
-        btnApply.classList.add('primary');
-        btnApply.id = 'modalApply';
-    
-        btnCancel.type = 'button';
-        btnCancel.classList.add('secondary');
-        btnCancel.id = 'modalCancel';
-    
-        footer.appendChild(btnApply);
-        footer.appendChild(btnCancel);
-    
-        content.appendChild(header);
-        content.appendChild(body);
-        content.appendChild(footer);
-    
-        this.modal.appendChild(content);
     }
 
 /** 
@@ -68,12 +38,13 @@ export default class Modal {
  */ 
 showQuestionModal( newTitle, newContext, onPrimaryClick ) {
     this.header.innerHTML = newTitle;
-    this.body.innerHTML = "";
 
     if (typeof newContext === "string") 
         this.body.innerHTML = newContext; 
-    else 
+    else {
+        this.body.innerHTML = "";
         this.body.appendChild(newContext);
+    }
 
     this.primaryButton.textContent = this.strings.accept;
     this.secondaryButton.textContent = this.strings.cancel;
@@ -87,19 +58,20 @@ showQuestionModal( newTitle, newContext, onPrimaryClick ) {
 
 /** 
  * Displays an informational modal with a title and body text only. 
- * Footer (buttons) is hidden in this type of modal. 
+ * Primary button is hidden in this type of modal. 
  * 
  * @param {string} newTitle The title to display in the modal header. 
  * @param {string} newContext The message or content to display in the modal body. 
  */
 showInfoModal( newTitle, newContext ) {
     this.header.innerHTML = newTitle;
-    this.body.innerHTML = "";
 
     if (typeof newContext === "string") 
         this.body.innerHTML = newContext; 
-    else 
+    else {
+        this.body.innerHTML = "";
         this.body.appendChild(newContext);
+    }
 
     this.secondaryButton.textContent = this.strings.close;
     this.primaryButton.style.display = "none";

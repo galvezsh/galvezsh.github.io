@@ -1,8 +1,10 @@
 /**
- * @param {string} title
- * @param {string} icon
- * @param {Array} knowledge
- * @returns {HTMLElement}
+ * Creates a shelf with the specified title, icon, and knowledge.
+ * 
+ * @param {string} title - The title of the shelf.
+ * @param {string} icon - The icon of the shelf.
+ * @param {Array} knowledge - The knowledge array.
+ * @returns {HTMLElement} - The shelf HTML element.
  */
 export default function createShelf( title, icon, knowledge ) {
     const container = document.createElement("div");
@@ -19,8 +21,10 @@ export default function createShelf( title, icon, knowledge ) {
 }
 
 /**
- * @param {object} item
- * @returns {HTMLElement}
+ * Creates a knowledge item with the specified item.
+ * 
+ * @param {object} item - The item object.
+ * @returns {HTMLElement} - The knowledge item HTML element.
  */
 function createKnowledgeItem( item ) {
     const div = document.createElement("div");
