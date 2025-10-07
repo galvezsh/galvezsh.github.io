@@ -1,6 +1,8 @@
 'use strict';
 
-import Strings from "./languages/strings.js";
+import en from './languages/en.js';
+import es from './languages/es.js';
+
 import voide from './components/void.js';
 import toast from './components/toast.js';
 import modal from './components/modal.js';
@@ -9,7 +11,7 @@ import footer from './components/footer.js';
 
 export class Cookie {
     /**
-     * Creates a new Cookie helper instance.
+     * Creates a new Cookie helper instance. This class is used to manage the cookies of the website, helping the developer accessing to the cookies stored in the navigator.
      */
     constructor() {
         this.lifetimeCookie = 30;
@@ -84,10 +86,116 @@ export class Cookie {
     }
 }
 
+export class Strings {
+
+    /**
+         * Creates a new Strings helper instance. This class is used to manage the strings of the website, and configure witch locale should be used based on the 'language_code'.
+     * 
+     * @param {string} language_code - A string that represents the language code (e.g., "en", "es", "fr"...).
+     */
+    constructor( language_code ) {
+
+        const languages = { en, es };
+        this.supportedLanguages = Object.keys( languages );
+
+        // STRINGS
+        Object.assign( this, {
+            // WEBSITE
+            websiteVersion: "v2.0.0_Beta (2025.09)",
+            websiteDevelopers: "Alberto Gálvez (galvezsh)",
+
+            // NAVBAR
+            navbarHomeLink: "/home",
+            navbarProjectsLink: "/projects",
+            navbarAboutLink: "/about",
+
+            // FOOTER
+            youtubeLink: "https://www.youtube.com/@galvezsh",
+            twitchLink: "#",
+            discordLink: "#",
+            instagramLink: "https://www.instagram.com/galvez.sh/",
+            githubLink: "https://github.com/galvezsh",
+            linkedinLink: "https://www.linkedin.com/in/alberto-galvez-gandullo-01838a244/",
+            emailLink: "alberto.galvez.n7@gmail.com",
+
+            // DOCS
+            diyServerDoc: "/projects/homelab",
+            minecraftServersDoc: "/projects/minecraft",
+            flipperZeroDoc: "/projects/flipper",
+
+            // SHARED
+            linkedin: "LinkedIn",
+            github: "GitHub",
+            email: "Email",
+
+            oop: "Oriented Object Programming",
+            multilanguage: "Multi-language",
+
+            java: "Java",
+            kotlin: "Kotlin",
+            python: "Python",
+            html: "HTML",
+            css: "CSS",
+            javascript: "JavaScript",
+            php: "PHP",
+            sql: "SQL - PL/SQL",
+            powershell: "Powershell - Shell Script",
+
+            kotlinMultiplatform: "Kotlin multiplatform",
+            composeMultiplatform: "Compose Multiplatform",
+            jetpackCompose: "Jetpack Compose",
+            daggerHilt: "Dagger Hilt",
+            koin: "Koin",
+            mvvm: "MVVM + Clean Arquitecture",
+            principles: "SOLID - DRY",
+            navigationCompose: "Compose Navigation",
+            room: "Room",
+            paging3: "Paging 3",
+            retrofit: "Retrofit",
+
+            git: "Git",
+            vscode: "VS Code",
+            androidStudio: "Android Studio",
+            intellij: "Intellij IDEA",
+            pycharm: "PyCharm",
+            phpstorm: "PhpStorm",
+            docker: "Docker",
+            figma: "Figma",
+
+            chatgpt: "ChatGPT",
+            gemini: "Gemini",
+            copilot: "GitHub Copilot",
+            notebookLM: "NotebookLM",
+            firebaseStudio: "Firebase Studio",
+
+            firebase: "Firebase",
+            springBoot: "Spring Boot",
+            hibernate: "Hibernate",
+            react: "React",
+            cakephp: "CakePHP",
+            django: "Django",
+
+            mysql: "MySQL",
+            mariadb: "MariaDB",
+            mongodb: "MongoDB",
+            postgresql: "PostgreSQL",
+
+        });
+
+        // LOCALE
+        if ( language_code && languages[ language_code ] ) { 
+            Object.assign( this, languages[ language_code ] );
+        } else {
+            Object.assign( this, en );
+        }
+    }
+}
+
 export default class Html {
 
     /**
-     * Initializes the HTML layout and sets localized content, theme, and startup behavior.
+     * Initializes the base HTML layout, define the cookie and strings objects, inject modal, toast, void, navbar and footer and 
+     * set theme and locale.
      * 
      * @param {string} navItemSelected The selected navigation item based in a string. The string must be present 
      * in strings.js and be one of the navbarItems keys.
@@ -98,6 +206,9 @@ export default class Html {
         this.modal = new modal( this.strings );
         this.toast = new toast( this.strings );
         this.void = new voide( this.strings );
+
+        this.nav = document.querySelector("main nav");
+        this.footer = document.querySelector("main footer");
 
         const lightMode = this.cookie.getCookie("theme") == "light";
         const firstStart = this.cookie.getCookie("logged") != "true";
@@ -115,19 +226,23 @@ export default class Html {
             "linkedin": this.strings.linkedinLink
         };
 
-        document.querySelector("main nav").innerHTML = navbar( this.strings, navbarItems, navItemSelected, lightMode );
-        document.querySelector("main footer").innerHTML = footer( this.strings, footerItems );
-
-        document.getElementById("theme-toggle").addEventListener( "click", () => this.changeTheme(lightMode) );
-        document.getElementById("locale-toggle").addEventListener( "click", () => this.showLocaleModal() );
+        // Check if navbar and footer exist, else skip initialization
+        if ( this.nav ) {
+            this.nav.innerHTML = navbar( this.strings, navbarItems, navItemSelected, lightMode );
+            document.getElementById("theme-toggle").addEventListener( "click", () => this.changeTheme( lightMode ) );
+            document.getElementById("locale-toggle").addEventListener( "click", () => this.showLocaleModal() );
+        } else console.log( this.strings.navbarNotFound );
+        
+        if ( this.footer ) this.footer.innerHTML = footer( this.strings, footerItems );
+        else console.log( this.strings.footerNotFound );
 
         document.title = this.strings.websiteName + ": " + this.strings[navItemSelected];
 
         // Set theme based on cookie
-        if (lightMode) document.body.classList.add("light");
+        if ( lightMode ) document.body.classList.add("light");
 
         // Trigger first-time setup if user has not been logged before
-        if (firstStart) this.firstStart();
+        if ( firstStart ) this.firstStart();
     }
 
     /**
@@ -154,7 +269,7 @@ export default class Html {
         const div = document.createElement("div");
         div.classList.add("lang");
 
-        this.strings.supportedLanguages().forEach( locale => {
+        this.strings.supportedLanguages.forEach( locale => {
             const a = document.createElement("a");
             const key = locale + "Locale"; // Building automatically the variable: "enLocale", "esLocale", ...
 

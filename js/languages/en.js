@@ -17,6 +17,8 @@ export default {
     // ERRORS
     error404Title: "Page Not Found",
     error404Label: "<p>The page you're looking for doesn't exist or has been removed.</p><p>Check the URL or use the menu to navigate.</p><p>Return to the <a href='/'>home page</a>.</p>",
+    navbarNotFound: "Navbar not found. Skipping initialization...",
+    footerNotFound: "Footer not found. Skipping initialization...",
 
     // NAVBAR
     navbarHome: "Home",
