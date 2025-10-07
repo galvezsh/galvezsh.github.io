@@ -22,7 +22,7 @@ export default {
 
     // NAVBAR
     navbarHome: "Home",
-    navbarProjects: "Projects",
+    navbarDocuments: "Documents",
     navbarAbout: "About",
     navbarLocale: "Change Language:",
     
@@ -135,22 +135,22 @@ export default {
     startProjects_1_Content: "Mobile app about the 'Rick and Morty' series. Includes a database with characters, episodes, and locations, all interconnected. Built with modern technologies and Google’s recommended architecture.",
     startProjectsGithub: "View project on GitHub",
 
-    // PROJECTS-HTML
-    projectsPersonalProjectsTitle: "Personal Projects",
-    projectsPersonalProjectsContent: "Here are my personal projects that, while not professional, are worth highlighting. I’ve dedicated a lot of time to them and want to share what I’ve learned with the world.",
-    projectsSeeFullDocument: "View full document",
+    // DOCUMENTS-HTML
+    documentsTitle: "Personal documents",
+    documentsContent: "Here are my personal documents that are worth highlighting. I’ve dedicated a lot of time to them and want to share what I’ve learned with the world.",
+    documentsSeeFullDocument: "View full document",
 
-    projects_3_title: "Flipper Zero",
-    projects_3_date: "January 2025 - Present",
-    projects_3_content: "This document covers everything related to Flipper Zero, a device capable of reading, copying, modifying, and emulating networks and cards. Known as the 'Tamagotchi for hackers'. I bought it to learn more about cybersecurity and ethical hacking, and to explain how to protect ourselves from such attacks. If you're interested, click the button to view the document.",
+    documents_3_title: "Custom Minecraft Servers",
+    documents_3_date: "May 2023 - Present (in development)",
+    documents_3_content: "Here I explain how I create my own Minecraft servers to play with friends for a few weeks. I usually pack them with mods to offer a unique experience, since vanilla Minecraft can get repetitive. If you’re curious, click the button to read the document.",
 
-    projects_2_title: "Custom Minecraft Servers",
-    projects_2_date: "May 2025 - June 2025",
-    projects_2_content: "Here I explain how I create my own Minecraft servers to play with friends for a few weeks. I usually pack them with mods to offer a unique experience, since vanilla Minecraft can get repetitive. If you’re curious, click the button to read the document.",
+    documents_2_title: "Flipper Zero",
+    documents_2_date: "January 2025 - Present (in development)",
+    documents_2_content: "This document covers everything related to Flipper Zero, a device capable of reading, copying, modifying, and emulating networks and cards. Known as the 'Tamagotchi for hackers'. I bought it to learn more about cybersecurity and ethical hacking, and to explain how to protect ourselves from such attacks. If you're interested, click the button to view the document.",
 
-    projects_1_title: "DIY Homelab Server",
-    projects_1_date: "October 2022 - August 2025",
-    projects_1_content: "In this document I explain how to build a powerful, affordable, and scalable homelab server step by step — ideal for various projects. Based on Intel, but I also include AMD alternatives. If you’re thinking of building your dream server, click the button to see it.",
+    documents_1_title: "DIY Homelab Server",
+    documents_1_date: "October 2022 - August 2025",
+    documents_1_content: "In this document I explain how to build a powerful, affordable, and scalable homelab server step by step — ideal for various projects. Based on Intel, but I also include AMD alternatives. If you’re thinking of building your dream server, click the button to see it.",
 
     // ABOUT-HTML
     aboutAboutTitle: "About the Website",
@@ -185,11 +185,33 @@ export default {
     docsMinecraft: "Minecraft",
     docsHomelab: "Homelab",
     
-    // DOCS-FLIPPER
-    docsFlipperTitle: "🐬 The Cybersecurity Audit Device 🐬",
-    
     // DOCS-MINECRAFT
     docsMinecraftTitle: "💻 Custom Minecraft Servers, One of a Kind 🎮",
+    docsMinecraftIndex_1: "Introduction",
+    docsMinecraftIndex_2: "What is Minecraft?",
+    docsMinecraftIndex_3: "The vanilla problem",
+    docsMinecraftIndex_5: "Optimizations",
+    docsMinecraftIndex_4: "Forge vs Fabric",
+
+    docsMinecraftContent_1: "If you're here, it's because you want to learn how to build your own Minecraft server, unique in its own kind. In this document, I'll explain everything you need to know to build it from scratch. If you don't know it, I recommend reading the entire document to understand it all.",
+    docsMinecraftContent_2: "",
+    docsMinecraftContent_3: "",
+    docsMinecraftContent_4: "",
+    docsMinecraftContent_5: "",
+    
+    // DOCS-FLIPPER
+    docsFlipperTitle: "🐬 The Cybersecurity Audit Device 🐬",
+    docsFlipperIndex_1: "Introduction",
+    docsFlipperIndex_2: "What is Flipper Zero?",
+    docsFlipperIndex_3: "Is it legal?",
+    docsFlipperIndex_4: "What can it do?",
+    docsFlipperIndex_5: "Custom Firmwares",
+
+    docsFlipperContent_1: "If you're here, it's because you want to learn how to use Flipper Zero, the cybersecurity audit device. In this document, I'll explain everything you need to know to use it. If you don't know it, I recommend reading the entire document to understand it all.",
+    docsFlipperContent_2: "",
+    docsFlipperContent_3: "",
+    docsFlipperContent_4: "",
+    docsFlipperContent_5: "",
     
     // DOCS-HOMELAB
     docsHomelabTitle: "💾 Intel-based Homelab Server; affordable, scalable, and powerful 💽",

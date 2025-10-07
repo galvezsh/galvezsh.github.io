@@ -12,6 +12,33 @@ import Html from "./engine.js";
 
 const HTML = new Html( "navbarHome" );
 const workState = false; // True if you're working, false if you're looking for a job
+const contactList = [
+    {
+        text: HTML.strings.linkedin,
+        icon: "fa-brands fa-linkedin",
+        link: HTML.strings.linkedinLink
+    },
+    {
+        text: HTML.strings.github,
+        icon: "fa-brands fa-github",
+        link: HTML.strings.githubLink
+    },
+    {
+        text: HTML.strings.email,
+        icon: "fa-solid fa-envelope",
+        link: HTML.strings.emailLink
+    },
+    {
+        text: HTML.strings.cvSpanish,
+        icon: "fa-solid fa-file-arrow-down",
+        link: HTML.strings.cvSpanishLink
+    },
+    {
+        text: HTML.strings.cvEnglish,
+        icon: "fa-solid fa-file-arrow-down",
+        link: HTML.strings.cvEnglishLink
+    }
+];
 const experience = [
     {
       title: HTML.strings.startLaboralExperience_5_Name,
@@ -198,7 +225,7 @@ const projectsList = [
 // SCRIPT ///////////////////////////////////
 /////////////////////////////////////////////
 
-document.getElementById("header").innerHTML = createHeader( HTML.strings, workState );
+document.getElementById("header").innerHTML = createHeader( HTML.strings, workState, contactList );
 document.getElementById("experience").innerHTML = timeline( HTML.strings.startLaboralExperience, "briefcase", experience );
 document.getElementById("stack").innerHTML = stack( HTML.strings.startTechStack, "layer-group", techStack );
 document.getElementById("knowledge").appendChild( shelf( HTML.strings.startKnowledge, "book", knowledge ) );
@@ -209,7 +236,7 @@ document.getElementById("projects").innerHTML = projects( HTML.strings.startProj
 // FUNCTIONS ////////////////////////////////
 /////////////////////////////////////////////
 
-function createHeader( strings, workState ) {
+function createHeader( strings, workState, list ) {
     return `
         <img src="../resources/images/developer.png">
 
@@ -221,15 +248,15 @@ function createHeader( strings, workState ) {
         <p>${strings.startSmallDescription}</p>
 
         <div class="list-links">
-            <a href="${strings.linkedinLink}" class="list-item" target="_blank">
-                <i class="fa-brands fa-linkedin"></i> ${strings.linkedin}
-            </a>
-            <a href="${strings.githubLink}" class="list-item" target="_blank">
-                <i class="fa-brands fa-github"></i> ${strings.github}
-            </a>
-            <a href="mailto:${strings.emailLink}" class="list-item">
-                <i class="fa-solid fa-envelope"></i> ${strings.email}
-            </a>
+            ${ list.map( item => createHeaderItem( item.text, item.icon, item.link ) ).join( "" ) }
         </div>
+    `;
+}
+
+function createHeaderItem( text, icon, link ) {
+    return `
+        <a href="${link}" class="list-item" target="_blank">
+            <i class="${icon}"></i> ${text}
+        </a>
     `;
 }

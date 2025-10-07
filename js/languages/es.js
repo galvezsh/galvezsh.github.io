@@ -22,7 +22,7 @@ export default {
 
     // NAVBAR
     navbarHome: "Inicio",
-    navbarProjects: "Proyectos",
+    navbarDocuments: "Documentos",
     navbarAbout: "Acerca de",
     navbarLocale: "Cambiar Idioma:",
 
@@ -135,22 +135,22 @@ export default {
     startProjects_1_Content: "Aplicación móvil sobre la serie 'Rick y Morty'. Contiene base de datos con personajes, episodios y localizaciones, interconectados. Desarrollada con tecnologías actuales y arquitectura recomendada por Google.",
     startProjectsGithub: "Ver proyecto en GitHub",
 
-    // PROJECTS-HTML
-    projectsPersonalProjectsTitle: "Proyectos personales",
-    projectsPersonalProjectsContent: "Aquí se presentan mis proyectos personales que, aunque no profesionales, merecen ser mencionados. Son proyectos a los que le he dedicado mucho tiempo y quiero compartir con el mundo lo que he aprendido con ellos.",
-    projectsSeeFullDocument: "Ver documentación completa",
+    // DOCUMENTS-HTML
+    documentsTitle: "Documentos personales",
+    documentsContent: "Aquí se presentan mis documentos personales que merecen ser mencionados. Son documentos a los que le he dedicado mucho tiempo y quiero compartir con el mundo lo que he aprendido con ellos.",
+    documentsSeeFullDocument: "Ver documentación completa",
+    
+    documents_3_title: "Servidores de Minecraft personalizados",
+    documents_3_date: "Mayo 2023 - Actualidad (en desarrollo)",
+    documents_3_content: "Aquí muestro cómo creo mis propios servidores de Minecraft para jugar con amigos durante unas semanas. Normalmente los lleno de mods para ofrecer una experiencia diferente, ya que el Minecraft vanilla está algo pasado. Si quieres saber qué contienen, pincha en el botón para acceder al documento.",
 
-    projects_3_title: "Flipper Zero",
-    projects_3_date: "Enero 2025 - Actualidad (en desarrollo)",
-    projects_3_content: "Este documento muestra todo lo relacionado con Flipper Zero, un dispositivo capaz de leer, copiar, modificar y emular redes y tarjetas. Conocido como el 'tamagotchi de los hackers'. Lo adquirí para aprender más sobre ciberseguridad y hacking ético, y explicar cómo proteger nuestros dispositivos de este tipo de ataques. Si te interesa, pincha en el botón para ver el documento.",
+    documents_2_title: "Flipper Zero",
+    documents_2_date: "Enero 2025 - Actualidad (en desarrollo)",
+    documents_2_content: "Este documento muestra todo lo relacionado con Flipper Zero, un dispositivo capaz de leer, copiar, modificar y emular redes y tarjetas. Conocido como el 'tamagotchi de los hackers'. Lo adquirí para aprender más sobre ciberseguridad y hacking ético, y explicar cómo proteger nuestros dispositivos de este tipo de ataques. Si te interesa, pincha en el botón para ver el documento.",
 
-    projects_2_title: "Servidores de Minecraft personalizados",
-    projects_2_date: "Mayo 2023 - Actualidad (en desarrollo)",
-    projects_2_content: "Aquí muestro cómo creo mis propios servidores de Minecraft para jugar con amigos durante unas semanas. Normalmente los lleno de mods para ofrecer una experiencia diferente, ya que el Minecraft vanilla está algo pasado. Si quieres saber qué contienen, pincha en el botón para acceder al documento.",
-
-    projects_1_title: "Servidor doméstico casero",
-    projects_1_date: "Octubre 2022 - Agosto 2025",
-    projects_1_content: "En este documento explico paso a paso cómo construir un servidor casero potente, económico y escalable, ideal para múltiples proyectos. Basado en Intel, aunque también incluyo alternativas con AMD. Si te interesa montar el servidor de tus sueños, pincha en el botón para verlo.",
+    documents_1_title: "Servidor doméstico casero",
+    documents_1_date: "Octubre 2022 - Agosto 2025",
+    documents_1_content: "En este documento explico paso a paso cómo construir un servidor casero potente, económico y escalable, ideal para múltiples proyectos. Basado en Intel, aunque también incluyo alternativas con AMD. Si te interesa montar el servidor de tus sueños, pincha en el botón para verlo.",
 
     // ABOUT-HTML
     aboutAboutTitle: "Acerca del sitio web",
@@ -184,12 +184,34 @@ export default {
     docsFlipper: "Flipper Zero",
     docsMinecraft: "Minecraft",
     docsHomelab: "Homelab",
+    
+    // DOCS-MINECRAFT
+    docsMinecraftTitle: "💻 Servidores de minecraft personalizados, únicos en su especie 🎮",
+    docsMinecraftIndex_1: "Introducción",
+    docsMinecraftIndex_2: "¿Qué es Minecraft?",
+    docsMinecraftIndex_3: "El problema del vanilla",
+    docsMinecraftIndex_5: "Optimizaciones",
+    docsMinecraftIndex_4: "Forge vs Fabric",
+    
+    docsMinecraftContent_1: "Si estas aquí es porque estas intersado en saber como contruir tu propio servidor de minecraft personalizado para hacer que sea también, al igual que los mios, únicos en su especie. En este documento te explicare todo lo que necesitas saber para construir desde 0 tu nuevo servidor. Si no lo conoces, te recomiendo que lo leas completo para entenderlo todo.",
+    docsMinecraftContent_2: "",
+    docsMinecraftContent_3: "",
+    docsMinecraftContent_4: "",
+    docsMinecraftContent_5: "",
 
     // DOCS-FLIPPER
     docsFlipperTitle: "🐬 El dispositivo de auditoría de ciberseguridad 🐬",
-
-    // DOCS-MINECRAFT
-    docsMinecraftTitle: "💻 Servidores de minecraft personalizados, únicos en su especie 🎮",
+    docsFlipperIndex_1: "Introducción",
+    docsFlipperIndex_2: "¿Qué es Flipper Zero?",
+    docsFlipperIndex_3: "¿Es legal?",
+    docsFlipperIndex_4: "¿Qué puede hacer?",
+    docsFlipperIndex_5: "Firmwares personalizados",
+    
+    docsFlipperContent_1: "Si estas aquí es porque quieres o estas interesado en aprender a usar Flipper Zero, el dispositivo de auditoría de ciberseguridad. En este documento te explicare todo lo que necesitas saber para usarlo. Si no lo conoces, te recomiendo que lo leas completo para entenderlo todo.",
+    docsFlipperContent_2: "",
+    docsFlipperContent_3: "",
+    docsFlipperContent_4: "",
+    docsFlipperContent_5: "",
 
     // DOCS-HOMELAB
     docsHomelabTitle: "💾 Servidor doméstico Intel-based; económico, escalable y potente 💽",

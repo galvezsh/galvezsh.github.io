@@ -16,11 +16,10 @@
 </html>
 
 <script type="module">
-    import Strings from "./js/languages/strings.js";
-    import { Cookie } from "./js/engine.js";
+    import { Cookie, Strings } from "./js/engine.js";
 
-    const STRINGS = new Strings( new Cookie( document ).getCookie( "locale" ) );
+    const STRINGS = new Strings( new Cookie().getCookie( "locale" ) );
 
-    document.title = STRINGS.websiteName + ": " + STRINGS.error404Title;
     document.querySelector("div.error-container").innerHTML += STRINGS.error404Label;
+    document.title = STRINGS.websiteName + ": " + STRINGS.error404Title;
 </script>

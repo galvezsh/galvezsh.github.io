@@ -3,7 +3,7 @@
 import en from './languages/en.js';
 import es from './languages/es.js';
 
-import voide from './components/void.js';
+import Void from './components/void.js';
 import toast from './components/toast.js';
 import modal from './components/modal.js';
 import navbar from './components/navbar.js';
@@ -106,7 +106,7 @@ export class Strings {
 
             // NAVBAR
             navbarHomeLink: "/home",
-            navbarProjectsLink: "/projects",
+            navbarDocumentsLink: "/documents",
             navbarAboutLink: "/about",
 
             // FOOTER
@@ -116,17 +116,21 @@ export class Strings {
             instagramLink: "https://www.instagram.com/galvez.sh/",
             githubLink: "https://github.com/galvezsh",
             linkedinLink: "https://www.linkedin.com/in/alberto-galvez-gandullo-01838a244/",
-            emailLink: "alberto.galvez.n7@gmail.com",
+            emailLink: "mailto:alberto.galvez.n7@gmail.com",
+            cvSpanishLink: "../resources/documents/cv_español.pdf",
+            cvEnglishLink: "../resources/documents/cv_english.pdf",
 
             // DOCS
-            diyServerDoc: "/projects/homelab",
-            minecraftServersDoc: "/projects/minecraft",
-            flipperZeroDoc: "/projects/flipper",
+            minecraftServersDoc: "/documents/minecraft",
+            flipperZeroDoc: "/documents/flipper",
+            diyServerDoc: "/documents/homelab",
 
             // SHARED
             linkedin: "LinkedIn",
             github: "GitHub",
             email: "Email",
+            cvSpanish: "Curriculum Español",
+            cvEnglish: "Curriculum English",
 
             oop: "Oriented Object Programming",
             multilanguage: "Multi-language",
@@ -205,7 +209,7 @@ export default class Html {
         this.strings = new Strings( this.cookie.getCookie("locale") );
         this.modal = new modal( this.strings );
         this.toast = new toast( this.strings );
-        this.void = new voide( this.strings );
+        this.void = new Void( this.strings );
 
         this.nav = document.querySelector("main nav");
         this.footer = document.querySelector("main footer");
@@ -214,7 +218,7 @@ export default class Html {
         const firstStart = this.cookie.getCookie("logged") != "true";
         const navbarItems = {
             [this.strings.navbarHome]: this.strings.navbarHomeLink,
-            [this.strings.navbarProjects]: this.strings.navbarProjectsLink,
+            [this.strings.navbarDocuments]: this.strings.navbarDocumentsLink,
             [this.strings.navbarAbout]: this.strings.navbarAboutLink
         };
         const footerItems = {

@@ -7,28 +7,28 @@ import Html from "./engine.js";
 // VARIABLES ////////////////////////////////
 /////////////////////////////////////////////
 
-const HTML = new Html( "navbarProjects" );
-const personalProjects = [
+const HTML = new Html( "navbarDocuments" );
+const personalDocuments = [
     {
-        title: HTML.strings.projects_3_title,
-        date: HTML.strings.projects_3_date,
-        content: HTML.strings.projects_3_content,
-        link: HTML.strings.flipperZeroDoc,
-        linkText: HTML.strings.projectsSeeFullDocument
-    },
-    {
-        title: HTML.strings.projects_2_title,
-        date: HTML.strings.projects_2_date,
-        content: HTML.strings.projects_2_content,
+        title: HTML.strings.documents_3_title,
+        date: HTML.strings.documents_3_date,
+        content: HTML.strings.documents_3_content,
         link: HTML.strings.minecraftServersDoc,
-        linkText: HTML.strings.projectsSeeFullDocument
+        linkText: HTML.strings.documentsSeeFullDocument
     },
     {
-        title: HTML.strings.projects_1_title,
-        date: HTML.strings.projects_1_date,
-        content: HTML.strings.projects_1_content,
+        title: HTML.strings.documents_2_title,
+        date: HTML.strings.documents_2_date,
+        content: HTML.strings.documents_2_content,
+        link: HTML.strings.flipperZeroDoc,
+        linkText: HTML.strings.documentsSeeFullDocument
+    },
+    {
+        title: HTML.strings.documents_1_title,
+        date: HTML.strings.documents_1_date,
+        content: HTML.strings.documents_1_content,
         link: HTML.strings.diyServerDoc,
-        linkText: HTML.strings.projectsSeeFullDocument
+        linkText: HTML.strings.documentsSeeFullDocument
     }
 ];
 
@@ -36,8 +36,8 @@ const personalProjects = [
 // SCRIPT ///////////////////////////////////
 /////////////////////////////////////////////
 
-document.getElementById("title").innerHTML = createTitle( HTML.strings.projectsPersonalProjectsContent );
-document.getElementById("projects").innerHTML = timeline( HTML.strings.projectsPersonalProjectsTitle, "list-check", personalProjects );
+document.getElementById("title").innerHTML = createTitle( HTML.strings.documentsContent );
+document.getElementById("projects").innerHTML = timeline( HTML.strings.documentsTitle, "list-check", personalDocuments );
 
 /////////////////////////////////////////////
 // FUNCTIONS ////////////////////////////////
