@@ -101,7 +101,7 @@ export class Strings {
         // STRINGS
         Object.assign( this, {
             // WEBSITE
-            websiteVersion: "v2.0.0_Beta (2025.09)",
+            websiteVersion: "v2.0.0 (2025.09)",
             websiteDevelopers: "Alberto Gálvez (galvezsh)",
 
             // NAVBAR
@@ -111,7 +111,7 @@ export class Strings {
 
             // FOOTER
             youtubeLink: "https://www.youtube.com/@galvezsh",
-            twitchLink: "#",
+            twitchLink: "https://www.twitch.tv/syronr",
             discordLink: "#",
             instagramLink: "https://www.instagram.com/galvez.sh/",
             githubLink: "https://github.com/galvezsh",
@@ -121,7 +121,6 @@ export class Strings {
             cvEnglishLink: "../resources/documents/cv_english.pdf",
 
             // DOCS
-            minecraftServersDoc: "/documents/minecraft",
             flipperZeroDoc: "/documents/flipper",
             diyServerDoc: "/documents/homelab",
 

@@ -140,10 +140,6 @@ export default {
     documentsContent: "Aquí se presentan mis documentos personales que merecen ser mencionados. Son documentos a los que le he dedicado mucho tiempo y quiero compartir con el mundo lo que he aprendido con ellos.",
     documentsSeeFullDocument: "Ver documentación completa",
     
-    documents_3_title: "Servidores de Minecraft personalizados",
-    documents_3_date: "Mayo 2023 - Actualidad (en desarrollo)",
-    documents_3_content: "Aquí muestro cómo creo mis propios servidores de Minecraft para jugar con amigos durante unas semanas. Normalmente los lleno de mods para ofrecer una experiencia diferente, ya que el Minecraft vanilla está algo pasado. Si quieres saber qué contienen, pincha en el botón para acceder al documento.",
-
     documents_2_title: "Flipper Zero",
     documents_2_date: "Enero 2025 - Actualidad (en desarrollo)",
     documents_2_content: "Este documento muestra todo lo relacionado con Flipper Zero, un dispositivo capaz de leer, copiar, modificar y emular redes y tarjetas. Conocido como el 'tamagotchi de los hackers'. Lo adquirí para aprender más sobre ciberseguridad y hacking ético, y explicar cómo proteger nuestros dispositivos de este tipo de ataques. Si te interesa, pincha en el botón para ver el documento.",
@@ -182,22 +178,7 @@ export default {
     docsNotStarted: "Este documento aún no ha sido desarrollado. Se irá desarrollando en futuras actualizaciones. 🚧🔧🔨",
 
     docsFlipper: "Flipper Zero",
-    docsMinecraft: "Minecraft",
     docsHomelab: "Homelab",
-    
-    // DOCS-MINECRAFT
-    docsMinecraftTitle: "💻 Servidores de minecraft personalizados, únicos en su especie 🎮",
-    docsMinecraftIndex_1: "Introducción",
-    docsMinecraftIndex_2: "¿Qué es Minecraft?",
-    docsMinecraftIndex_3: "El problema del vanilla",
-    docsMinecraftIndex_5: "Optimizaciones",
-    docsMinecraftIndex_4: "Forge vs Fabric",
-    
-    docsMinecraftContent_1: "Si estas aquí es porque estas intersado en saber como contruir tu propio servidor de minecraft personalizado para hacer que sea también, al igual que los mios, únicos en su especie. En este documento te explicare todo lo que necesitas saber para construir desde 0 tu nuevo servidor. Si no lo conoces, te recomiendo que lo leas completo para entenderlo todo.",
-    docsMinecraftContent_2: "",
-    docsMinecraftContent_3: "",
-    docsMinecraftContent_4: "",
-    docsMinecraftContent_5: "",
 
     // DOCS-FLIPPER
     docsFlipperTitle: "🐬 El dispositivo de auditoría de ciberseguridad 🐬",

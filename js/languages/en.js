@@ -140,10 +140,6 @@ export default {
     documentsContent: "Here are my personal documents that are worth highlighting. I’ve dedicated a lot of time to them and want to share what I’ve learned with the world.",
     documentsSeeFullDocument: "View full document",
 
-    documents_3_title: "Custom Minecraft Servers",
-    documents_3_date: "May 2023 - Present (in development)",
-    documents_3_content: "Here I explain how I create my own Minecraft servers to play with friends for a few weeks. I usually pack them with mods to offer a unique experience, since vanilla Minecraft can get repetitive. If you’re curious, click the button to read the document.",
-
     documents_2_title: "Flipper Zero",
     documents_2_date: "January 2025 - Present (in development)",
     documents_2_content: "This document covers everything related to Flipper Zero, a device capable of reading, copying, modifying, and emulating networks and cards. Known as the 'Tamagotchi for hackers'. I bought it to learn more about cybersecurity and ethical hacking, and to explain how to protect ourselves from such attacks. If you're interested, click the button to view the document.",
@@ -182,22 +178,7 @@ export default {
     docsNotStarted: "This document has not been developed yet. It will be developed in future updates. 🚧🔧🔨",
 
     docsFlipper: "Flipper Zero",
-    docsMinecraft: "Minecraft",
     docsHomelab: "Homelab",
-    
-    // DOCS-MINECRAFT
-    docsMinecraftTitle: "💻 Custom Minecraft Servers, One of a Kind 🎮",
-    docsMinecraftIndex_1: "Introduction",
-    docsMinecraftIndex_2: "What is Minecraft?",
-    docsMinecraftIndex_3: "The vanilla problem",
-    docsMinecraftIndex_5: "Optimizations",
-    docsMinecraftIndex_4: "Forge vs Fabric",
-
-    docsMinecraftContent_1: "If you're here, it's because you want to learn how to build your own Minecraft server, unique in its own kind. In this document, I'll explain everything you need to know to build it from scratch. If you don't know it, I recommend reading the entire document to understand it all.",
-    docsMinecraftContent_2: "",
-    docsMinecraftContent_3: "",
-    docsMinecraftContent_4: "",
-    docsMinecraftContent_5: "",
     
     // DOCS-FLIPPER
     docsFlipperTitle: "🐬 The Cybersecurity Audit Device 🐬",
