@@ -117,8 +117,8 @@ export class Strings {
             githubLink: "https://github.com/galvezsh",
             linkedinLink: "https://www.linkedin.com/in/alberto-galvez-gandullo-01838a244/",
             emailLink: "mailto:alberto.galvez.n7@gmail.com",
-            cvSpanishLink: "../resources/documents/cv_español.pdf",
-            cvEnglishLink: "../resources/documents/cv_english.pdf",
+            cvSpanishLink: "../resources/documents/CV_2025.10.01_Spanish.pdf",
+            cvEnglishLink: "../resources/documents/CV_2025.10.01_English.pdf",
 
             // DOCS
             flipperZeroDoc: "/documents/flipper",
