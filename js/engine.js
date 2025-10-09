@@ -101,7 +101,7 @@ export class Strings {
         // STRINGS
         Object.assign( this, {
             // WEBSITE
-            websiteVersion: "v2.0.0 (2025.09)",
+            websiteVersion: "v2.0.0 (2025.10.01)",
             websiteDevelopers: "Alberto Gálvez (galvezsh)",
 
             // NAVBAR
