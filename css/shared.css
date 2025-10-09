@@ -17,6 +17,16 @@ body {
     margin: auto;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    margin: 0 auto; /* Adjust only horizontal margin */
+    max-width: 1000px;
+    transition: 200ms ease-in-out;
+}
+
 h1, h2 {
     color: var(--title-color);
     margin-top: 0;
@@ -32,6 +42,10 @@ h3 {
     margin: 0;
     margin-bottom: 4px;
     transition: 200ms ease-in-out;
+}
+
+h3 > i {
+    padding-right: 12px;
 }
 
 h4 {
@@ -86,12 +100,6 @@ ul {
     padding: 0;
     margin: 0 auto;
     gap: 20px;
-}
-
-main {
-    margin: auto;
-    max-width: 1000px;
-    transition: 200ms ease-in-out;
 }
 
 .yt-video {
@@ -196,6 +204,7 @@ button.small {
 
 .toast .header {
     padding: 10px 12px;
+    font-size: 0.9rem;
     font-weight: bold;
     background-image: linear-gradient(
         90deg,
@@ -245,29 +254,21 @@ button.small {
     border-radius: 8px;
     background-color: var(--onBg-color);
     color: var(--text-color-primary);
-}
-
-.modal .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid var(--text-color-quaternary);
-    padding: 16px;
-}
-
-.modal .header i {
-    transform: scale(1.2);
-    color: var(--text-color-quaternary);
-    padding-right: 2px;
     transition: 200ms ease-in-out;
 }
 
-.modal .header i:hover {
-    color: var(--text-color-primary);
+.modal .header {
+    border-bottom: 1px solid var(--text-color-quaternary);
+    padding: 16px;
+    margin: 0;
 }
 
 .modal .body {
     margin: 16px;
+}
+
+.modal .body a {
+    cursor: pointer;
 }
 
 .modal .body div.lang {
@@ -282,14 +283,8 @@ button.small {
 }
 
 .modal .footer {
-    width: 100%;
-    padding: 0;
-    border-top: 1px solid var(--text-color-quaternary);
-}
-
-.modal .footer .buttons {
-    display: inline-block;
     padding: 16px;
+    border-top: 1px solid var(--text-color-quaternary);
 }
 
 .modal button {
@@ -311,6 +306,7 @@ nav a {
     display: block;
     padding: 8px;
     color: var(--text-color-primary);
+    cursor: pointer;
 }
 
 nav a:hover {
@@ -319,6 +315,10 @@ nav a:hover {
 
 nav a.active {
     color: var(--text-color-quaternary);
+}
+
+nav i {
+    transform: scale(1.2);
 }
 
 /**************/
@@ -373,7 +373,7 @@ nav a.active {
 .timeline {
     position: relative;
     border-left: 2px solid var(--timeline-color);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .timeline-item {
@@ -408,6 +408,7 @@ footer {
     padding: 16px 0;
     color: var(--text-color-quaternary);
     font-size: 0.8rem;
+    margin-top: auto;
 }
 
 footer > ul {

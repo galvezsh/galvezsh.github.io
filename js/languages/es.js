@@ -7,23 +7,22 @@ export default {
     warning: "Advertencia",
     error: "Error",
     apply: "Aplicar",
+    accept: "Aceptar",
     cancel: "Cancelar",
     close: "Cerrar",
 
     // TOAST
     blockedToast: "Toast no disponible. Espere a que finalice el anterior.",
 
-    // MODAL
-    resetCookiesHead: "Restaurar configuración",
-    resetCookiesBody: "¿Desea restaurar la configuración de la página web como el primer día? Esta acción recargará la ventana y se perderá toda la configuración actual.",
-
     // ERRORS
     error404Title: "Página no encontrada",
     error404Label: "<p>La página que estás buscando no existe o ha sido eliminada.</p><p>Comprueba la URL o usa el menú para navegar.</p><p>Vuelve a la <a href='/'>página de inicio</a>.</p>",
+    navbarNotFound: "Navbar no encontrado. Saltando inicialización...",
+    footerNotFound: "Footer no encontrado. Saltando inicialización...",
 
     // NAVBAR
     navbarHome: "Inicio",
-    navbarProjects: "Proyectos",
+    navbarDocuments: "Documentos",
     navbarAbout: "Acerca de",
     navbarLocale: "Cambiar Idioma:",
 
@@ -108,27 +107,26 @@ export default {
     startTechStack_6_4: "Base de datos relacional avanzada",
 
     startKnowledge: "Conocimientos adicionales",
-    startDeepKnowledge: "Especialización",
     startMicroinformatic: "Microinformática",
     startCibersecurity: "Ciberseguridad",
     startMicroinformaticSkills: "Amplios conocimientos en microinformática: ordenadores, servidores, sistemas operativos, etc. Desde pequeño siempre me ha atraído todo lo relacionado con la electrónica y la informática.",
     startCibersecuritySkills: "Conocimientos en fundamentos de ciberseguridad moderna: hardening de sistemas, análisis SIEM, análisis forense, hacking ético y gestión de incidentes. También puedo impartir charlas de concienciación en ciberseguridad.",
-    startMicroinformaticSkillsDetail: `<p>- <strong>Montaje de equipos</strong>: ordenadores domésticos y servidores; mantenimiento y reparación.</p><p>- <strong>Sistemas operativos</strong>: domésticos, empresariales y personalizados; gestión, optimización y configuración.</p><p>- <strong>Diseño de redes</strong>: topología, esquemas, análisis y optimización. Conocimientos sobre routers, switches, hubs, puntos de acceso, etc.</p>`,
-    startCibersecuritySkillsDetail: `<p>- <strong>Analista SIEM</strong>: monitorización de endpoints con Elastic Stack (Elasticsearch, Kibana, Beats y Logstash), Wazuh y Suricata.</p><p>- <strong>Hacking ético</strong>: pentesting de aplicaciones y sistemas para descubrir vulnerabilidades.</p><p>- <strong>Hardening</strong>: refuerzo de sistemas críticos siguiendo el principio de mínimo privilegio.</p><p>- <strong>Análisis forense</strong>: detección de causas de fallos o ciberataques.</p>`,
+    startMicroinformaticSkillsDetail: "<p>- <strong>Montaje de equipos</strong>: ordenadores domésticos y servidores; mantenimiento y reparación.</p><p>- <strong>Sistemas operativos</strong>: domésticos, empresariales y personalizados; gestión, optimización y configuración.</p><p>- <strong>Diseño de redes</strong>: topología, esquemas, análisis y optimización. Conocimientos sobre routers, switches, hubs, puntos de acceso, etc.</p>",
+    startCibersecuritySkillsDetail: "<p>- <strong>Analista SIEM</strong>: monitorización de endpoints con Elastic Stack (Elasticsearch, Kibana, Beats y Logstash), Wazuh y Suricata.</p><p>- <strong>Hacking ético</strong>: pentesting de aplicaciones y sistemas para descubrir vulnerabilidades.</p><p>- <strong>Hardening</strong>: refuerzo de sistemas críticos siguiendo el principio de mínimo privilegio.</p><p>- <strong>Análisis forense</strong>: detección de causas de fallos o ciberataques.</p>",
     startKnowMore: "Saber más...",
 
-    startStudies: "Formación académica",
-    startStudies_3_Date: "Octubre 2023 - Mayo 2024",
-    startStudies_3_Name: "Curso de especialización en ciberseguridad",
-    startStudies_3_Content: "Formación avanzada en ciberseguridad, incluyendo hardening de sistemas, análisis SIEM, análisis forense, hacking ético y gestión de incidentes. Uso de herramientas como Elastic Stack (Elasticsearch, Kibana, Beats y Logstash), Wazuh y Suricata para monitorización y análisis de seguridad.",
+    startEducation: "Formación académica",
+    startEducation_3_Date: "Octubre 2023 - Mayo 2024",
+    startEducation_3_Name: "Curso de especialización en ciberseguridad",
+    startEducation_3_Content: "Formación avanzada en ciberseguridad, incluyendo hardening de sistemas, análisis SIEM, análisis forense, hacking ético y gestión de incidentes. Uso de herramientas como Elastic Stack (Elasticsearch, Kibana, Beats y Logstash), Wazuh y Suricata para monitorización y análisis de seguridad.",
 
-    startStudies_2_Date: "Septiembre 2021 - Mayo 2023",
-    startStudies_2_Name: "Grado Superior en Desarrollo de Aplicaciones Multiplataforma",
-    startStudies_2_Content: "Formación en desarrollo de software multiplataforma, tanto para aplicaciones web como móviles y de escritorio. Bases en la programación orientada a objetos, estructuras de datos, bases de datos y redes. Proyectos prácticos en Java, Kotlin, Python, PHP, SQL y PL/SQL.",
+    startEducation_2_Date: "Septiembre 2021 - Mayo 2023",
+    startEducation_2_Name: "Grado Superior en Desarrollo de Aplicaciones Multiplataforma",
+    startEducation_2_Content: "Formación en desarrollo de software multiplataforma, tanto para aplicaciones web como móviles y de escritorio. Bases en la programación orientada a objetos, estructuras de datos, bases de datos y redes. Proyectos prácticos en Java, Kotlin, Python, PHP, SQL y PL/SQL.",
 
-    startStudies_1_Date: "Septiembre 2019 - Mayo 2021",
-    startStudies_1_Name: "Grado Medio en Sistemas Microinformáticos y Redes",
-    startStudies_1_Content: "Formación en montaje, configuración y mantenimiento de equipos informáticos y redes locales. Administración básica de sistemas operativos, seguridad informática y soporte técnico. Proyectos prácticos en hardware, software y redes.",
+    startEducation_1_Date: "Septiembre 2019 - Mayo 2021",
+    startEducation_1_Name: "Grado Medio en Sistemas Microinformáticos y Redes",
+    startEducation_1_Content: "Formación en montaje, configuración y mantenimiento de equipos informáticos y redes locales. Administración básica de sistemas operativos, seguridad informática y soporte técnico. Proyectos prácticos en hardware, software y redes.",
 
     startProjects: "Proyectos profesionales",
     startProjects_2_Name: "Digital Void (Enero 2022 - Actualidad)",
@@ -137,38 +135,41 @@ export default {
     startProjects_1_Content: "Aplicación móvil sobre la serie 'Rick y Morty'. Contiene base de datos con personajes, episodios y localizaciones, interconectados. Desarrollada con tecnologías actuales y arquitectura recomendada por Google.",
     startProjectsGithub: "Ver proyecto en GitHub",
 
-    // PROJECTS-HTML
-    projectsPersonalProjectsTitle: "Proyectos personales",
-    projectsPersonalProjectsContent: "Aquí se presentan algunos de mis proyectos personales que, aunque no profesionales, merecen ser mencionados.",
-    projectsSeeFullDocument: "Ver documentación completa",
+    // DOCUMENTS-HTML
+    documentsTitle: "Documentos personales",
+    documentsContent: "Aquí se presentan mis documentos personales que merecen ser mencionados. Son documentos a los que le he dedicado mucho tiempo y quiero compartir con el mundo lo que he aprendido con ellos.",
+    documentsSeeFullDocument: "Ver documentación completa",
+    
+    documents_2_title: "Flipper Zero",
+    documents_2_date: "Enero 2025 - Actualidad (en desarrollo)",
+    documents_2_content: "Este documento muestra todo lo relacionado con Flipper Zero, un dispositivo capaz de leer, copiar, modificar y emular redes y tarjetas. Conocido como el 'tamagotchi de los hackers'. Lo adquirí para aprender más sobre ciberseguridad y hacking ético, y explicar cómo proteger nuestros dispositivos de este tipo de ataques. Si te interesa, pincha en el botón para ver el documento.",
 
-    projects_3_title: "Flipper Zero",
-    projects_3_subtitle: "Ciberseguridad y utilidades",
-    projects_3_content: "Este documento muestra todo lo relacionado con Flipper Zero, un dispositivo capaz de leer, copiar, modificar y emular redes y tarjetas. Conocido como el 'tamagotchi de los hackers'. Lo adquirí para aprender más sobre ciberseguridad y hacking ético, y explicar cómo proteger nuestros dispositivos de este tipo de ataques. Si te interesa, pincha en el botón para ver el documento.",
-
-    projects_2_title: "Servidores de Minecraft personalizados",
-    projects_2_subtitle: "Servidores virtuales configurables",
-    projects_2_content: "Aquí muestro cómo creo mis propios servidores de Minecraft para jugar con amigos durante unas semanas. Normalmente los lleno de mods para ofrecer una experiencia diferente, ya que el Minecraft vanilla está algo pasado. Si quieres saber qué contienen, pincha en el botón para acceder al documento.",
-
-    projects_1_title: "Servidor doméstico casero",
-    projects_1_subtitle: "Ordenadores y servidores físicos",
-    projects_1_content: "En este documento explico paso a paso cómo construir un servidor casero potente, económico y escalable, ideal para múltiples proyectos. Basado en Intel, aunque también incluyo alternativas con AMD. Si te interesa montar el servidor de tus sueños, pincha en el botón para verlo.",
+    documents_1_title: "Servidor doméstico casero",
+    documents_1_date: "Octubre 2022 - Agosto 2025",
+    documents_1_content: "En este documento explico paso a paso cómo construir un servidor casero potente, económico y escalable, ideal para múltiples proyectos. Basado en Intel, aunque también incluyo alternativas con AMD. Si te interesa montar el servidor de tus sueños, pincha en el botón para verlo.",
 
     // ABOUT-HTML
     aboutAboutTitle: "Acerca del sitio web",
     aboutAboutVersion: "Versión del sitio web: ",
     aboutAboutDevelopers: "Desarrolladores: ",
 
-    aboutLegacyTitle: "Legado de antaño",
-    aboutLegacyLabel: "Antes de llamarse <strong>'Vacio Digital'</strong>, el sitio web pasó por varias etapas. Aquí puedes ver cómo lucía el inicio con cada versión:",
-    aboutLegacy_1: "<strong>Nacimiento de GSSR Web</strong>, diseño y desarrollo de la estructura básica.",
-    aboutLegacy_2: "<strong>Desarrollo completo de GSSR Web</strong>, orientación a objetos en JavaScript, kernel modular basado en funciones, integración local de Bootstrap 5.2.3 y AnimateCSS 4.1.1.",
-    aboutLegacy_3: "<strong>Rediseño completo de la interfaz y reconstrucción del código</strong>, abandono de Bootstrap y AnimateCSS, y renombrado a 'El estudio de Gálvez'.",
-
     aboutConfigTitle: "Configuración del sitio web",
-
     aboutConfigRestoreLabel: "Para restaurar la <strong>configuración de cookies por defecto</strong> y dejar el sitio como la primera vez que lo visitó, pulse el siguiente botón:",
     aboutConfigRestoreButton: "🔧 Restaurar configuración 🔨",
+    aboutConfigRestoreCookiesTitle: "Restaurar configuración por defecto",
+    aboutConfigRestoreCookiesContent: "¿Desea restaurar la configuración de la página web como el primer día? Esta acción recargará la ventana y se perderá toda la configuración actual.",
+
+    aboutHistoryTitle: "Historial de versiones",
+    aboutHistoryTitle_3: "El estudio de Gálvez - Versión 0.3.1",
+    aboutHistoryContent_3: "Rediseño completo de la interfaz y reconstrucción del código, abandono de Bootstrap y AnimateCSS, y renombrado a 'El estudio de Gálvez'.",
+    aboutHistoryDate_3: "Octubre 2024 - Julio 2025",
+    aboutHistoryTitle_2: "GSSR Web - Versión 0.2.11",
+    aboutHistoryContent_2: "Desarrollo completo de GSSR Web, orientación a objetos en JavaScript, kernel modular basado en funciones, integración local de Bootstrap 5.2.3 y AnimateCSS 4.1.1.",
+    aboutHistoryDate_2: "Septiembre 2022 - Octubre 2024",
+    aboutHistoryTitle_1: "GSSR Web - Versión 0.1.1",
+    aboutHistoryContent_1: "Nacimiento de GSSR Web, diseño y desarrollo de la estructura básica.",
+    aboutHistoryDate_1: "Agosto 2022 - Septiembre 2022",
+    aboutHistorySeeImage: "Ver imagen",
 
     // DOCS
     docsIndex: "Índice",
@@ -177,14 +178,21 @@ export default {
     docsNotStarted: "Este documento aún no ha sido desarrollado. Se irá desarrollando en futuras actualizaciones. 🚧🔧🔨",
 
     docsFlipper: "Flipper Zero",
-    docsMinecraft: "Minecraft",
     docsHomelab: "Homelab",
 
     // DOCS-FLIPPER
     docsFlipperTitle: "🐬 El dispositivo de auditoría de ciberseguridad 🐬",
-
-    // DOCS-MINECRAFT
-    docsMinecraftTitle: "💻 Servidores de minecraft personalizados, únicos en su especie 🎮",
+    docsFlipperIndex_1: "Introducción",
+    docsFlipperIndex_2: "¿Qué es Flipper Zero?",
+    docsFlipperIndex_3: "¿Es legal?",
+    docsFlipperIndex_4: "¿Qué puede hacer?",
+    docsFlipperIndex_5: "Firmwares personalizados",
+    
+    docsFlipperContent_1: "Si estas aquí es porque quieres o estas interesado en aprender a usar Flipper Zero, el dispositivo de auditoría de ciberseguridad. En este documento te explicare todo lo que necesitas saber para usarlo. Si no lo conoces, te recomiendo que lo leas completo para entenderlo todo.",
+    docsFlipperContent_2: "",
+    docsFlipperContent_3: "",
+    docsFlipperContent_4: "",
+    docsFlipperContent_5: "",
 
     // DOCS-HOMELAB
     docsHomelabTitle: "💾 Servidor doméstico Intel-based; económico, escalable y potente 💽",

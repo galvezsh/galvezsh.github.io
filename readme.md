@@ -19,7 +19,7 @@ Inside each folder there’s a minimal `index.html` that acts as an entry point.
 ### ✅ What's New
 
 - Pages are now organized into **folders with their own** `index.html`, allowing clean URLs like `/home/`, `/about/`, `/projects/homelab/`.
-- All UI components (e.g., Navbar, Footer, Toast) are in separate JavaScript files inside `/js/components/`. `engine.js` no longer contains full component definitions — it now bootstraps rendering and connects logic.
+- All UI components (e.g., navbar, footer, toast) are in separate JavaScript files inside `/js/components/`. `engine.js` no longer contains full component definitions — it now bootstraps rendering and connects logic.
 - No need to manually duplicate HTML markup for components. Simply declare an element placeholder (e.g. `<footer></footer>`) and the engine will render it.
 - Cookies are now explicitly set with `path=/`, so locale, theme, and first-visit state are shared across all pages.
 
@@ -56,11 +56,15 @@ DigitalVoid/
 │   │   ├── es.js       # English strings
 │   │   └── strings.js  # Language detection & loader
 │   ├── components/
-│   │   ├── Footer.js
-│   │   ├── Modal.js
-│   │   ├── NavBar.js
-│   │   ├── Toast.js
-│   │   └── Void.js
+│   │   ├── footer.js
+│   │   ├── modal.js
+│   │   ├── navbar.js
+│   │   ├── project.js
+│   │   ├── shelf.js
+│   │   ├── stack.js
+│   │   ├── timeline.js
+│   │   ├── toast.js
+│   │   └── void.js
 │   ├── about.js
 │   ├── engine.js   # Only handles rendering logic and component bootstrapping
 │   ├── home.js
@@ -90,8 +94,8 @@ Each page-specific script (like `about.js`) loads `strings.js`, which then uses 
 
 DigitalVoid’s rendering engine simulates React-like behavior using native JavaScript classes:
 
-- UI components like NavBar, Footer, and Toast are now standalone modules inside /js/componentes/.
-- Components are automatically created and rendered by the engine — you just need to declare a placeholder tag in your HTML (e.g. `<footer></footer> || <div class="toast"></div>`).
+- UI components like `navbar`, `footer`, and `toast` are now standalone modules inside /js/components/.
+- Components are automatically created and rendered by the engine — you just need to declare a placeholder tag in your HTML (e.g. `<footer></footer> || <div class="toast"></div> || <div class="container-big" id="timeline"></div>`).
 - Logic, structure, and styling are handled dynamically — no need to repeat layout or markup patterns.
 
 

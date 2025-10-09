@@ -4,7 +4,7 @@
 /************/
 /* ABOUT-ME */
 /************/
-.header .flex-header {
+main div.container-big:nth-of-type(1) .flex-header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -12,23 +12,23 @@
     transition: 200ms ease-in-out;
 }
 
-.header .flex-header > span {
+main div.container-big:nth-of-type(1) .flex-header > span {
     font-size: 0.8rem;
     background-color: var(--text-color-tertiary);
     border-radius: 12px;
     padding: 4px 10px;
 }
 
-.header .flex-header > * {
+main div.container-big:nth-of-type(1) .flex-header > * {
     margin: 0;
 }
 
-.header img {
+main div.container-big:nth-of-type(1) img {
     width: 80px;
     border-radius: 50%;
 }
 
-.header span {
+main div.container-big:nth-of-type(1) span {
     color: var(--title-color);
 }
 
@@ -82,7 +82,7 @@ img.stack-item-img {
 /* PROJECTS */
 /************/
 
-.projects .project > .images {
+main div.container-big:nth-of-type(6) .project > .images {
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax( 270px, 1fr) );
     gap: 8px;
@@ -92,7 +92,7 @@ img.screenshot {
     width: 100%;
 }
 
-.projects .project .list-links:nth-of-type(1) .list-item {
+main div.container-big:nth-of-type(6) .list-links:nth-of-type(1) .list-item {
     font-size: 12px;
     background-color: var(--text-color-tertiary);
     padding: 4px 8px;

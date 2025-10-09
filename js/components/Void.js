@@ -1,28 +1,18 @@
-'use strict';
 
 export default class Void {
 
     /**
-     * Initializes the footer component and builds its structure.
-     * 
-     * @param {object} STRINGS An object containing localized static strings and external social links.
+     * Initializes the void component and builds its structure. This one is special because it is not added to the DOM
+     * in the HTML file, but it is added here. This is for ensuring that the void is always present in the page, so the 
+     * developer can use it without worrying about the DOM structure.
      */
-    constructor( STRINGS ) {
-        this.strings = STRINGS;
-        this.void = document.querySelector( "div.void" );
+    constructor() {
+        this.body = document.querySelector( "body" );
+        this.void = document.createElement( "div" );
+        this.void.classList.add( "void", "animation-fadeIn" );
+        this.void.innerHTML = `<h1>Welcome to the void</h1>`;
 
-        this.buildBlock();
-    }
-
-    /**
-     * Dynamically builds the internal HTML structure for the modal component
-     * and appends it to the modal container element.
-     */
-    buildBlock() {
-        const h1 = document.createElement( 'h1' );
-        h1.innerHTML = this.strings.staticWelcomeVoid;
-
-        this.void.appendChild( h1 );
+        this.body.prepend( this.void );
     }
 
     /**
@@ -40,6 +30,9 @@ export default class Void {
      */
     hideVoid() {
         this.void.classList.add( "animation-fadeOut" );
-        this.void.addEventListener( "animationend", () => this.void.style.display = "none" );
+        this.void.addEventListener( "animationend", () => {
+            this.void.classList.remove( "animation-fadeOut" );
+            this.void.style.display = "none"; 
+        }, { once: true } );
     }
 }

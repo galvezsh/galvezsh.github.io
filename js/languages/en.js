@@ -7,23 +7,22 @@ export default {
     warning: "Warning",
     error: "Error",
     apply: "Apply",
+    accept: "Accept",
     cancel: "Cancel",
     close: "Close",
 
     // TOAST
     blockedToast: "Toast not available. Please wait until the previous one finishes.",
 
-    // MODAL
-    resetCookiesHead: "Restore Settings",
-    resetCookiesBody: "Do you want to reset the website settings as if it were your first visit? This will reload the page and discard all current settings.",
-
     // ERRORS
     error404Title: "Page Not Found",
     error404Label: "<p>The page you're looking for doesn't exist or has been removed.</p><p>Check the URL or use the menu to navigate.</p><p>Return to the <a href='/'>home page</a>.</p>",
+    navbarNotFound: "Navbar not found. Skipping initialization...",
+    footerNotFound: "Footer not found. Skipping initialization...",
 
     // NAVBAR
     navbarHome: "Home",
-    navbarProjects: "Projects",
+    navbarDocuments: "Documents",
     navbarAbout: "About",
     navbarLocale: "Change Language:",
     
@@ -108,27 +107,26 @@ export default {
     startTechStack_6_4: "Advanced relational database",
     
     startKnowledge: "Additional skills",
-    startDeepKnowledge: "Specialties",
     startMicroinformatic: "Computer Hardware",
     startCibersecurity: "Cybersecurity",
     startMicroinformaticSkills: "Extensive knowledge in IT hardware: computers, servers, operating systems, etc. I’ve always been drawn to electronics and computing since I was a kid.",
     startCibersecuritySkills: "Knowledge in modern cybersecurity fundamentals: system hardening, SIEM analysis, forensic analysis, ethical hacking, and incident response. I can also give cybersecurity awareness talks.",
-    startMicroinformaticSkillsDetail: `<p>- <strong>Computer assembly</strong>: building and maintaining home PCs and servers.</p><p>- <strong>Operating systems</strong>: managing, optimizing, and configuring home, enterprise, and custom OS setups.</p><p>- <strong>Network design</strong>: topology, schematics, analysis, and optimization. Familiar with routers, switches, hubs, access points, etc.</p>`,
-    startCibersecuritySkillsDetail: `<p>- <strong>SIEM analyst</strong>: endpoint monitoring with Elastic Stack (Elasticsearch, Kibana, Beats, and Logstash), Wazuh, and Suricata.</p><p>- <strong>Ethical hacking</strong>: penetration testing to uncover vulnerabilities in apps and systems.</p><p>- <strong>System hardening</strong>: securing critical systems using least privilege principles.</p><p>- <strong>Forensic analysis</strong>: investigating causes of failures or cyberattacks.</p>`,
+    startMicroinformaticSkillsDetail: "<p>- <strong>Computer assembly</strong>: building and maintaining home PCs and servers.</p><p>- <strong>Operating systems</strong>: managing, optimizing, and configuring home, enterprise, and custom OS setups.</p><p>- <strong>Network design</strong>: topology, schematics, analysis, and optimization. Familiar with routers, switches, hubs, access points, etc.</p>",
+    startCibersecuritySkillsDetail: "<p>- <strong>SIEM analyst</strong>: endpoint monitoring with Elastic Stack (Elasticsearch, Kibana, Beats, and Logstash), Wazuh, and Suricata.</p><p>- <strong>Ethical hacking</strong>: penetration testing to uncover vulnerabilities in apps and systems.</p><p>- <strong>System hardening</strong>: securing critical systems using least privilege principles.</p><p>- <strong>Forensic analysis</strong>: investigating causes of failures or cyberattacks.</p>",
     startKnowMore: "Learn more...",
 
-    startStudies: "Education",
-    startStudies_3_Date: "October 2023 - May 2024",
-    startStudies_3_Name: "Specialization Course in Cybersecurity",
-    startStudies_3_Content: "Advanced training in cybersecurity, including system hardening, SIEM analysis, forensic analysis, ethical hacking, and incident management. Use of tools such as Elastic Stack (Elasticsearch, Kibana, Beats, and Logstash), Wazuh, and Suricata for security monitoring and analysis.",
+    startEducation: "Education",
+    startEducation_3_Date: "October 2023 - May 2024",
+    startEducation_3_Name: "Specialization Course in Cybersecurity",
+    startEducation_3_Content: "Advanced training in cybersecurity, including system hardening, SIEM analysis, forensic analysis, ethical hacking, and incident management. Use of tools such as Elastic Stack (Elasticsearch, Kibana, Beats, and Logstash), Wazuh, and Suricata for security monitoring and analysis.",
 
-    startStudies_2_Date: "September 2021 - May 2023",
-    startStudies_2_Name: "Higher Vocational Training in Multiplatform Application Development",
-    startStudies_2_Content: "Training in multiplatform software development for web, mobile, and desktop applications. Foundations in object-oriented programming, data structures, databases, and networks. Practical projects in Java, Kotlin, Python, PHP, SQL, and PL/SQL.",
+    startEducation_2_Date: "September 2021 - May 2023",
+    startEducation_2_Name: "Higher Vocational Training in Multiplatform Application Development",
+    startEducation_2_Content: "Training in multiplatform software development for web, mobile, and desktop applications. Foundations in object-oriented programming, data structures, databases, and networks. Practical projects in Java, Kotlin, Python, PHP, SQL, and PL/SQL.",
 
-    startStudies_1_Date: "September 2019 - May 2021",
-    startStudies_1_Name: "Intermediate Vocational Training in Computer Systems and Networks",
-    startStudies_1_Content: "Training in assembly, configuration, and maintenance of computer equipment and local networks. Basic system administration, IT security, and technical support. Practical projects in hardware, software, and networking.",
+    startEducation_1_Date: "September 2019 - May 2021",
+    startEducation_1_Name: "Intermediate Vocational Training in Computer Systems and Networks",
+    startEducation_1_Content: "Training in assembly, configuration, and maintenance of computer equipment and local networks. Basic system administration, IT security, and technical support. Practical projects in hardware, software, and networking.",
 
     startProjects: "Professional Projects",
     startProjects_2_Name: "Digital Void (January 2022 - Present)",
@@ -137,38 +135,41 @@ export default {
     startProjects_1_Content: "Mobile app about the 'Rick and Morty' series. Includes a database with characters, episodes, and locations, all interconnected. Built with modern technologies and Google’s recommended architecture.",
     startProjectsGithub: "View project on GitHub",
 
-    // PROJECTS-HTML
-    projectsPersonalProjectsTitle: "Personal Projects",
-    projectsPersonalProjectsContent: "Here are some of my personal projects that, while not professional, are worth highlighting.",
-    projectsSeeFullDocument: "View full document",
+    // DOCUMENTS-HTML
+    documentsTitle: "Personal documents",
+    documentsContent: "Here are my personal documents that are worth highlighting. I’ve dedicated a lot of time to them and want to share what I’ve learned with the world.",
+    documentsSeeFullDocument: "View full document",
 
-    projects_3_title: "Flipper Zero",
-    projects_3_subtitle: "Cybersecurity and Utilities",
-    projects_3_content: "This document covers everything related to Flipper Zero, a device capable of reading, copying, modifying, and emulating networks and cards. Known as the 'Tamagotchi for hackers'. I bought it to learn more about cybersecurity and ethical hacking, and to explain how to protect ourselves from such attacks. If you're interested, click the button to view the document.",
+    documents_2_title: "Flipper Zero",
+    documents_2_date: "January 2025 - Present (in development)",
+    documents_2_content: "This document covers everything related to Flipper Zero, a device capable of reading, copying, modifying, and emulating networks and cards. Known as the 'Tamagotchi for hackers'. I bought it to learn more about cybersecurity and ethical hacking, and to explain how to protect ourselves from such attacks. If you're interested, click the button to view the document.",
 
-    projects_2_title: "Custom Minecraft Servers",
-    projects_2_subtitle: "Configurable Virtual Servers",
-    projects_2_content: "Here I explain how I create my own Minecraft servers to play with friends for a few weeks. I usually pack them with mods to offer a unique experience, since vanilla Minecraft can get repetitive. If you’re curious, click the button to read the document.",
-
-    projects_1_title: "DIY Homelab Server",
-    projects_1_subtitle: "Physical Computers and Servers",
-    projects_1_content: "In this document I explain how to build a powerful, affordable, and scalable homelab server step by step — ideal for various projects. Based on Intel, but I also include AMD alternatives. If you’re thinking of building your dream server, click the button to see it.",
+    documents_1_title: "DIY Homelab Server",
+    documents_1_date: "October 2022 - August 2025",
+    documents_1_content: "In this document I explain how to build a powerful, affordable, and scalable homelab server step by step — ideal for various projects. Based on Intel, but I also include AMD alternatives. If you’re thinking of building your dream server, click the button to see it.",
 
     // ABOUT-HTML
     aboutAboutTitle: "About the Website",
     aboutAboutVersion: "Website version: ",
     aboutAboutDevelopers: "Developers: ",
 
-    aboutLegacyTitle: "Legacy History",
-    aboutLegacyLabel: "Before being named <strong>'Digital Void'</strong>, this website went through several phases. Here’s how the homepage looked with each version:",
-    aboutLegacy_1: "<strong>Birth of GSSR Web</strong>, basic structure design and development.",
-    aboutLegacy_2: "<strong>Full development of GSSR Web</strong>, object-oriented JavaScript, function-based modular kernel, local integration of Bootstrap 5.2.3 and AnimateCSS 4.1.1.",
-    aboutLegacy_3: "<strong>Full UI redesign and code rebuild</strong>, dropped Bootstrap and AnimateCSS, and renamed to 'El estudio de Gálvez'.",
-
     aboutConfigTitle: "Website Settings",
-
     aboutConfigRestoreLabel: "To restore the <strong>default cookie settings</strong> and reset the site to its original state, click the button below:",
     aboutConfigRestoreButton: "🔧 Restore Settings 🔨",
+    aboutConfigRestoreCookiesTitle: "Restore default settings",
+    aboutConfigRestoreCookiesContent: "Do you want to reset the website settings as if it were your first visit? This will reload the page and discard all current settings.",
+
+    aboutHistoryTitle: "Version history",
+    aboutHistoryTitle_3: "Gálvez's studio - Version 0.3.1",
+    aboutHistoryContent_3: "Full UI redesign and code rebuild, dropped Bootstrap and AnimateCSS, and renamed to 'El estudio de Gálvez'.",
+    aboutHistoryDate_3: "October 2024 - July 2025",
+    aboutHistoryTitle_2: "GSSR Web - Version 0.2.11",
+    aboutHistoryContent_2: "Full development of GSSR Web, object-oriented JavaScript, function-based modular kernel, local integration of Bootstrap 5.2.3 and AnimateCSS 4.1.1.",
+    aboutHistoryDate_2: "September 2022 - October 2024",
+    aboutHistoryTitle_1: "GSSR Web - Version 0.1.1",
+    aboutHistoryContent_1: "Birth of GSSR Web, basic structure design and development.",
+    aboutHistoryDate_1: "August 2022 - September 2022",
+    aboutHistorySeeImage: "See image",
 
     // DOCS
     docsIndex: "Index",
@@ -177,14 +178,21 @@ export default {
     docsNotStarted: "This document has not been developed yet. It will be developed in future updates. 🚧🔧🔨",
 
     docsFlipper: "Flipper Zero",
-    docsMinecraft: "Minecraft",
     docsHomelab: "Homelab",
     
     // DOCS-FLIPPER
     docsFlipperTitle: "🐬 The Cybersecurity Audit Device 🐬",
-    
-    // DOCS-MINECRAFT
-    docsMinecraftTitle: "💻 Custom Minecraft Servers, One of a Kind 🎮",
+    docsFlipperIndex_1: "Introduction",
+    docsFlipperIndex_2: "What is Flipper Zero?",
+    docsFlipperIndex_3: "Is it legal?",
+    docsFlipperIndex_4: "What can it do?",
+    docsFlipperIndex_5: "Custom Firmwares",
+
+    docsFlipperContent_1: "If you're here, it's because you want to learn how to use Flipper Zero, the cybersecurity audit device. In this document, I'll explain everything you need to know to use it. If you don't know it, I recommend reading the entire document to understand it all.",
+    docsFlipperContent_2: "",
+    docsFlipperContent_3: "",
+    docsFlipperContent_4: "",
+    docsFlipperContent_5: "",
     
     // DOCS-HOMELAB
     docsHomelabTitle: "💾 Intel-based Homelab Server; affordable, scalable, and powerful 💽",

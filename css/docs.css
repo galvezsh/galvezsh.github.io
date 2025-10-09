@@ -20,6 +20,10 @@ article {
     padding-top: 20px;
 }
 
+article ul {
+    flex-direction: column;
+}
+
 h2 {
     text-align: center;
 }
@@ -28,11 +32,7 @@ p {
     line-height: 1.5;
 }
 
-@media ( min-width: 1000px ) {
-
-    main {
-        max-width: 950px;
-    }
+@media ( min-width: 1050px ) {
 
     div.document {
         display: flex;

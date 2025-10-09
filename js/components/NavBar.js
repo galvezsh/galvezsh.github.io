@@ -1,68 +1,37 @@
-'use strict';
+/**
+ * Creates a navbar element with the specified strings, items, item selected, and light mode.
+ * 
+ * @param {object} strings - The strings object that contains the language strings.
+ * @param {object} items - The navbar items object that contains the navigation links.
+ * @param {string} itemSelected - The selected navbar item.
+ * @param {boolean} lightMode - The light mode.
+ * @returns {string} - The navbar HTML in string format.
+ */
+export default function NavBar( strings, items, itemSelected, lightMode ) {
+    const navLinks = Object.entries( items )
+        .map(([ text, href ]) => createNavItem( text, href, text === strings[itemSelected] )).join("");
 
-export default class NavBar {
+    return `
+        <a id="theme-toggle">
+            ${lightMode ? '<i class="fa-solid fa-moon"></i>' : '<i class="fa-solid fa-sun"></i>'}
+        </a>
+        <ul>
+            ${navLinks}
+        </ul>
+        <a id="locale-toggle">
+            <i class="fa-solid fa-language"></i>
+        </a>
+    `;
+}
 
-    /**
-     * Initializes the navigation bar and builds its links.
-     * 
-     * @param {object} STRINGS An object containing localized strings and corresponding navigation URLs.
-     * @param {string} navItemSelected The currently active navigation item to be visually highlighted.
-     * @param {boolean} lightMode A boolean that checks if the website is in light mode or not.
-     * @param {string} callbackTheme A callback feature that sends an action backwards when the theme button is pressed.
-     * @param {string} callbackLocale A callback feature that sends an action backwards when the locale button is pressed.
-     */
-    constructor( STRINGS, navItemSelected, lightMode, callbackTheme, callbackLocale ) {
-        this.strings = STRINGS;
-        this.nav = document.querySelector( "main nav" );
-
-        this.buildBlock( navItemSelected, lightMode, () => { callbackTheme(); }, () => { callbackLocale(); } );
-    }
-
-    /**
-     * Dynamically creates the navigation menu with localized labels and highlights the active item.
-     * 
-     * @param {string} navItemSelected The navigation label to be marked as active.
-     * @param {boolean} lightMode A boolean that checks if the website is in light mode or not.
-     * @param {string} callbackTheme A callback feature that sends an action backwards when the theme button is pressed.
-     * @param {string} callbackLocale A callback feature that sends an action backwards when the locale button is pressed.
-     */
-    buildBlock( navItemSelected, lightMode, callbackTheme, callbackLocale ) {
-        const theme = document.createElement("a");
-        const ul = document.createElement( "ul" );
-        const locale = document.createElement("a");
-        const navItems = {
-            [ this.strings.navbarHome ]: [ this.strings.navbarHomeLink ],
-            [ this.strings.navbarProjects ]: [ this.strings.navbarProjectsLink ],
-            [ this.strings.navbarAbout ]: [ this.strings.navbarAboutLink ]
-        };
-
-        if ( lightMode ) 
-            theme.innerHTML = '<i class="fa-solid fa-moon"></i>';
-        else
-            theme.innerHTML = '<i class="fa-solid fa-sun"></i>';
-        
-        theme.onclick = () => { callbackTheme(); };
-        this.nav.appendChild( theme );
-
-        Object.entries( navItems ).forEach( ( [ text, href ] ) => {
-            const li = document.createElement( "li" );
-            const a = document.createElement( "a" );
-
-            a.textContent = text;
-            a.href = href;
-
-            if ( text === navItemSelected ) {
-                a.classList.add( "active" );
-            }
-
-            li.appendChild( a );
-            ul.appendChild( li );
-        });
-
-        locale.innerHTML += '<i class="fa-solid fa-language"></i>';
-        locale.onclick = () => { callbackLocale(); };
-
-        this.nav.appendChild( ul );
-        this.nav.appendChild( locale );
-    }
+/**
+ * @param {string} text - The text of the nav item.
+ * @param {string} href - The href of the nav item.
+ * @param {boolean} isActive - Whether the nav item is active.
+ * @returns {string} - The nav item HTML in string format.
+ */
+function createNavItem( text, href, isActive = false ) {
+    return `
+        <li><a href="${href}" class="${isActive ? "active" : ""}">${text}</a></li>
+    `;
 }

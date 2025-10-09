@@ -1,27 +1,43 @@
 'use strict';
 
-import Strings from "../js/languages/strings.js";
-import { Html, Cookie } from "./engine.js";
+import timeline from "./components/timeline.js";
+import Html from "./engine.js";
 
 /////////////////////////////////////////////
 // VARIABLES ////////////////////////////////
 /////////////////////////////////////////////
 
-const COOKIE = new Cookie();
-const STRINGS = new Strings( COOKIE.getCookie( "locale" ) );
-new Html( STRINGS, COOKIE, STRINGS.navbarProjects );
-
-const LINKS = [ STRINGS.flipperZeroDoc, STRINGS.minecraftServersDoc, STRINGS.diyServerDoc ];
+const HTML = new Html( "navbarDocuments" );
+const personalDocuments = [
+    {
+        title: HTML.strings.documents_2_title,
+        date: HTML.strings.documents_2_date,
+        content: HTML.strings.documents_2_content,
+        link: HTML.strings.flipperZeroDoc,
+        linkText: HTML.strings.documentsSeeFullDocument
+    },
+    {
+        title: HTML.strings.documents_1_title,
+        date: HTML.strings.documents_1_date,
+        content: HTML.strings.documents_1_content,
+        link: HTML.strings.diyServerDoc,
+        linkText: HTML.strings.documentsSeeFullDocument
+    }
+];
 
 /////////////////////////////////////////////
 // SCRIPT ///////////////////////////////////
 /////////////////////////////////////////////
 
-document.querySelectorAll("#seeFullDocument").forEach( (link, index) => {
-    link.innerHTML += STRINGS.projectsSeeFullDocument;
-    link.href = LINKS[ index ];
-});
+document.getElementById("title").innerHTML = createTitle( HTML.strings.documentsContent );
+document.getElementById("projects").innerHTML = timeline( HTML.strings.documentsTitle, "list-check", personalDocuments );
 
 /////////////////////////////////////////////
 // FUNCTIONS ////////////////////////////////
 /////////////////////////////////////////////
+
+function createTitle( content ) {
+    return `
+        <p>${content}</p>
+    `;
+}
