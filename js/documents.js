@@ -30,7 +30,7 @@ const personalDocuments = [
 /////////////////////////////////////////////
 
 document.getElementById("title").innerHTML = createTitle( HTML.strings.documentsContent );
-document.getElementById("projects").innerHTML = timeline( HTML.strings.documentsTitle, "list-check", personalDocuments );
+document.getElementById("documents").innerHTML = timeline( HTML.strings.documentsTitle, "list-check", personalDocuments );
 
 /////////////////////////////////////////////
 // FUNCTIONS ////////////////////////////////
