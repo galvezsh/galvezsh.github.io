@@ -1,7 +1,7 @@
 'use strict';
 
-import en from './languages/en.js';
 import es from './languages/es.js';
+import en from './languages/en.js';
 
 import Void from './components/void.js';
 import toast from './components/toast.js';
@@ -17,7 +17,7 @@ export class Cookie {
         this.lifetimeCookie = 30;
         this.defaults = {
             logged: "false",
-            locale: "en",
+            locale: "es",
             theme: "dark"
         };
         this.initializeCookies();
@@ -69,7 +69,7 @@ export class Cookie {
      */
     resetCookies() {
         for ( const [name, defaultValue] of Object.entries( this.defaults ) ) {
-            this.setCookie(name, defaultValue);
+            this.setCookie( name, defaultValue );
         }
     }
 
@@ -79,8 +79,8 @@ export class Cookie {
      */
     initializeCookies() {
         for ( const [name, defaultValue] of Object.entries( this.defaults ) ) {
-            if (this.getCookie(name) === null) {
-                this.setCookie(name, defaultValue);
+            if (this.getCookie( name ) === null ) {
+                this.setCookie( name, defaultValue );
             }
         }
     }
@@ -91,17 +91,17 @@ export class Strings {
     /**
          * Creates a new Strings helper instance. This class is used to manage the strings of the website, and configure witch locale should be used based on the 'language_code'.
      * 
-     * @param {string} language_code - A string that represents the language code (e.g., "en", "es", "fr"...).
+     * @param {string} language_code - A string that represents the language code (e.g., "es", "en", "fr"...).
      */
     constructor( language_code ) {
 
-        const languages = { en, es };
+        const languages = { es, en };
         this.supportedLanguages = Object.keys( languages );
 
         // STRINGS
         Object.assign( this, {
             // WEBSITE
-            websiteVersion: "v2.0.0 (2025.10.01)",
+            websiteVersion: "v2.0.1 (2025.10.02)",
             websiteDevelopers: "Alberto Gálvez (galvezsh)",
 
             // NAVBAR
@@ -110,15 +110,21 @@ export class Strings {
             navbarAboutLink: "/about",
 
             // FOOTER
-            youtubeLink: "https://www.youtube.com/@galvezsh",
-            twitchLink: "https://www.twitch.tv/syronr",
+            youtubeLink: "https://www.youtube.com/@agalvezsh",
+            twitchLink: "https://www.twitch.tv/galvezsh",
             discordLink: "#",
-            instagramLink: "https://www.instagram.com/galvez.sh/",
+            instagramLink: "https://www.instagram.com/agalvezsh/",
             githubLink: "https://github.com/galvezsh",
             linkedinLink: "https://www.linkedin.com/in/alberto-galvez-gandullo-01838a244/",
-            emailLink: "mailto:alberto.galvez.n7@gmail.com",
-            cvSpanishLink: "../resources/documents/CV_2025.10.01_Spanish.pdf",
-            cvEnglishLink: "../resources/documents/CV_2025.10.01_English.pdf",
+            emailLink: "mailto:agalvezsh@gmail.com",
+            cvSpanishLink: "../resources/documents/cv_es.pdf",
+            cvEnglishLink: "../resources/documents/cv_en.pdf",
+
+            // CERTIFICATIONS
+            aiCertLink: "../resources/documents/ai_cert.pdf",
+            wordpress1CertLink: "../resources/documents/wordpress_1_cert.pdf",
+            wordpress2CertLink: "../resources/documents/wordpress_2_cert.pdf",
+            arduinoCertLink: "../resources/documents/arduino_cert.pdf",
 
             // DOCS
             flipperZeroDoc: "/documents/flipper",
@@ -128,8 +134,8 @@ export class Strings {
             linkedin: "LinkedIn",
             github: "GitHub",
             email: "Email",
-            cvSpanish: "Curriculum Español",
-            cvEnglish: "Curriculum English",
+            cvSpanish: "Curriculum - Español",
+            cvEnglish: "Curriculum - English",
 
             oop: "Oriented Object Programming",
             multilanguage: "Multi-language",
@@ -165,11 +171,10 @@ export class Strings {
             docker: "Docker",
             figma: "Figma",
 
+            claude: "Claude Code CLI",
             chatgpt: "ChatGPT",
-            gemini: "Gemini",
             copilot: "GitHub Copilot",
-            notebookLM: "NotebookLM",
-            firebaseStudio: "Firebase Studio",
+            stitch: "Google Stitch",
 
             firebase: "Firebase",
             springBoot: "Spring Boot",
@@ -189,7 +194,7 @@ export class Strings {
         if ( language_code && languages[ language_code ] ) { 
             Object.assign( this, languages[ language_code ] );
         } else {
-            Object.assign( this, en );
+            Object.assign( this, es );
         }
     }
 }
