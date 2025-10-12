@@ -22,10 +22,13 @@ export default function createProjects( title, icon, projects ) {
 function createProjectItem( project ) {
     return `
         <div class="container-medium project">
-            <h3>${project.name}</h3>
+            <div class="header">
+                <h3>${project.name}</h3>
+                <h4>${project.date}</h4>
+            </div>
             <p class="m0">${project.content}</p>
 
-            <div class="list-links">
+            <div class="list-links stack">
                 ${project.techs.map( tech => `<span class="list-item"><i class="${tech.icon}"></i> ${tech.label}</span>` ).join("")}
             </div>
 

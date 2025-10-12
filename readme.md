@@ -31,13 +31,11 @@ Inside each folder there’s a minimal `index.html` that acts as an entry point.
 DigitalVoid/
 ├── about/
 │   └── index.html
-├── projects/
+├── documents/
 │   ├── index.html
 │   ├── flipper/
 │   │   └── index.html
-│   ├── homelab/
-│   │   └── index.html
-│   └── minecraft/
+│   └── homelab/
 │       └── index.html
 ├── home/
 │   └── index.html
@@ -45,9 +43,9 @@ DigitalVoid/
 │   ├── about.css
 │   ├── animations.css
 │   ├── docs.css
+│   ├── documents.css
 │   ├── errors.css
 │   ├── home.css
-│   ├── projects.css
 │   ├── shared.css
 │   └── themes.css
 ├── js/
@@ -66,12 +64,12 @@ DigitalVoid/
 │   │   ├── toast.js
 │   │   └── void.js
 │   ├── about.js
+│   ├── documents.js
 │   ├── engine.js   # Only handles rendering logic and component bootstrapping
 │   ├── home.js
-│   └── projects.js
 ├── resources/
 │   ├── images/
-│   └── videos/
+│   └── documents/
 ├── credentials.txt
 ├── 404.html        # Custom 404 error. Github pages only supports the 404 error
 ├── robots.txt

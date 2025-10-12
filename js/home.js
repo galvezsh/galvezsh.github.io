@@ -115,11 +115,10 @@ const techStack = [
         title: HTML.strings.startTechStackTitle_4,
         icon: "brain",
         items: [
-            { img: "ia.svg", title: HTML.strings.chatgpt, desc: HTML.strings.startTechStack_4_1 },
-            { img: "ia.svg", title: HTML.strings.gemini, desc: HTML.strings.startTechStack_4_2 },
+            { img: "ia.svg", title: HTML.strings.claude, desc: HTML.strings.startTechStack_4_1 },
+            { img: "ia.svg", title: HTML.strings.chatgpt, desc: HTML.strings.startTechStack_4_2 },
             { img: "ia.svg", title: HTML.strings.copilot, desc: HTML.strings.startTechStack_4_3 },
-            { img: "ia.svg", title: HTML.strings.notebookLM, desc: HTML.strings.startTechStack_4_4 },
-            { img: "firebase.svg", title: HTML.strings.firebaseStudio, desc: HTML.strings.startTechStack_4_5 },
+            { img: "ia.svg", title: HTML.strings.stitch, desc: HTML.strings.startTechStack_4_4 },
         ]
     },
     {
@@ -176,9 +175,40 @@ const education = [
         content: HTML.strings.startEducation_1_Content
     }
 ];
+const certificationsList = [
+    {
+        title: HTML.strings.startCertifications_4_Title,
+        date: HTML.strings.startCertifications_4_Subtitle,
+        content: HTML.strings.startCertifications_4_Content,
+        link: HTML.strings.aiCertLink,
+        linkText: HTML.strings.startCertificationsLinkText
+    },
+    {
+        title: HTML.strings.startCertifications_3_Title,
+        date: HTML.strings.startCertifications_3_Subtitle,
+        content: HTML.strings.startCertifications_3_Content,
+        link: HTML.strings.wordpress2CertLink,
+        linkText: HTML.strings.startCertificationsLinkText
+    },
+    {
+        title: HTML.strings.startCertifications_2_Title,
+        date: HTML.strings.startCertifications_2_Subtitle,
+        content: HTML.strings.startCertifications_2_Content,
+        link: HTML.strings.wordpress1CertLink,
+        linkText: HTML.strings.startCertificationsLinkText
+    },
+    {
+        title: HTML.strings.startCertifications_1_Title,
+        date: HTML.strings.startCertifications_1_Subtitle,
+        content: HTML.strings.startCertifications_1_Content,
+        link: HTML.strings.arduinoCertLink,
+        linkText: HTML.strings.startCertificationsLinkText
+    }
+];
 const projectsList = [
     {
         name: HTML.strings.startProjects_2_Name,
+        date: HTML.strings.startProjects_2_Date,
         content: HTML.strings.startProjects_2_Content,
         techs: [
             { label: HTML.strings.html, icon: "fa-brands fa-html5" },
@@ -196,6 +226,7 @@ const projectsList = [
     },
     {
         name: HTML.strings.startProjects_1_Name,
+        date: HTML.strings.startProjects_1_Date,
         content: HTML.strings.startProjects_1_Content,
         techs: [
             { label: HTML.strings.kotlinMultiplatform, icon: "fa-brands fa-android" },
@@ -221,6 +252,7 @@ const projectsList = [
     }
 ];
 
+
 /////////////////////////////////////////////
 // SCRIPT ///////////////////////////////////
 /////////////////////////////////////////////
@@ -230,6 +262,7 @@ document.getElementById("experience").innerHTML = timeline( HTML.strings.startLa
 document.getElementById("stack").innerHTML = stack( HTML.strings.startTechStack, "layer-group", techStack );
 document.getElementById("knowledge").appendChild( shelf( HTML.strings.startKnowledge, "book", knowledge ) );
 document.getElementById("education").innerHTML = timeline( HTML.strings.startEducation, "graduation-cap", education );
+document.getElementById("certifications").innerHTML = timeline( HTML.strings.startCertifications, "certificate", certificationsList );
 document.getElementById("projects").innerHTML = projects( HTML.strings.startProjects, "laptop-code", projectsList );
 
 /////////////////////////////////////////////
