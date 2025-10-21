@@ -17,7 +17,7 @@ export default {
     // ERRORS
     error404Title: "Página no encontrada",
     error404Label: "<p>La página que estás buscando no existe o ha sido eliminada.</p><p>Comprueba la URL o usa el menú para navegar.</p><p>Vuelve a la <a href='/'>página de inicio</a>.</p>",
-    navbarNotFound: "Navbar no encontrado. Saltando inicialización...",
+    headerNotFound: "Header no encontrado. Saltando inicialización...",
     footerNotFound: "Footer no encontrado. Saltando inicialización...",
 
     // NAVBAR
@@ -156,6 +156,10 @@ export default {
     documentsContent: "Aquí se presentan mis documentos personales que merecen ser mencionados. Son documentos a los que le he dedicado mucho tiempo y quiero compartir con el mundo lo que he aprendido con ellos.",
     documentsSeeFullDocument: "Ver documentación completa",
     
+    documents_3_title: "El caballo Lusitano",
+    documents_3_date: "Octubre 2025 - Noviembre 2025",
+    documents_3_content: "Este documento es especial, ya que no es solo un simple documento. Se trata de un pequeño trabajo desarrollado por mi hermana donde se habla en profundidad acerca de la historia del caballo Lusitano, su importancia histórica y su papel en la historia de la cultura española. <strong>Este documento esta exclusivamente en español.</strong> Si te interesa, pincha en el botón para ver el documento.",
+
     documents_2_title: "Flipper Zero",
     documents_2_date: "Enero 2025 - Actualidad (en desarrollo)",
     documents_2_content: "Este documento muestra todo lo relacionado con Flipper Zero, un dispositivo capaz de leer, copiar, modificar y emular redes y tarjetas. Conocido como el 'tamagotchi de los hackers'. Lo adquirí para aprender más sobre ciberseguridad y hacking ético, y explicar cómo proteger nuestros dispositivos de este tipo de ataques. Si te interesa, pincha en el botón para ver el documento.",

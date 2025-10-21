@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+        <link rel="shortcut icon" href="../../resources/images/favicon.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <!-- <link rel="stylesheet" href="../../css/docs.css"> -->
+        <script defer type="module" src="../../js/documents/lusitano.js"></script>
+    </head>
+
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: white;
+            color: black;
+            margin: 0;
+            font-size: 16px;
+        }
+
+        main {
+            width: 120vh;
+            margin: 0 auto;
+        }
+
+        .container {
+            height: 60vh;
+            margin-bottom: 80px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            padding-top: 8px;
+            padding-bottom: 24px;
+            background-color: white;
+        }
+
+        header * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav {
+            margin: 0 auto;
+        }
+
+        header nav ul {
+            list-style: none;
+        }
+        
+        header nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        
+        header nav ul li a {
+            text-decoration: none;
+            color: grey;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        #introduction {
+            background: url('../../resources/images/lusitano/lusitano.png') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+        }
+
+        #introduction h1 {
+            font-size: 2.8em;
+            margin: 0;
+        }
+
+        #introduction p {
+            font-size: 1.4em;
+        }
+
+    </style>
+
+    <body>
+        <main>
+            
+            <header></header>
+
+            <div class="container" id="introduction"></div>
+
+            <div class="container" id="origin"></div>
+
+            <div class="container" id="purpose"></div>
+
+            <div class="container" id="anatomy"></div>
+
+            <div class="container" id="questions"></div>
+
+            <footer></footer>
+            
+        </main>
+    </body>
+</html>
