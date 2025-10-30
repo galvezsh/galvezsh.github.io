@@ -163,6 +163,40 @@ button.small {
     padding: 4px 8px;
 }
 
+/**********/
+/* HEADER */
+/**********/
+header {
+    display: flex;
+    margin: 8px 0 80px;
+    font-size: 0.8rem;
+}
+
+header i {
+    transform: scale(1.2);
+}
+
+header a {
+    display: block;
+    cursor: pointer;
+    padding: 8px;
+    color: var(--text-color-primary);
+}
+
+header a:hover {
+    transform: scale(1.1);
+}
+
+header a.active {
+    color: var(--text-color-quaternary);
+}
+
+header nav {
+    display: flex;
+    margin: 0 auto;
+    gap: 20px;
+}
+
 /*********/
 /* VOID **/
 /*********/
@@ -293,34 +327,6 @@ button.small {
     margin-right: 8px;
 }
 
-/**********/
-/* NAVBAR */
-/**********/
-nav {
-    display: flex;
-    margin: 8px 0 80px;
-    font-size: 0.8rem;
-}
-
-nav a {
-    display: block;
-    padding: 8px;
-    color: var(--text-color-primary);
-    cursor: pointer;
-}
-
-nav a:hover {
-    transform: scale(1.1);
-}
-
-nav a.active {
-    color: var(--text-color-quaternary);
-}
-
-nav i {
-    transform: scale(1.2);
-}
-
 /**************/
 /* CONTAINERS */
 /**************/
@@ -432,8 +438,10 @@ footer a {
 /****************/
 /* MEDIA QUERY  */
 /****************/
-/* For medium screens (from 0px to 1100px) */
-@media ( max-width: 1050px ) {
+/* Querys for smaller screens, like small laptops, tablets and mobiles */
+
+/* For medium screens ( between 800px and 1049px ) */
+@media ( 800px <= width <= 1049px ) {
     
     html {
         font-size: 16px;
@@ -444,8 +452,8 @@ footer a {
     }
 }
 
-/* For small screens (from 0px to 800px) */
-@media ( max-width: 800px ) {
+/* For small screens ( between 600px and 799px ) */
+@media ( 600px <= width <= 799px ) {
     
     html {
         font-size: 15px;
@@ -460,8 +468,8 @@ footer a {
     }
 }
 
-/* For mobile screens (from 0px to 500px) */
-@media ( max-width: 600px ) {
+/* For mobile screens ( less than 600px ) */
+@media ( width < 600px ) {
     
     html {
         font-size: 14px;

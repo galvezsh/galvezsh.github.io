@@ -17,7 +17,7 @@ export default {
     // ERRORS
     error404Title: "Page Not Found",
     error404Label: "<p>The page you're looking for doesn't exist or has been removed.</p><p>Check the URL or use the menu to navigate.</p><p>Return to the <a href='/'>home page</a>.</p>",
-    navbarNotFound: "Navbar not found. Skipping initialization...",
+    headerNotFound: "Header not found. Skipping initialization...",
     footerNotFound: "Footer not found. Skipping initialization...",
 
     // NAVBAR
@@ -155,6 +155,10 @@ export default {
     documentsTitle: "Personal documents",
     documentsContent: "Here are my personal documents that are worth highlighting. I’ve dedicated a lot of time to them and want to share what I’ve learned with the world.",
     documentsSeeFullDocument: "View full document",
+
+    documents_3_title: "The Lusitano horse",
+    documents_3_date: "October 2025 - November 2025",
+    documents_3_content: "This document is special, as it is not just a simple document. It is a small work developed by my sister where it delves deeply into the history of the Lusitano horse, its historical importance and its role in the history of Spanish culture. <strong>This document is only in Spanish.</strong> If you're interested, click the button to view the document.",
 
     documents_2_title: "Flipper Zero",
     documents_2_date: "January 2025 - Present (in development)",

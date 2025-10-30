@@ -1,23 +1,23 @@
 /**
- * Creates a navbar element with the specified strings, items, item selected, and light mode.
+ * Creates a header element with the specified strings, items, item selected, and light mode.
  * 
  * @param {object} strings - The strings object that contains the language strings.
- * @param {object} items - The navbar items object that contains the navigation links.
- * @param {string} itemSelected - The selected navbar item.
+ * @param {object} navbarItems - The navbar items object that contains the navigation links.
+ * @param {string} navbarItemSelected - The selected navbar item.
  * @param {boolean} lightMode - The light mode.
- * @returns {string} - The navbar HTML in string format.
+ * @returns {string} - The header HTML in string format.
  */
-export default function NavBar( strings, items, itemSelected, lightMode ) {
-    const navLinks = Object.entries( items )
-        .map(([ text, href ]) => createNavItem( text, href, text === strings[itemSelected] )).join("");
+export default function Header( strings, navbarItems, navbarItemSelected, lightMode ) {
+    const navLinks = Object.entries( navbarItems )
+        .map(([ text, href ]) => createNavItem( text, href, text === strings[navbarItemSelected] )).join("");
 
     return `
         <a id="theme-toggle">
             ${lightMode ? '<i class="fa-solid fa-moon"></i>' : '<i class="fa-solid fa-sun"></i>'}
         </a>
-        <ul>
+        <nav>
             ${navLinks}
-        </ul>
+        </nav>
         <a id="locale-toggle">
             <i class="fa-solid fa-language"></i>
         </a>
@@ -31,7 +31,5 @@ export default function NavBar( strings, items, itemSelected, lightMode ) {
  * @returns {string} - The nav item HTML in string format.
  */
 function createNavItem( text, href, isActive = false ) {
-    return `
-        <li><a href="${href}" class="${isActive ? "active" : ""}">${text}</a></li>
-    `;
+    return `<a href="${href}" class="${isActive ? "active" : ""}">${text}</a>`;
 }

@@ -6,7 +6,7 @@ import en from './languages/en.js';
 import Void from './components/void.js';
 import toast from './components/toast.js';
 import modal from './components/modal.js';
-import navbar from './components/navbar.js';
+import header from './components/header.js';
 import footer from './components/footer.js';
 
 export class Cookie {
@@ -101,7 +101,7 @@ export class Strings {
         // STRINGS
         Object.assign( this, {
             // WEBSITE
-            websiteVersion: "v2.0.1 (2025.10.02)",
+            websiteVersion: "v2.0.3 (2025.10.04)",
             websiteDevelopers: "Alberto Gálvez (galvezsh)",
 
             // NAVBAR
@@ -129,6 +129,7 @@ export class Strings {
             // DOCS
             flipperZeroDoc: "/documents/flipper",
             diyServerDoc: "/documents/homelab",
+            lusitanoDoc: "/documents/lusitano",
 
             // SHARED
             linkedin: "LinkedIn",
@@ -202,7 +203,7 @@ export class Strings {
 export default class Html {
 
     /**
-     * Initializes the base HTML layout, define the cookie and strings objects, inject modal, toast, void, navbar and footer and 
+     * Initializes the base HTML layout, define the cookie and strings objects, inject modal, toast, void, header and footer and 
      * set theme and locale.
      * 
      * @param {string} navItemSelected The selected navigation item based in a string. The string must be present 
@@ -215,7 +216,7 @@ export default class Html {
         this.toast = new toast( this.strings );
         this.void = new Void( this.strings );
 
-        this.nav = document.querySelector("main nav");
+        this.header = document.querySelector("main header");
         this.footer = document.querySelector("main footer");
 
         const lightMode = this.cookie.getCookie("theme") == "light";
@@ -235,14 +236,14 @@ export default class Html {
         };
 
         // Check if navbar and footer exist, else skip initialization
-        if ( this.nav ) {
-            this.nav.innerHTML = navbar( this.strings, navbarItems, navItemSelected, lightMode );
+        if ( this.header ) {
+            this.header.innerHTML = header( this.strings, navbarItems, navItemSelected, lightMode );
             document.getElementById("theme-toggle").addEventListener( "click", () => this.changeTheme( lightMode ) );
             document.getElementById("locale-toggle").addEventListener( "click", () => this.showLocaleModal() );
-        } else console.log( this.strings.navbarNotFound );
+        } else console.warn( this.strings.headerNotFound );
         
         if ( this.footer ) this.footer.innerHTML = footer( this.strings, footerItems );
-        else console.log( this.strings.footerNotFound );
+        else console.warn( this.strings.footerNotFound );
 
         document.title = this.strings.websiteName + ": " + this.strings[navItemSelected];
 

@@ -10,6 +10,13 @@ import Html from "./engine.js";
 const HTML = new Html( "navbarDocuments" );
 const personalDocuments = [
     {
+        title: HTML.strings.documents_3_title,
+        date: HTML.strings.documents_3_date,
+        content: HTML.strings.documents_3_content,
+        link: HTML.strings.lusitanoDoc,
+        linkText: HTML.strings.documentsSeeFullDocument
+    },
+    {
         title: HTML.strings.documents_2_title,
         date: HTML.strings.documents_2_date,
         content: HTML.strings.documents_2_content,
