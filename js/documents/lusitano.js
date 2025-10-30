@@ -138,7 +138,7 @@ function createIntroduction() {
 function createOrigin() {
     return `
         <div>
-            <img src="../../resources/images/lusitano/lusitano_2.png" alt="Caballo Lusitano">
+            <img src="../../resources/images/lusitano/lusitano_2.jpeg" alt="Caballo Lusitano">
         </div>
         <div>
             <h1>Un Linaje Milenario</h1>
@@ -208,7 +208,7 @@ function createAnatomy() {
             </button>
             
             <div class="carousel-slides">
-                <div class="carousel-slide active" data-bg="../../resources/images/lusitano/anatomy_cabeza.jpg">
+                <div class="carousel-slide active">
                     <div class="slide-content">
                         <h2>La Cabeza</h2>
                         <p>
@@ -223,7 +223,7 @@ function createAnatomy() {
                     </div>
                 </div>
                 
-                <div class="carousel-slide" data-bg="../../resources/images/lusitano/anatomy_cuello.jpg">
+                <div class="carousel-slide">
                     <div class="slide-content">
                         <h2>El Cuello</h2>
                         <p>
@@ -238,7 +238,7 @@ function createAnatomy() {
                     </div>
                 </div>
                 
-                <div class="carousel-slide" data-bg="../../resources/images/lusitano/anatomy_tronco.jpg">
+                <div class="carousel-slide">
                     <div class="slide-content">
                         <h2>El Tronco</h2>
                         <p>
@@ -251,7 +251,7 @@ function createAnatomy() {
                     </div>
                 </div>
                 
-                <div class="carousel-slide" data-bg="../../resources/images/lusitano/anatomy_partes.jpg">
+                <div class="carousel-slide">
                     <div class="slide-content">
                         <h2>Partes del Tronco</h2>
                         <p>
@@ -271,7 +271,7 @@ function createAnatomy() {
                     </div>
                 </div>
 
-                <div class="carousel-slide" data-bg="../../resources/images/lusitano/anatomy_grupa.jpg">
+                <div class="carousel-slide">
                     <div class="slide-content">
                         <h2>La Grupa</h2>
                         <p>
@@ -287,7 +287,7 @@ function createAnatomy() {
                     </div>
                 </div>
 
-                <div class="carousel-slide" data-bg="../../resources/images/lusitano/anatomy_extremidades.jpg">
+                <div class="carousel-slide">
                     <div class="slide-content">
                         <h2>Extremidades</h2>
                         <p>
