@@ -29,14 +29,14 @@ const contactList = [
         link: HTML.strings.emailLink
     },
     {
-        text: HTML.strings.cvSpanish,
+        text: HTML.strings.cvMultiplatform,
         icon: "fa-solid fa-file-arrow-down",
-        link: HTML.strings.cvSpanishLink
+        link: HTML.strings.cvMultiplatformLink
     },
     {
-        text: HTML.strings.cvEnglish,
+        text: HTML.strings.cvBackend,
         icon: "fa-solid fa-file-arrow-down",
-        link: HTML.strings.cvEnglishLink
+        link: HTML.strings.cvBackendLink
     }
 ];
 const experience = [
