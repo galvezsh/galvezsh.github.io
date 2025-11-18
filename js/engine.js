@@ -115,10 +115,10 @@ export class Strings {
             discordLink: "#",
             instagramLink: "https://www.instagram.com/agalvezsh/",
             githubLink: "https://github.com/galvezsh",
-            linkedinLink: "https://www.linkedin.com/in/alberto-galvez-gandullo-01838a244/",
+            linkedinLink: "https://www.linkedin.com/in/alberto-galvez-gandullo/",
             emailLink: "mailto:agalvezsh@gmail.com",
-            cvSpanishLink: "../resources/documents/cv_es.pdf",
-            cvEnglishLink: "../resources/documents/cv_en.pdf",
+            cvMultiplatformLink: "../resources/documents/cv_multiplatform.pdf",
+            cvBackendLink: "../resources/documents/cv_backend.pdf",
 
             // CERTIFICATIONS
             aiCertLink: "../resources/documents/ai_cert.pdf",
@@ -135,8 +135,8 @@ export class Strings {
             linkedin: "LinkedIn",
             github: "GitHub",
             email: "Email",
-            cvSpanish: "Curriculum - Español",
-            cvEnglish: "Curriculum - English",
+            cvMultiplatform: "Curriculum Vitae | Android - KMP",
+            cvBackend: "Curriculum Vitae | SpringBoot",
 
             oop: "Oriented Object Programming",
             multilanguage: "Multi-language",
