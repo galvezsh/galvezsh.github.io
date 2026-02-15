@@ -11,7 +11,7 @@ import Html from "./engine.js";
 /////////////////////////////////////////////
 
 const HTML = new Html( "navbarHome" );
-const workState = false; // True if you're working, false if you're looking for a job
+const workState = true; // True if you're working, false if you're looking for a job
 const contactList = [
     {
         text: HTML.strings.linkedin,
@@ -40,6 +40,11 @@ const contactList = [
     }
 ];
 const experience = [
+    {
+      title: HTML.strings.startLaboralExperience_6_Name,
+      date: HTML.strings.startLaboralExperience_6_Date,
+      content: HTML.strings.startLaboralExperience_6_Content
+    },
     {
       title: HTML.strings.startLaboralExperience_5_Name,
       date: HTML.strings.startLaboralExperience_5_Date,

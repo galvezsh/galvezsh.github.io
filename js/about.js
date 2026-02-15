@@ -24,10 +24,17 @@ const legacyItems = [
         linkText: HTML.strings.aboutHistorySeeImage
     },
     {
+        title: HTML.strings.aboutHistoryTitle_1_1,
+        date: HTML.strings.aboutHistoryDate_1_1,
+        content: HTML.strings.aboutHistoryContent_1_1,
+        link: "../resources/images/digitalvoid/gssr_0.1.1.png",
+        linkText: HTML.strings.aboutHistorySeeImage
+    },
+    {
         title: HTML.strings.aboutHistoryTitle_1,
         date: HTML.strings.aboutHistoryDate_1,
         content: HTML.strings.aboutHistoryContent_1,
-        link: "../resources/images/digitalvoid/gssr_0.1.1.png",
+        link: "../resources/images/digitalvoid/gssr_0.1.0.png",
         linkText: HTML.strings.aboutHistorySeeImage
     }
 ];
